@@ -1,0 +1,22 @@
+/* ==========================================================================
+   Archive page
+   ========================================================================== */
+
+.page-head {
+  padding-block: clamp(44px, 7vw, 84px) clamp(24px, 3vw, 40px);
+}
+.page-head .display { margin: 18px 0 20px; }
+.page-head .lead { max-width: 56ch; }
+
+.archive-note {
+  display: inline-block;
+  margin-bottom: 24px;
+  padding: 8px 14px;
+  border: 1px dashed var(--line-strong);
+  border-radius: 999px;
+  font-size: 0.74rem;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+
+.icon { font-family: var(--font-mono); }

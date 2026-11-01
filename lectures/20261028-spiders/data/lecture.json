@@ -1,0 +1,151 @@
+{
+  "ru": {
+    "meta": {
+      "title": "Пауки. Страшно интересные! · Нишский Лекторий",
+      "description": "Открытие Нишского Лектория: Ксения Проскурякова о пауках-скакунчиках — характере, уме и снах."
+    },
+    "a11y": { "skip": "К содержанию" },
+    "brand": { "sub": "Project", "name": "Нишский Лекторий" },
+    "nav": { "schedule": "Афиша", "archive": "Архив", "submit": "Предложить лекцию" },
+    "lecture": {
+      "back": "← Все лекции",
+      "status": "Прошедшая лекция",
+      "title": "Пауки. Страшно интересные!",
+      "summary": "Открытие Нишского Лектория: биолог Ксения Проскурякова — о пауках-скакунчиках, их характере, уме и, возможно, снах.",
+      "whenLabel": "Когда",
+      "when": "28 октября 2026, среда, 19:00",
+      "placeLabel": "Где",
+      "place": "кафе «Звуки сердца», Branka Krsmanovića 17, Niš",
+      "speakerLabel": "Лектор",
+      "speaker": "Ксения Проскурякова — учёный-биолог",
+      "aboutLabel": "О лекции",
+      "about": [
+        "А вы знали, что пауки могут иметь разные характеры, запоминать символы и, возможно, даже видеть сны? Обычно мы боимся того, что нам незнакомо. Поэтому предлагаем познакомиться поближе с одними из самых милых и умных представителей паучьего мира — пауками-скакунчиками.",
+        "Приходите всей семьёй! Лекция будет интересна взрослым и детям от 10 лет. А если ребёнок младше, но любознателен, — тоже приходите."
+      ],
+      "learnLabel": "Что узнаем",
+      "learn": [
+        "Есть ли у пауков свой характер?",
+        "Насколько они умны и могут ли запоминать абстрактные символы?",
+        "И самое удивительное — видят ли пауки сны?"
+      ],
+      "materialsLabel": "Материалы",
+      "materialsText": "Слайды, ссылки и заметки Ксении — в репозитории проекта на GitHub.",
+      "materialsButton": "Смотреть материалы",
+      "materialsUrl": "https://github.com/tritonJS826/openLectures/tree/main/lectures/20261028-spiders",
+      "recapLabel": "Как это было",
+      "recapTitle": "Открытие Нишского Лектория",
+      "recap": [
+        "28 октября состоялось открытие Нишского Лектория. Нашим первым лектором стала Ксения Проскурякова — молодой учёный-биолог с темой о пауках-скакунчиках.",
+        "«Пауки — страшно интересные»: вечер, после которого на пауков смотришь совсем другими глазами."
+      ],
+      "imageAlt": "Паук-скакунчик видит сон, будто ведёт лекцию у доски",
+      "imageCredit": "Иллюстрация · паук-скакунчик"
+    },
+    "footer": {
+      "tagline": "ZAJEDNO — LEARN · GROW · JOY",
+      "note": "Нишский Лекторий · кафе «Звуки сердца», Niš",
+      "telegram": "Telegram"
+    }
+  },
+
+  "en": {
+    "meta": {
+      "title": "Spiders. Scary interesting! · Niš Lectorium",
+      "description": "The opening of the Niš Lectorium: Ksenia Proskuryakova on jumping spiders — personality, intelligence and dreams."
+    },
+    "a11y": { "skip": "Skip to content" },
+    "brand": { "sub": "Project", "name": "Niš Lectorium" },
+    "nav": { "schedule": "Schedule", "archive": "Archive", "submit": "Propose a talk" },
+    "lecture": {
+      "back": "← All lectures",
+      "status": "Past talk",
+      "title": "Spiders. Scary interesting!",
+      "summary": "The opening night of the Niš Lectorium: biologist Ksenia Proskuryakova on jumping spiders — their personality, their smarts, and possibly their dreams.",
+      "whenLabel": "When",
+      "when": "October 28, 2026, Wednesday, 19:00",
+      "placeLabel": "Where",
+      "place": "Zvuci srca café, Branka Krsmanovića 17, Niš",
+      "speakerLabel": "Speaker",
+      "speaker": "Ksenia Proskuryakova — biologist",
+      "aboutLabel": "About the talk",
+      "about": [
+        "Did you know that spiders can have different personalities, remember symbols and possibly even dream? We usually fear what we don't know — so let's get to know one of the cutest and smartest members of the spider world, the jumping spider.",
+        "Come with the whole family! The talk is aimed at adults and children from 10 years old — and if your child is younger but curious, bring them along too."
+      ],
+      "learnLabel": "What you'll discover",
+      "learn": [
+        "Do spiders have personalities?",
+        "How smart are they, and can they remember abstract symbols?",
+        "And most amazingly — do spiders dream?"
+      ],
+      "materialsLabel": "Materials",
+      "materialsText": "Ksenia's slides, links and notes live in the project repository on GitHub.",
+      "materialsButton": "View the materials",
+      "materialsUrl": "https://github.com/tritonJS826/openLectures/tree/main/lectures/20261028-spiders",
+      "recapLabel": "How it went",
+      "recapTitle": "The opening of the Niš Lectorium",
+      "recap": [
+        "On October 28 the Niš Lectorium opened its doors. Our first speaker was Ksenia Proskuryakova, a young biologist who talked about jumping spiders.",
+        "“Spiders — scary interesting”: an evening that leaves you looking at spiders in a whole new way."
+      ],
+      "imageAlt": "A jumping spider dreams of giving a lecture at a chalkboard",
+      "imageCredit": "Illustration · jumping spider"
+    },
+    "footer": {
+      "tagline": "ZAJEDNO — LEARN · GROW · JOY",
+      "note": "Niš Lectorium · Zvuci srca café, Niš",
+      "telegram": "Telegram"
+    }
+  },
+
+  "sr": {
+    "meta": {
+      "title": "Pauci. Strašno zanimljivi! · Niški Lektorij",
+      "description": "Otvaranje Niškog Lektorija: Ksenija Proskurjakova o paukovima skakačima — karakteru, umu i snovima."
+    },
+    "a11y": { "skip": "Na sadržaj" },
+    "brand": { "sub": "Project", "name": "Niški Lektorij" },
+    "nav": { "schedule": "Program", "archive": "Arhiva", "submit": "Predloži predavanje" },
+    "lecture": {
+      "back": "← Sva predavanja",
+      "status": "Prošlo predavanje",
+      "title": "Pauci. Strašno zanimljivi!",
+      "summary": "Otvaranje Niškog Lektorija: biolog Ksenija Proskurjakova o paukovima skakačima — njihovom karakteru, umu i, možda, snovima.",
+      "whenLabel": "Kada",
+      "when": "28. oktobar 2026, sreda, 19:00",
+      "placeLabel": "Gde",
+      "place": "kafić „Zvuci srca“, Branka Krsmanovića 17, Niš",
+      "speakerLabel": "Predavač",
+      "speaker": "Ksenija Proskurjakova — biolog",
+      "aboutLabel": "O predavanju",
+      "about": [
+        "Da li ste znali da pauci mogu imati različite karaktere, pamtiti simbole i možda čak sanjati snove? Obično se plašimo onoga što nam je nepoznato — zato hajde da se bolje upoznamo sa jednim od najslađih i najinteligentnijih predstavnika sveta pauka, paukom skakačem.",
+        "Dođite sa celom porodicom! Predavanje je namenjeno odraslima i deci od 10 godina — a ako je dete mlađe ali radoznalo, povedite i njega."
+      ],
+      "learnLabel": "Šta ćemo saznati",
+      "learn": [
+        "Da li pauci imaju karakter?",
+        "Koliko su pametni i mogu li da pamte apstraktne simbole?",
+        "I najneverovatnije — da li pauci sanjaju?"
+      ],
+      "materialsLabel": "Materijali",
+      "materialsText": "Sla ide, linkovi i beleške Ksenije nalaze se u repozitorijumu projekta na GitHubu.",
+      "materialsButton": "Pogledaj materijale",
+      "materialsUrl": "https://github.com/tritonJS826/openLectures/tree/main/lectures/20261028-spiders",
+      "recapLabel": "Kako je bilo",
+      "recapTitle": "Otvaranje Niškog Lektorija",
+      "recap": [
+        "28. oktobra otvoren je Niški Lektorij. Naš prvi predavač bila je Ksenija Proskurjakova, mladi biolog, koja je govorila o paukovima skakačima.",
+        "„Pauci — strašno zanimljivi“: veče posle kog na pauke gledate potpuno drugačijim očima."
+      ],
+      "imageAlt": "Pauk skakač sanja da drži predavanje pored table",
+      "imageCredit": "Ilustracija · pauk skakač"
+    },
+    "footer": {
+      "tagline": "ZAJEDNO — LEARN · GROW · JOY",
+      "note": "Niški Lektorij · kafić „Zvuci srca“, Niš",
+      "telegram": "Telegram"
+    }
+  }
+}

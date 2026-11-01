@@ -1,0 +1,124 @@
+{
+  "ru": {
+    "meta": {
+      "title": "New Space · Нишский Лекторий",
+      "description": "Владимир, разработчик электроники: современная индустрия New Space, орбитальные аппараты и космическая электроника."
+    },
+    "a11y": { "skip": "К содержанию" },
+    "brand": { "sub": "Project", "name": "Нишский Лекторий" },
+    "nav": { "schedule": "Афиша", "archive": "Архив", "submit": "Предложить лекцию" },
+    "lecture": {
+      "back": "← Все лекции",
+      "status": "Предстоящая лекция",
+      "title": "New Space: индустрия, орбитальные аппараты и космическая электроника",
+      "summary": "Владимир, разработчик электроники, расскажет о современной космической индустрии — от New Space до электроники, которой приходится работать на орбите.",
+      "whenLabel": "Когда",
+      "when": "7 ноября 2026, суббота, 18:00",
+      "placeLabel": "Где",
+      "place": "кафе «Звуки сердца», Branka Krsmanovića 17, Niš",
+      "speakerLabel": "Лектор",
+      "speaker": "Владимир — разработчик электроники",
+      "aboutLabel": "О лекции",
+      "about": [
+        "Владимир, разработчик электроники, с радостью проведёт лекцию в подобном формате — про современную индустрию New Space, орбитальные аппараты и космическую электронику.",
+        "Поговорим о том, как сегодня устроен космос: кто и зачем запускает спутники, чем New Space отличается от «классической» космонавтики и как выглядит электроника, которой приходится выживать на орбите."
+      ],
+      "learnLabel": "Что узнаем",
+      "learn": [
+        "Что такое New Space и почему космос становится доступнее",
+        "Как устроены орбитальные аппараты",
+        "Космическая электроника: как она переживает космос"
+      ],
+      "ctaLabel": "Приходите",
+      "ctaText": "Вход свободный. Приходите один или всей семьёй — будет по-настоящему космически.",
+      "ctaButton": "Напомнить в Telegram"
+    },
+    "footer": {
+      "tagline": "ZAJEDNO — LEARN · GROW · JOY",
+      "note": "Нишский Лекторий · кафе «Звуки сердца», Niš",
+      "telegram": "Telegram"
+    }
+  },
+
+  "en": {
+    "meta": {
+      "title": "New Space · Niš Lectorium",
+      "description": "Vladimir, electronics engineer: the modern New Space industry, orbital vehicles and space electronics."
+    },
+    "a11y": { "skip": "Skip to content" },
+    "brand": { "sub": "Project", "name": "Niš Lectorium" },
+    "nav": { "schedule": "Schedule", "archive": "Archive", "submit": "Propose a talk" },
+    "lecture": {
+      "back": "← All lectures",
+      "status": "Upcoming talk",
+      "title": "New Space: the industry, orbital vehicles and space electronics",
+      "summary": "Vladimir, an electronics engineer, walks us through today's space industry — from New Space to the electronics that has to survive in orbit.",
+      "whenLabel": "When",
+      "when": "November 7, 2026, Saturday, 18:00",
+      "placeLabel": "Where",
+      "place": "Zvuci srca café, Branka Krsmanovića 17, Niš",
+      "speakerLabel": "Speaker",
+      "speaker": "Vladimir — electronics engineer",
+      "aboutLabel": "About the talk",
+      "about": [
+        "Vladimir, an electronics engineer, is happy to give a talk in this format — on the modern New Space industry, orbital vehicles and space electronics.",
+        "We'll look at how space works today: who launches satellites and why, how New Space differs from “classic” spaceflight, and what the electronics that survive in orbit actually look like."
+      ],
+      "learnLabel": "What you'll discover",
+      "learn": [
+        "What New Space is, and why space is becoming more accessible",
+        "How orbital vehicles are built",
+        "Space electronics: how it endures the environment of space"
+      ],
+      "ctaLabel": "Come along",
+      "ctaText": "Free entry. Come alone or bring the whole family — it'll be genuinely cosmic.",
+      "ctaButton": "Remind me on Telegram"
+    },
+    "footer": {
+      "tagline": "ZAJEDNO — LEARN · GROW · JOY",
+      "note": "Niš Lectorium · Zvuci srca café, Niš",
+      "telegram": "Telegram"
+    }
+  },
+
+  "sr": {
+    "meta": {
+      "title": "New Space · Niški Lektorij",
+      "description": "Vladimir, inženjer elektronike: savremena New Space industrija, orbitalne letelice i svemirska elektronika."
+    },
+    "a11y": { "skip": "Na sadržaj" },
+    "brand": { "sub": "Project", "name": "Niški Lektorij" },
+    "nav": { "schedule": "Program", "archive": "Arhiva", "submit": "Predloži predavanje" },
+    "lecture": {
+      "back": "← Sva predavanja",
+      "status": "Predstojeće predavanje",
+      "title": "New Space: industrija, orbitalne letelice i svemirska elektronika",
+      "summary": "Vladimir, inženjer elektronike, provodi nas kroz savremenu svemirsku industriju — od New Space-a do elektronike koja mora da preživi u orbiti.",
+      "whenLabel": "Kada",
+      "when": "7. novembar 2026, subota, 18:00",
+      "placeLabel": "Gde",
+      "place": "kafić „Zvuci srca“, Branka Krsmanovića 17, Niš",
+      "speakerLabel": "Predavač",
+      "speaker": "Vladimir — inženjer elektronike",
+      "aboutLabel": "O predavanju",
+      "about": [
+        "Vladimir, inženjer elektronike, rado će održati predavanje u ovom formatu — o savremenoj New Space industriji, orbitalnim letelicama i svemirskoj elektronici.",
+        "Pričaćemo o tome kako danas funkcioniše svemir: ko i zašto lansira satelite, po čemu se New Space razlikuje od „klasične“ astronautike i kako izgleda elektronika koja mora da preživi u orbiti."
+      ],
+      "learnLabel": "Šta ćemo saznati",
+      "learn": [
+        "Šta je New Space i zašto svemir postaje dostupniji",
+        "Kako su konstruisane orbitalne letelice",
+        "Svemirska elektronika: kako izdržava uslove svemira"
+      ],
+      "ctaLabel": "Dođite",
+      "ctaText": "Ulaz je slobodan. Dođite sami ili sa celom porodicom — biće zaista kosmički.",
+      "ctaButton": "Podseti me na Telegramu"
+    },
+    "footer": {
+      "tagline": "ZAJEDNO — LEARN · GROW · JOY",
+      "note": "Niški Lektorij · kafić „Zvuci srca“, Niš",
+      "telegram": "Telegram"
+    }
+  }
+}

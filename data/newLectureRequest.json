@@ -1,0 +1,85 @@
+{
+  "ru": {
+    "meta": {
+      "title": "Предложить лекцию · Нишский Лекторий",
+      "description": "Расскажите о теме, которую хотите предложить для Нишского Лектория."
+    },
+    "a11y": { "skip": "К содержанию" },
+    "brand": { "sub": "Project", "name": "Нишский Лекторий" },
+    "nav": { "schedule": "Афиша", "archive": "Архив", "submit": "Предложить лекцию" },
+    "form": {
+      "eyebrow": "Твоя очередь",
+      "title": "Предложи лекцию.",
+      "lead": "Расскажи, о чём хотелось бы поговорить. Мы свяжемся с тобой и поможем всё организовать.",
+      "point1": "Любая тема и любой формат",
+      "point2": "Поможем с местом и афишей",
+      "point3": "Отвечаем в течение нескольких дней",
+      "name": { "label": "Имя", "placeholder": "Как к тебе обращаться?" },
+      "contact": { "label": "Как связаться", "placeholder": "Telegram, e-mail или телефон", "hint": "Мы не делимся контактами с кем-либо." },
+      "comment": { "label": "Свободный комментарий", "placeholder": "О чём твоя лекция? Почему тебе это интересно?" },
+      "submit": "Отправить",
+      "note": "Форма уходит напрямую нам. Спасибо!"
+    },
+    "footer": {
+      "tagline": "ZAJEDNO — LEARN · GROW · JOY",
+      "note": "Нишский Лекторий · кафе «Звуки сердца», Niš",
+      "telegram": "Telegram"
+    }
+  },
+
+  "en": {
+    "meta": {
+      "title": "Propose a talk · Niš Lectorium",
+      "description": "Tell us about a topic you'd like to bring to the Niš Lectorium."
+    },
+    "a11y": { "skip": "Skip to content" },
+    "brand": { "sub": "Project", "name": "Niš Lectorium" },
+    "nav": { "schedule": "Schedule", "archive": "Archive", "submit": "Propose a talk" },
+    "form": {
+      "eyebrow": "Your turn",
+      "title": "Propose a talk.",
+      "lead": "Tell us what you'd like to talk about. We'll get in touch and help organise everything.",
+      "point1": "Any topic, any format",
+      "point2": "We'll help with the venue and the poster",
+      "point3": "We reply within a few days",
+      "name": { "label": "Name", "placeholder": "What should we call you?" },
+      "contact": { "label": "How to reach you", "placeholder": "Telegram, email or phone", "hint": "We never share your contacts with anyone." },
+      "comment": { "label": "Anything else", "placeholder": "What's your talk about? Why does it fascinate you?" },
+      "submit": "Send",
+      "note": "The form goes straight to us. Thank you!"
+    },
+    "footer": {
+      "tagline": "ZAJEDNO — LEARN · GROW · JOY",
+      "note": "Niš Lectorium · Zvuci srca café, Niš",
+      "telegram": "Telegram"
+    }
+  },
+
+  "sr": {
+    "meta": {
+      "title": "Predloži predavanje · Niški Lektorij",
+      "description": "Recite nam temu koju biste želeli da predložite za Niški Lektorij."
+    },
+    "a11y": { "skip": "Na sadržaj" },
+    "brand": { "sub": "Project", "name": "Niški Lektorij" },
+    "nav": { "schedule": "Program", "archive": "Arhiva", "submit": "Predloži predavanje" },
+    "form": {
+      "eyebrow": "Tvoj red",
+      "title": "Predloži predavanje.",
+      "lead": "Recite nam o čemu biste želeli da govorite. Javićemo se i pomoći da sve organizujemo.",
+      "point1": "Bilo koja tema i format",
+      "point2": "Pomažemo oko prostora i plakata",
+      "point3": "Odgovaramo u roku od nekoliko dana",
+      "name": { "label": "Ime", "placeholder": "Kako da te zovemo?" },
+      "contact": { "label": "Kontakt", "placeholder": "Telegram, imejl ili telefon", "hint": "Vaše kontakte ne delimo ni sa kim." },
+      "comment": { "label": "Slobodan komentar", "placeholder": "O čemu je vaše predavanje? Zašto vas to zanima?" },
+      "submit": "Pošalji",
+      "note": "Formular ide direktno nama. Hvala!"
+    },
+    "footer": {
+      "tagline": "ZAJEDNO — LEARN · GROW · JOY",
+      "note": "Niški Lektorij · kafić „Zvuci srca“, Niš",
+      "telegram": "Telegram"
+    }
+  }
+}

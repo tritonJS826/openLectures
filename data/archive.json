@@ -1,0 +1,109 @@
+{
+  "ru": {
+    "meta": {
+      "title": "Архив · Нишский Лекторий",
+      "description": "Прошедшие лекции Нишского Лектория и материалы лекторов."
+    },
+    "a11y": { "skip": "К содержанию" },
+    "brand": { "sub": "Project", "name": "Нишский Лекторий" },
+    "nav": { "schedule": "Афиша", "archive": "Архив", "submit": "Предложить лекцию" },
+    "archive": {
+      "eyebrow": "Прошлое",
+      "title": "Архив лекций",
+      "lead": "Темы, которые мы уже обсудили. У каждой — страница лекции и материалы лектора.",
+      "note": "У каждой лекции два действия: открыть страницу и посмотреть материалы.",
+      "items": [
+        {
+          "day": "28",
+          "mon": "окт",
+          "badge": "Открытие лектория",
+          "title": "Пауки. Страшно интересные!",
+          "speaker": "Ксения Проскурякова · учёный-биолог",
+          "dateText": "28 октября 2026",
+          "time": "19:00",
+          "place": "кафе «Звуки сердца», Niš",
+          "url": "lectures/20261028-spiders/",
+          "materialUrl": "https://github.com/tritonJS826/openLectures/tree/main/lectures/20261028-spiders",
+          "materialLabel": "Материалы"
+        }
+      ]
+    },
+    "footer": {
+      "tagline": "ZAJEDNO — LEARN · GROW · JOY",
+      "note": "Нишский Лекторий · кафе «Звуки сердца», Niš",
+      "telegram": "Telegram"
+    }
+  },
+
+  "en": {
+    "meta": {
+      "title": "Archive · Niš Lectorium",
+      "description": "Past talks of the Niš Lectorium and the speakers' materials."
+    },
+    "a11y": { "skip": "Skip to content" },
+    "brand": { "sub": "Project", "name": "Niš Lectorium" },
+    "nav": { "schedule": "Schedule", "archive": "Archive", "submit": "Propose a talk" },
+    "archive": {
+      "eyebrow": "Past",
+      "title": "Lecture archive",
+      "lead": "The topics we've already covered. Each has a lecture page and the speaker's materials.",
+      "note": "Each lecture has two actions: open the page, and view the materials.",
+      "items": [
+        {
+          "day": "28",
+          "mon": "OCT",
+          "badge": "Opening night",
+          "title": "Spiders. Scary interesting!",
+          "speaker": "Ksenia Proskuryakova · biologist",
+          "dateText": "October 28, 2026",
+          "time": "19:00",
+          "place": "Zvuci srca café, Niš",
+          "url": "lectures/20261028-spiders/",
+          "materialUrl": "https://github.com/tritonJS826/openLectures/tree/main/lectures/20261028-spiders",
+          "materialLabel": "Materials"
+        }
+      ]
+    },
+    "footer": {
+      "tagline": "ZAJEDNO — LEARN · GROW · JOY",
+      "note": "Niš Lectorium · Zvuci srca café, Niš",
+      "telegram": "Telegram"
+    }
+  },
+
+  "sr": {
+    "meta": {
+      "title": "Arhiva · Niški Lektorij",
+      "description": "Prošla predavanja Niškog Lektorija i materijali predavača."
+    },
+    "a11y": { "skip": "Na sadržaj" },
+    "brand": { "sub": "Project", "name": "Niški Lektorij" },
+    "nav": { "schedule": "Program", "archive": "Arhiva", "submit": "Predloži predavanje" },
+    "archive": {
+      "eyebrow": "Prošlost",
+      "title": "Arhiva predavanja",
+      "lead": "Teme o kojima smo već govorili. Uz svaku idu stranica predavanja i materijali predavača.",
+      "note": "Svako predavanje ima dve radnje: otvori stranicu i pogledaj materijale.",
+      "items": [
+        {
+          "day": "28",
+          "mon": "okt",
+          "badge": "Otvaranje lektorija",
+          "title": "Pauci. Strašno zanimljivi!",
+          "speaker": "Ksenija Proskurjakova · biolog",
+          "dateText": "28. oktobar 2026.",
+          "time": "19:00",
+          "place": "kafić „Zvuci srca“, Niš",
+          "url": "lectures/20261028-spiders/",
+          "materialUrl": "https://github.com/tritonJS826/openLectures/tree/main/lectures/20261028-spiders",
+          "materialLabel": "Materijali"
+        }
+      ]
+    },
+    "footer": {
+      "tagline": "ZAJEDNO — LEARN · GROW · JOY",
+      "note": "Niški Lektorij · kafić „Zvuci srca“, Niš",
+      "telegram": "Telegram"
+    }
+  }
+}

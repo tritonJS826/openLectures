@@ -1,0 +1,187 @@
+{
+  "ru": {
+    "meta": {
+      "title": "Нишский Лекторий · Project Open Lectures",
+      "description": "Открытый лекторий в Нише: любой может рассказать о чём угодно. Афиша, архив и форма для лекторов."
+    },
+    "a11y": { "skip": "К содержанию" },
+    "brand": { "sub": "Project", "name": "Нишский Лекторий" },
+    "nav": { "schedule": "Афиша", "archive": "Архив", "submit": "Предложить лекцию" },
+    "hero": {
+      "eyebrow": "Открытый лекторий в Нише",
+      "title": "Расскажи о том, что тебе интересно.",
+      "lead": "Project Open Lectures — открытая площадка, где любой может поделиться тем, что его по-настоящему увлекает. Без регалий и пафоса: просто заполни форму — и мы свяжемся с тобой.",
+      "ctaPrimary": "Предложить лекцию",
+      "ctaSecondary": "Смотреть афишу"
+    },
+    "idea": {
+      "eyebrow": "Что это",
+      "title": "Любой может рассказать о чём угодно",
+      "lead": "Космос, пауки, электроника или выпечка — если это зажигает тебя, это заинтересует и других.",
+      "points": [
+        { "title": "Любая тема", "text": "Не нужна учёная степень. Достаточно искреннего интереса и желания поделиться." },
+        { "title": "Живой формат", "text": "Тёплые встречи в кафе «Звуки сердца», где вместо цен — добровольные пожертвования." },
+        { "title": "Для всех", "text": "Взрослым и детям: лекции интересны и тем, кто знает много, и тем, кто только начинает." }
+      ]
+    },
+    "upcoming": {
+      "eyebrow": "Скоро",
+      "title": "Предстоящие лекции",
+      "lead": "Вход свободный — приходи один или всей семьёй.",
+      "items": [
+        {
+          "day": "07",
+          "mon": "ноя",
+          "badge": "Предстоящая лекция",
+          "title": "New Space: индустрия, орбитальные аппараты и космическая электроника",
+          "speaker": "Владимир · разработчик электроники",
+          "dateText": "7 ноября 2026",
+          "time": "18:00",
+          "place": "кафе «Звуки сердца», Niš",
+          "url": "lectures/20261107-newspace/"
+        }
+      ]
+    },
+    "archiveCta": {
+      "eyebrow": "Прошлое",
+      "title": "Уже состоялось",
+      "text": "Темы, которые мы уже обсудили, — вместе с материалами лекторов.",
+      "button": "Архив лекций"
+    },
+    "formCta": {
+      "eyebrow": "Твоя очередь",
+      "title": "Есть тема? Расскажи нам.",
+      "text": "Заполни короткую форму — и мы свяжемся с тобой, чтобы всё организовать.",
+      "button": "Заполнить форму"
+    },
+    "footer": {
+      "tagline": "ZAJEDNO — LEARN · GROW · JOY",
+      "note": "Нишский Лекторий · кафе «Звуки сердца», Niš",
+      "telegram": "Telegram"
+    }
+  },
+
+  "en": {
+    "meta": {
+      "title": "Niš Lectorium · Project Open Lectures",
+      "description": "An open lecture club in Niš: anyone can talk about anything they love. Schedule, archive and a form for speakers."
+    },
+    "a11y": { "skip": "Skip to content" },
+    "brand": { "sub": "Project", "name": "Niš Lectorium" },
+    "nav": { "schedule": "Schedule", "archive": "Archive", "submit": "Propose a talk" },
+    "hero": {
+      "eyebrow": "An open lecture club in Niš",
+      "title": "Tell us about what fascinates you.",
+      "lead": "Project Open Lectures is an open stage where anyone can share what they truly care about. No titles, no fuss — just fill in the form and we'll get in touch.",
+      "ctaPrimary": "Propose a talk",
+      "ctaSecondary": "See the schedule"
+    },
+    "idea": {
+      "eyebrow": "What it is",
+      "title": "Anyone can talk about anything",
+      "lead": "Space, spiders, electronics or baking — if it lights you up, it will interest others too.",
+      "points": [
+        { "title": "Any topic", "text": "No degree required. Genuine curiosity and a wish to share are enough." },
+        { "title": "A live format", "text": "Warm gatherings at the Zvuci srca café, where you pay with a donation, not a price." },
+        { "title": "For everyone", "text": "Adults and kids alike: talks work for experts and beginners both." }
+      ]
+    },
+    "upcoming": {
+      "eyebrow": "Soon",
+      "title": "Upcoming talks",
+      "lead": "Free entry — come alone or bring the whole family.",
+      "items": [
+        {
+          "day": "07",
+          "mon": "NOV",
+          "badge": "Upcoming talk",
+          "title": "New Space: the industry, orbital vehicles and space electronics",
+          "speaker": "Vladimir · electronics engineer",
+          "dateText": "November 7, 2026",
+          "time": "18:00",
+          "place": "Zvuci srca café, Niš",
+          "url": "lectures/20261107-newspace/"
+        }
+      ]
+    },
+    "archiveCta": {
+      "eyebrow": "Past",
+      "title": "Already happened",
+      "text": "The topics we've covered, along with the speakers' materials.",
+      "button": "Lecture archive"
+    },
+    "formCta": {
+      "eyebrow": "Your turn",
+      "title": "Got a topic? Tell us.",
+      "text": "Fill in a short form and we'll reach out to organise everything.",
+      "button": "Open the form"
+    },
+    "footer": {
+      "tagline": "ZAJEDNO — LEARN · GROW · JOY",
+      "note": "Niš Lectorium · Zvuci srca café, Niš",
+      "telegram": "Telegram"
+    }
+  },
+
+  "sr": {
+    "meta": {
+      "title": "Niški Lektorij · Project Open Lectures",
+      "description": "Otvoreni lektorij u Nišu: svako može da govori o čemu god želi. Program, arhiva i formular za predavače."
+    },
+    "a11y": { "skip": "Na sadržaj" },
+    "brand": { "sub": "Project", "name": "Niški Lektorij" },
+    "nav": { "schedule": "Program", "archive": "Arhiva", "submit": "Predloži predavanje" },
+    "hero": {
+      "eyebrow": "Otvoreni lektorij u Nišu",
+      "title": "Ispričaj nam o onome što te zanima.",
+      "lead": "Project Open Lectures je otvorena platforma na kojoj svako može da podeli ono što ga zaista inspiriše. Bez titula i pompe — samo popuni formular i mi ćemo ti se javiti.",
+      "ctaPrimary": "Predloži predavanje",
+      "ctaSecondary": "Pogledaj program"
+    },
+    "idea": {
+      "eyebrow": "Šta je ovo",
+      "title": "Svako može da govori o čemu god želi",
+      "lead": "Kosmos, pauci, elektronika ili pekarski zanat — ako to pali tebe, zainteresovaće i druge.",
+      "points": [
+        { "title": "Bilo koja tema", "text": "Nije potrebna akademska titula. Dovoljno je iskreno interesovanje i želja da podeliš." },
+        { "title": "Živi format", "text": "Tople večeri u kafiću „Zvuci srca“, gde umesto cene daješ dobrovoljni prilog." },
+        { "title": "Za sve", "text": "I za odrasle i za decu: predavanja su zanimljiva i onima koji znaju mnogo i onima koji tek počinju." }
+      ]
+    },
+    "upcoming": {
+      "eyebrow": "Uskoro",
+      "title": "Predstojeća predavanja",
+      "lead": "Ulaz je slobodan — dođi sam ili sa celom porodicom.",
+      "items": [
+        {
+          "day": "07",
+          "mon": "nov",
+          "badge": "Predstojeće predavanje",
+          "title": "New Space: industrija, orbitalne letelice i svemirska elektronika",
+          "speaker": "Vladimir · inženjer elektronike",
+          "dateText": "7. novembar 2026.",
+          "time": "18:00",
+          "place": "kafić „Zvuci srca“, Niš",
+          "url": "lectures/20261107-newspace/"
+        }
+      ]
+    },
+    "archiveCta": {
+      "eyebrow": "Prošlost",
+      "title": "Već se održalo",
+      "text": "Teme o kojima smo govorili, zajedno sa materijalima predavača.",
+      "button": "Arhiva predavanja"
+    },
+    "formCta": {
+      "eyebrow": "Tvoj red",
+      "title": "Imaš temu? Javi nam se.",
+      "text": "Popuni kratak formular i mi ćemo ti se javiti da sve organizujemo.",
+      "button": "Otvori formular"
+    },
+    "footer": {
+      "tagline": "ZAJEDNO — LEARN · GROW · JOY",
+      "note": "Niški Lektorij · kafić „Zvuci srca“, Niš",
+      "telegram": "Telegram"
+    }
+  }
+}

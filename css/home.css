@@ -1,0 +1,107 @@
+/* ==========================================================================
+   Home page — hero, orbit art, bands
+   ========================================================================== */
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.9fr);
+  align-items: center;
+  gap: clamp(28px, 5vw, 64px);
+  padding-block: clamp(52px, 9vw, 108px) clamp(36px, 6vw, 72px);
+}
+
+.hero__text .display { margin: 20px 0 22px; max-width: 16ch; }
+.hero__text .lead { max-width: 52ch; }
+
+.hero__cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+/* Orbital decorative art */
+.hero__art { display: flex; justify-content: center; }
+.orbit {
+  position: relative;
+  width: min(360px, 74vw);
+  aspect-ratio: 1;
+}
+.orbit__ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+}
+.orbit__ring--1 { inset: 0; border-style: dashed; animation: spin 46s linear infinite; }
+.orbit__ring--2 { inset: 13%; border-color: rgba(90, 209, 255, 0.28); animation: spin 32s linear infinite reverse; }
+.orbit__ring--3 { inset: 27%; border-color: rgba(185, 140, 255, 0.28); animation: spin 22s linear infinite; }
+
+.orbit__core {
+  position: absolute;
+  inset: 40%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #ffd59a, var(--accent) 45%, #b0620f 100%);
+  box-shadow: 0 0 60px rgba(255, 179, 71, 0.55), 0 0 120px rgba(255, 179, 71, 0.25);
+}
+
+.orbit__sat {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  margin: -6px 0 0 -6px;
+  border-radius: 50%;
+}
+.orbit__sat--a {
+  background: var(--accent-2);
+  box-shadow: 0 0 16px var(--accent-2);
+  animation: orbit 32s linear infinite;
+}
+.orbit__sat--b {
+  background: var(--accent-3);
+  box-shadow: 0 0 16px var(--accent-3);
+  animation: orbit 22s linear infinite;
+  animation-delay: -8s;
+  --r: 74%;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes orbit {
+  from { transform: rotate(0deg) translateX(var(--r, 100%)) rotate(0deg); }
+  to   { transform: rotate(360deg) translateX(var(--r, 100%)) rotate(-360deg); }
+}
+
+/* Bands */
+.band {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 26px;
+  padding: clamp(28px, 4vw, 44px);
+  border: 1px solid var(--line);
+  border-radius: calc(var(--radius) + 6px);
+  background:
+    linear-gradient(120deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.012));
+}
+.band__text { max-width: 58ch; }
+.band__text .h2 { margin: 14px 0 10px; }
+
+.band--accent {
+  border-color: rgba(255, 179, 71, 0.35);
+  background:
+    radial-gradient(600px 300px at 12% 0%, rgba(255, 179, 71, 0.16), transparent 70%),
+    linear-gradient(120deg, rgba(255, 179, 71, 0.06), rgba(255, 255, 255, 0.012));
+}
+
+@media (max-width: 880px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero__art { order: -1; }
+  .orbit { width: min(300px, 66vw); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .orbit__ring, .orbit__sat { animation: none !important; }
+}

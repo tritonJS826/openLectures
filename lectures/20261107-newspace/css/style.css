@@ -158,32 +158,35 @@ body[data-lecture="spiders"] {
   background: radial-gradient(circle at 35% 30%, #ffe1b3, var(--accent) 45%, #b0620f 100%);
   box-shadow: 0 0 60px rgba(255, 179, 71, 0.55), 0 0 120px rgba(255, 179, 71, 0.25);
 }
-.orbit__sat {
+.orbit__electron {
+  position: absolute;
+  border-radius: 50%;
+  animation: orbit-spin linear infinite;
+  will-change: transform;
+}
+.orbit__electron--1 { inset: 0;   animation-duration: 17s; }
+.orbit__electron--2 { inset: 14%; animation-duration: 11s; animation-direction: reverse; }
+.orbit__electron--3 { inset: 28%; animation-duration: 7.5s; }
+.orbit__electron i {
   position: absolute;
   top: 50%;
-  left: 50%;
-  width: 12px;
-  height: 12px;
-  margin: -6px 0 0 -6px;
+  left: 0;
+  width: 11px;
+  height: 11px;
   border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle at 35% 35%, #fff, var(--accent) 60%);
+  box-shadow: 0 0 10px var(--accent), 0 0 24px rgba(255, 179, 71, 0.65), 0 0 44px rgba(255, 179, 71, 0.3);
 }
-.orbit__sat--a {
-  background: var(--accent-2);
-  box-shadow: 0 0 16px var(--accent-2);
-  animation: orbit-path 32s linear infinite;
+.orbit__electron--2 i {
+  background: radial-gradient(circle at 35% 35%, #fff, var(--accent-2) 60%);
+  box-shadow: 0 0 10px var(--accent-2), 0 0 24px rgba(90, 209, 255, 0.6), 0 0 44px rgba(90, 209, 255, 0.28);
 }
-.orbit__sat--b {
-  background: var(--accent-3);
-  box-shadow: 0 0 16px var(--accent-3);
-  animation: orbit-path 22s linear infinite;
-  animation-delay: -8s;
-  --r: 74%;
+.orbit__electron--3 i {
+  background: radial-gradient(circle at 35% 35%, #fff, var(--accent-3) 60%);
+  box-shadow: 0 0 10px var(--accent-3), 0 0 24px rgba(185, 140, 255, 0.6), 0 0 44px rgba(185, 140, 255, 0.28);
 }
 @keyframes orbit-spin { to { transform: rotate(360deg); } }
-@keyframes orbit-path {
-  from { transform: rotate(0deg) translateX(var(--r, 100%)) rotate(0deg); }
-  to   { transform: rotate(360deg) translateX(var(--r, 100%)) rotate(-360deg); }
-}
 
 /* Responsive ------------------------------------------------------------- */
 @media (max-width: 880px) {
@@ -193,5 +196,5 @@ body[data-lecture="spiders"] {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .orbit__ring, .orbit__sat { animation: none !important; }
+  .orbit__ring, .orbit__electron { animation: none !important; }
 }

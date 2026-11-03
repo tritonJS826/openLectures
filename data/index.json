@@ -30,13 +30,13 @@
       "lead": "Вход свободный — приходи один или всей семьёй.",
       "items": [
         {
-          "day": "07",
+          "day": "08",
           "mon": "ноя",
           "badge": "Предстоящая лекция",
           "title": "New Space: индустрия, орбитальные аппараты и космическая электроника",
           "speaker": "Владимир · разработчик электроники",
-          "dateText": "7 ноября 2026",
-          "time": "18:00",
+          "dateText": "8 ноября 2026",
+          "time": "19:00",
           "place": "кафе «Звуки сердца», Niš",
           "url": "lectures/20261107-newspace/"
         }
@@ -92,13 +92,13 @@
       "lead": "Free entry — come alone or bring the whole family.",
       "items": [
         {
-          "day": "07",
+          "day": "08",
           "mon": "NOV",
           "badge": "Upcoming talk",
           "title": "New Space: the industry, orbital vehicles and space electronics",
           "speaker": "Vladimir · electronics engineer",
-          "dateText": "November 7, 2026",
-          "time": "18:00",
+          "dateText": "November 8, 2026",
+          "time": "19:00",
           "place": "Zvuci srca café, Niš",
           "url": "lectures/20261107-newspace/"
         }
@@ -154,13 +154,13 @@
       "lead": "Ulaz je slobodan — dođi sam ili sa celom porodicom.",
       "items": [
         {
-          "day": "07",
+          "day": "08",
           "mon": "nov",
           "badge": "Predstojeće predavanje",
           "title": "New Space: industrija, orbitalne letelice i svemirska elektronika",
           "speaker": "Vladimir · inženjer elektronike",
-          "dateText": "7. novembar 2026.",
-          "time": "18:00",
+          "dateText": "8. novembar 2026.",
+          "time": "19:00",
           "place": "kafić „Zvuci srca“, Niš",
           "url": "lectures/20261107-newspace/"
         }

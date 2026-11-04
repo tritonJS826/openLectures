@@ -83,12 +83,6 @@ html { scroll-behavior: smooth; }
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
 }
-.lecture-hero__media figcaption {
-  margin-top: 12px;
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  color: var(--muted);
-}
 
 /* Body blocks ------------------------------------------------------------ */
 .lecture-body {

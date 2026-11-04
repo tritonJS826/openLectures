@@ -230,6 +230,49 @@
     for (var j = 0; j < nodes.length; j++) io.observe(nodes[j]);
   }
 
+  /* ---- mobile menu (burger) -------------------------------------------- */
+  function initNav() {
+    var toggle = document.querySelector(".nav-toggle");
+    var nav = document.getElementById("site-nav");
+    if (!toggle || !nav) return;
+
+    function setOpen(open) {
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      nav.classList.toggle("is-open", open);
+      document.body.classList.toggle("nav-open", open);
+    }
+
+    function isOpen() {
+      return toggle.getAttribute("aria-expanded") === "true";
+    }
+
+    toggle.addEventListener("click", function () { setOpen(!isOpen()); });
+
+    nav.addEventListener("click", function (e) {
+      if (!e.target.closest) return;
+      if (e.target.closest("a") || e.target.closest("[data-lang]")) setOpen(false);
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && isOpen()) {
+        setOpen(false);
+        toggle.focus();
+      }
+    });
+
+    document.addEventListener("click", function (e) {
+      if (!isOpen() || !e.target.closest) return;
+      if (e.target.closest(".nav-toggle") || e.target.closest("#site-nav")) return;
+      setOpen(false);
+    });
+
+    // Close the panel when the viewport grows back to the desktop layout.
+    var mq = window.matchMedia("(min-width: 761px)");
+    var onChange = function () { if (mq.matches) setOpen(false); };
+    if (mq.addEventListener) mq.addEventListener("change", onChange);
+    else if (mq.addListener) mq.addListener(onChange);
+  }
+
   /* ---- failure fallback ------------------------------------------------- */
   function showLoadError() {
     var containers = document.querySelectorAll("[data-list]");
@@ -269,6 +312,8 @@
         initReveal();
       });
   }
+
+  initNav();
 
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", boot);

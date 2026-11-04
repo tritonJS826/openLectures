@@ -4,7 +4,7 @@
       "title": "Пауки. Страшно интересные! · Нишский Лекторий",
       "description": "Открытие Нишского Лектория: Ксения Проскурякова о пауках-скакунчиках — характере, уме и снах."
     },
-    "a11y": { "skip": "К содержанию" },
+    "a11y": { "skip": "К содержанию", "menu": "Меню" },
     "brand": { "sub": "Project", "name": "Нишский Лекторий" },
     "nav": { "schedule": "Афиша", "archive": "Архив", "submit": "Предложить лекцию" },
     "lecture": {
@@ -54,7 +54,7 @@
       "title": "Spiders. Scary interesting! · Niš Lectorium",
       "description": "The opening of the Niš Lectorium: Ksenia Proskuryakova on jumping spiders — personality, intelligence and dreams."
     },
-    "a11y": { "skip": "Skip to content" },
+    "a11y": { "skip": "Skip to content", "menu": "Menu" },
     "brand": { "sub": "Project", "name": "Niš Lectorium" },
     "nav": { "schedule": "Schedule", "archive": "Archive", "submit": "Propose a talk" },
     "lecture": {
@@ -104,7 +104,7 @@
       "title": "Pauci. Strašno zanimljivi! · Niški Lektorij",
       "description": "Otvaranje Niškog Lektorija: Ksenija Proskurjakova o paukovima skakačima — karakteru, umu i snovima."
     },
-    "a11y": { "skip": "Na sadržaj" },
+    "a11y": { "skip": "Na sadržaj", "menu": "Meni" },
     "brand": { "sub": "Project", "name": "Niški Lektorij" },
     "nav": { "schedule": "Program", "archive": "Arhiva", "submit": "Predloži predavanje" },
     "lecture": {

@@ -4,7 +4,7 @@
       "title": "Предложить лекцию · Нишский Лекторий",
       "description": "Расскажите о теме, которую хотите предложить для Нишского Лектория."
     },
-    "a11y": { "skip": "К содержанию" },
+    "a11y": { "skip": "К содержанию", "menu": "Меню" },
     "brand": { "sub": "Project", "name": "Нишский Лекторий" },
     "nav": { "schedule": "Афиша", "archive": "Архив", "submit": "Предложить лекцию" },
     "form": {
@@ -32,7 +32,7 @@
       "title": "Propose a talk · Niš Lectorium",
       "description": "Tell us about a topic you'd like to bring to the Niš Lectorium."
     },
-    "a11y": { "skip": "Skip to content" },
+    "a11y": { "skip": "Skip to content", "menu": "Menu" },
     "brand": { "sub": "Project", "name": "Niš Lectorium" },
     "nav": { "schedule": "Schedule", "archive": "Archive", "submit": "Propose a talk" },
     "form": {
@@ -60,7 +60,7 @@
       "title": "Predloži predavanje · Niški Lektorij",
       "description": "Recite nam temu koju biste želeli da predložite za Niški Lektorij."
     },
-    "a11y": { "skip": "Na sadržaj" },
+    "a11y": { "skip": "Na sadržaj", "menu": "Meni" },
     "brand": { "sub": "Project", "name": "Niški Lektorij" },
     "nav": { "schedule": "Program", "archive": "Arhiva", "submit": "Predloži predavanje" },
     "form": {

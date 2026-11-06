@@ -39,6 +39,17 @@
           "time": "19:00",
           "place": "кафе «Звуки сердца», Niš",
           "url": "lectures/20261107-newspace/"
+        },
+        {
+          "day": "11",
+          "mon": "ноя",
+          "badge": "Предстоящая лекция",
+          "title": "Две звезды, две светлых повести… Литературный вечер поэзии, прозы и песни",
+          "speaker": "Гульмира Динич и Александр Деловеров",
+          "dateText": "11 ноября 2026",
+          "time": "18:00",
+          "place": "кафе «Звуки сердца», Niš",
+          "url": "lectures/20261111-two-stars/"
         }
       ]
     },
@@ -101,6 +112,17 @@
           "time": "19:00",
           "place": "Zvuci srca café, Niš",
           "url": "lectures/20261107-newspace/"
+        },
+        {
+          "day": "11",
+          "mon": "NOV",
+          "badge": "Upcoming talk",
+          "title": "“Two stars, two bright tales…” — an evening of poetry, prose and song",
+          "speaker": "Gulmira Dinić and Aleksandar Deloverov",
+          "dateText": "November 11, 2026",
+          "time": "18:00",
+          "place": "Zvuci srca café, Niš",
+          "url": "lectures/20261111-two-stars/"
         }
       ]
     },
@@ -163,6 +185,17 @@
           "time": "19:00",
           "place": "kafić „Zvuci srca“, Niš",
           "url": "lectures/20261107-newspace/"
+        },
+        {
+          "day": "11",
+          "mon": "nov",
+          "badge": "Predstojeće predavanje",
+          "title": "„Dve zvezde, dve svetle priče…“ — književno veče poezije, proze i pesme",
+          "speaker": "Gulmira Dinić i Aleksandar Deloverov",
+          "dateText": "11. novembar 2026.",
+          "time": "18:00",
+          "place": "kafić „Zvuci srca“, Niš",
+          "url": "lectures/20261111-two-stars/"
         }
       ]
     },

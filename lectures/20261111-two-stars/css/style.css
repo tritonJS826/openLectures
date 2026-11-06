@@ -1,0 +1,200 @@
+/* ==========================================================================
+   Lecture page — shared layout (base.css provides the tokens)
+   Per-lecture accents are set on <body data-lecture="…">.
+   ========================================================================== */
+
+html { scroll-behavior: smooth; }
+
+.back-link {
+  display: inline-flex;
+  align-items: top;
+  gap: 8px;
+  margin-top: clamp(24px, 4vw, 40px);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  transition: color 0.2s var(--ease), gap 0.2s var(--ease);
+}
+.back-link:hover { color: var(--accent); gap: 12px; }
+
+/* Hero ------------------------------------------------------------------- */
+.lecture-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  align-items: center;
+  gap: clamp(28px, 5vw, 64px);
+  padding-block: clamp(28px, 5vw, 52px) clamp(24px, 4vw, 48px);
+}
+.lecture-hero--no-media { grid-template-columns: 1fr; }
+
+.lecture-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 6px 14px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent-2);
+}
+.lecture-status::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: 0 0 10px currentColor;
+}
+.lecture-status--past { color: var(--muted); }
+
+.lecture-title {
+  margin: 20px 0 18px;
+  font-size: clamp(2rem, 5.2vw, 3.6rem);
+  letter-spacing: -0.035em;
+}
+.lecture-hero .lead { max-width: 54ch; }
+
+.lecture-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 18px 24px;
+  margin: 30px 0 0;
+  padding-top: 26px;
+  border-top: 1px solid var(--line);
+}
+.lecture-meta dt {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+.lecture-meta dd { margin: 0; font-size: 1.02rem; color: var(--ink); }
+
+.lecture-hero__media { margin: 0; }
+.lecture-hero__media img {
+  width: 100%;
+  border-radius: calc(var(--radius) + 8px);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+/* Body blocks ------------------------------------------------------------ */
+.lecture-body {
+  display: grid;
+  gap: clamp(36px, 6vw, 64px);
+  padding-block: clamp(24px, 4vw, 48px) clamp(56px, 8vw, 96px);
+  max-width: 1080px;
+}
+.lecture-block { max-width: 72ch; }
+.lecture-block .h2 { margin-bottom: 20px; }
+.lecture-block .lead { margin-bottom: 20px; }
+.lecture-block + .lecture-block { padding-top: clamp(28px, 4vw, 44px); border-top: 1px solid var(--line); }
+
+.lecture-block--materials {
+  max-width: none;
+  padding: clamp(26px, 4vw, 40px);
+  border: 1px solid rgba(255, 179, 71, 0.35);
+  border-radius: calc(var(--radius) + 6px);
+  background:
+    radial-gradient(520px 260px at 8% 0%, rgba(255, 179, 71, 0.16), transparent 70%),
+    linear-gradient(120deg, rgba(255, 179, 71, 0.06), rgba(255, 255, 255, 0.012));
+}
+
+.lecture-block--recap {
+  padding: clamp(26px, 4vw, 40px);
+  border: 1px solid var(--line);
+  border-radius: calc(var(--radius) + 6px);
+  background: linear-gradient(140deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.012));
+}
+
+/* Per-lecture accents ---------------------------------------------------- */
+body[data-lecture="newspace"] {
+  background-image:
+    radial-gradient(1100px 720px at 72% -6%, rgba(90, 209, 255, 0.22), transparent 60%),
+    radial-gradient(900px 640px at 6% 8%, rgba(120, 90, 255, 0.18), transparent 58%),
+    radial-gradient(1200px 900px at 50% 120%, rgba(90, 209, 255, 0.10), transparent 60%);
+}
+body[data-lecture="two-stars"] {
+  background-image:
+    radial-gradient(1100px 720px at 72% -6%, rgba(255, 179, 71, 0.20), transparent 60%),
+    radial-gradient(900px 640px at 6% 8%, rgba(236, 122, 154, 0.14), transparent 58%),
+    radial-gradient(1200px 900px at 50% 120%, rgba(185, 140, 255, 0.12), transparent 60%);
+}
+body[data-lecture="spiders"] {
+  background-image:
+    radial-gradient(1100px 720px at 74% -6%, rgba(255, 179, 71, 0.16), transparent 60%),
+    radial-gradient(900px 640px at 8% 8%, rgba(120, 200, 120, 0.12), transparent 60%),
+    radial-gradient(1200px 900px at 50% 120%, rgba(185, 140, 255, 0.10), transparent 60%);
+}
+
+/* Orbit artwork (used on lecture pages without a photo) ------------------ */
+.lecture-hero__art { display: flex; justify-content: center; }
+.orbit {
+  position: relative;
+  width: min(360px, 74vw);
+  aspect-ratio: 1;
+}
+.orbit--lg { width: min(420px, 78vw); }
+.orbit__ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+}
+.orbit__ring--1 { inset: 0; border-style: dashed; animation: orbit-spin 46s linear infinite; }
+.orbit__ring--2 { inset: 13%; border-color: rgba(90, 209, 255, 0.30); animation: orbit-spin 32s linear infinite reverse; }
+.orbit__ring--3 { inset: 27%; border-color: rgba(185, 140, 255, 0.30); animation: orbit-spin 22s linear infinite; }
+
+.orbit__core {
+  position: absolute;
+  inset: 40%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #ffe1b3, var(--accent) 45%, #b0620f 100%);
+  box-shadow: 0 0 60px rgba(255, 179, 71, 0.55), 0 0 120px rgba(255, 179, 71, 0.25);
+}
+.orbit__electron {
+  position: absolute;
+  border-radius: 50%;
+  animation: orbit-spin linear infinite;
+  will-change: transform;
+}
+.orbit__electron--1 { inset: 0;   animation-duration: 17s; }
+.orbit__electron--2 { inset: 14%; animation-duration: 11s; animation-direction: reverse; }
+.orbit__electron--3 { inset: 28%; animation-duration: 7.5s; }
+.orbit__electron i {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle at 35% 35%, #fff, var(--accent) 60%);
+  box-shadow: 0 0 10px var(--accent), 0 0 24px rgba(255, 179, 71, 0.65), 0 0 44px rgba(255, 179, 71, 0.3);
+}
+.orbit__electron--2 i {
+  background: radial-gradient(circle at 35% 35%, #fff, var(--accent-2) 60%);
+  box-shadow: 0 0 10px var(--accent-2), 0 0 24px rgba(90, 209, 255, 0.6), 0 0 44px rgba(90, 209, 255, 0.28);
+}
+.orbit__electron--3 i {
+  background: radial-gradient(circle at 35% 35%, #fff, var(--accent-3) 60%);
+  box-shadow: 0 0 10px var(--accent-3), 0 0 24px rgba(185, 140, 255, 0.6), 0 0 44px rgba(185, 140, 255, 0.28);
+}
+@keyframes orbit-spin { to { transform: rotate(360deg); } }
+
+/* Responsive ------------------------------------------------------------- */
+@media (max-width: 880px) {
+  .lecture-hero { grid-template-columns: 1fr; }
+  .lecture-hero__media { order: -1; }
+  .lecture-hero__art { order: -1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .orbit__ring, .orbit__electron { animation: none !important; }
+}

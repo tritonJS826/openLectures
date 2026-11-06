@@ -21,10 +21,10 @@
 }
 
 /* Orbital decorative art */
-.hero__art { display: flex; justify-content: center; }
+.hero__art { display: flex; justify-content: center; min-width: 0; overflow: hidden; }
 .orbit {
   position: relative;
-  width: min(360px, 74vw);
+  width: min(360px, 100%);
   aspect-ratio: 1;
 }
 .orbit__ring {

@@ -63,17 +63,37 @@
   text-transform: uppercase;
   color: var(--muted);
 }
+.about-contact__email-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 12px;
+  min-width: 0;
+  max-width: 100%;
+}
 .about-contact__email {
+  padding: 0 0 4px;
+  border: 0;
+  border-bottom: 1px dashed var(--line-strong);
+  background: transparent;
   font-family: var(--font-mono);
   font-size: clamp(0.92rem, 1.8vw, 1.05rem);
+  line-height: 1.4;
   color: var(--ink);
-  padding-bottom: 4px;
-  border-bottom: 1px dashed var(--line-strong);
+  text-align: left;
   cursor: copy;
   word-break: break-all;
-  -webkit-user-select: all;
-  user-select: all;
+  transition: color 0.2s var(--ease), border-color 0.2s var(--ease);
 }
+.about-contact__email:hover { color: var(--accent); border-color: var(--accent); }
+.about-contact__copied {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-2);
+}
+.about-contact__copied[hidden] { display: none; }
 .about-contact__email-hint {
   font-size: 0.8rem;
   color: var(--muted);

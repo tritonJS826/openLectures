@@ -159,6 +159,7 @@ button { font: inherit; color: inherit; }
   font-size: 0.92rem;
   padding: 8px 12px;
   border-radius: 999px;
+  white-space: nowrap;
   transition: color 0.2s var(--ease), background 0.2s var(--ease);
 }
 .nav a:hover { color: var(--ink); background: var(--panel-2); }
@@ -248,7 +249,7 @@ button { font: inherit; color: inherit; }
   opacity: 0.7;
 }
 
-.display { font-size: clamp(2.5rem, 7vw, 5rem); font-weight: 700; letter-spacing: -0.035em; }
+.display { font-size: clamp(2.5rem, 7vw, 5rem); font-weight: 700; letter-spacing: -0.035em; overflow-wrap: break-word; }
 .h2 { font-size: clamp(1.7rem, 3.6vw, 2.6rem); }
 .lead { color: var(--ink-dim); font-size: clamp(1.02rem, 1.6vw, 1.2rem); max-width: 60ch; }
 .muted { color: var(--muted); }
@@ -544,7 +545,8 @@ ul.prose { margin: 16px 0 0; padding-left: 0; list-style: none; display: grid; g
 [data-reveal].is-visible { opacity: 1; transform: none; }
 
 /* Responsive ------------------------------------------------------------- */
-@media (max-width: 760px) {
+/* Burger menu (shown on narrow screens) ---------------------------------- */
+@media (max-width: 700px) {
   .nav-toggle { display: inline-flex; }
   .nav {
     position: absolute;
@@ -579,11 +581,26 @@ ul.prose { margin: 16px 0 0; padding-left: 0; list-style: none; display: grid; g
   }
 }
 
+/* Between the burger and the roomy desktop bar, tighten the nav a little
+   so all four links still fit. */
+@media (min-width: 701px) and (max-width: 760px) {
+  .nav { gap: 2px; }
+  .nav a { padding: 8px 6px; font-size: 0.9rem; }
+  .nav .lang-switch { margin-left: 4px; padding: 2px; }
+  .nav .lang-switch button { padding: 5px 7px; }
+}
+
 @media (max-width: 520px) {
   body { font-size: 16px; }
   .brand__sub { display: none; }
   .site-header__inner { padding-block: 12px; gap: 12px; }
   .site-footer__inner { flex-direction: column; align-items: flex-start; }
+}
+
+/* Long page titles (e.g. «Любознательность…») must not force a
+   horizontal scrollbar on narrow phones. */
+@media (max-width: 480px) {
+  .page-head .display { font-size: clamp(1.8rem, 9.2vw, 2.4rem); }
 }
 
 @media (prefers-reduced-motion: reduce) {

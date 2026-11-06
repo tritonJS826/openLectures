@@ -53,7 +53,8 @@
       "contactText": "Расскажите, о чём хотели бы поговорить или чем помочь, — ответим и всё обсудим. Мы открыты к любому формату сотрудничества.",
       "contactNote": "Также мы на связи в Telegram.",
       "emailLabel": "Почта",
-      "emailHint": "Нажми, чтобы выделить адрес и скопировать."
+      "emailHint": "Нажми, чтобы скопировать адрес.",
+      "emailCopied": "Скопировано"
     },
     "footer": {
       "tagline": "ZAJEDNO — LEARN · GROW · JOY",
@@ -116,7 +117,8 @@
       "contactText": "Tell us what you'd like to talk about or how you'd like to help — we'll reply and figure it out together. We're open to any kind of collaboration.",
       "contactNote": "You can also reach us on Telegram.",
       "emailLabel": "Email",
-      "emailHint": "Click to select the address and copy it."
+      "emailHint": "Click to copy the address.",
+      "emailCopied": "Copied"
     },
     "footer": {
       "tagline": "ZAJEDNO — LEARN · GROW · JOY",
@@ -179,7 +181,8 @@
       "contactText": "Reci nam o čemu bi želeo da govoriš ili kako bi želeo da pomogneš — javićemo se i sve dogovoriti. Otvoreni smo za svaki oblik saradnje.",
       "contactNote": "Tu smo i na Telegramu.",
       "emailLabel": "Imejl",
-      "emailHint": "Klikni da označiš adresu i kopiraš je."
+      "emailHint": "Klikni da kopiraš adresu.",
+      "emailCopied": "Kopirano"
     },
     "footer": {
       "tagline": "ZAJEDNO — LEARN · GROW · JOY",

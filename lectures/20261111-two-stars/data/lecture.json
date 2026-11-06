@@ -6,7 +6,7 @@
     },
     "a11y": { "skip": "К содержанию", "menu": "Меню" },
     "brand": { "sub": "Project", "name": "Нишский Лекторий" },
-    "nav": { "schedule": "Афиша", "archive": "Архив", "submit": "Предложить лекцию" },
+    "nav": { "schedule": "Афиша", "archive": "Архив", "about": "О нас", "submit": "Предложить лекцию" },
     "lecture": {
       "back": "← Все лекции",
       "status": "Предстоящая лекция",
@@ -51,7 +51,7 @@
     },
     "a11y": { "skip": "Skip to content", "menu": "Menu" },
     "brand": { "sub": "Project", "name": "Niš Lectorium" },
-    "nav": { "schedule": "Schedule", "archive": "Archive", "submit": "Propose a talk" },
+    "nav": { "schedule": "Schedule", "archive": "Archive", "about": "About us", "submit": "Propose a talk" },
     "lecture": {
       "back": "← All lectures",
       "status": "Upcoming talk",
@@ -96,7 +96,7 @@
     },
     "a11y": { "skip": "Na sadržaj", "menu": "Meni" },
     "brand": { "sub": "Project", "name": "Niški Lektorij" },
-    "nav": { "schedule": "Program", "archive": "Arhiva", "submit": "Predloži predavanje" },
+    "nav": { "schedule": "Program", "archive": "Arhiva", "about": "O nama", "submit": "Predloži predavanje" },
     "lecture": {
       "back": "← Sva predavanja",
       "status": "Predstojeće predavanje",

@@ -45,7 +45,7 @@ Slug = дата + смысл, например `20261107-newspace`. Дата в 
 2. Отредактируйте `data/lecture.json` для `ru` / `en` / `sr`.
    Обязательные ключи:
    - `meta.title`, `meta.description`
-   - `a11y.skip`, `brand.sub`, `brand.name`, `nav.{schedule,archive,submit}`
+   - `a11y.skip`, `brand.sub`, `brand.name`, `nav.{schedule,archive,about,submit}`
    - `footer.{tagline,note,telegram}`
    - `lecture.{back,status,title,summary,whenLabel,when,placeLabel,place,speakerLabel,speaker,aboutLabel,about[],learnLabel,learn[]}`
    - для прошедших лекций ещё: `lecture.{materialsLabel,materialsText,materialsButton,materialsUrl,recapLabel,recapTitle,recap[]}`

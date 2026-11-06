@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>О нас · Нишский Лекторий</title>
+  <meta name="description" content="Нишский Лекторий — сообщество, которое популяризирует науку, искусство и прикладные знания. Бесплатные лекции и открытая площадка для каждого.">
+  <meta name="theme-color" content="#06070d">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2306070d'/%3E%3Ccircle cx='16' cy='16' r='6.5' fill='%23ffb347'/%3E%3C/svg%3E">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="О нас · Нишский Лекторий">
+  <meta property="og:description" content="Сообщество, которое популяризирует науку, искусство и прикладные знания.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/newLectureRequest.css">
+  <link rel="stylesheet" href="css/about.css">
+</head>
+<body data-page="about" data-json="data/about.json">
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">К содержанию</a>
+  <canvas id="stars" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__dot" aria-hidden="true"></span>
+        <span>
+          <span class="brand__sub" data-i18n="brand.sub">Project</span>
+          <span class="brand__name" data-i18n="brand.name">Нишский Лекторий</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Меню" data-i18n-attr="aria-label:a11y.menu">
+        <span class="nav-toggle__bars" aria-hidden="true"><i></i><i></i><i></i></span>
+      </button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <a href="index.html#upcoming" data-i18n="nav.schedule">Афиша</a>
+        <a href="archive.html" data-i18n="nav.archive">Архив</a>
+        <a href="about.html" aria-current="page" data-i18n="nav.about">О нас</a>
+        <a href="newLectureRequest.html" class="nav-hide-sm" data-i18n="nav.submit">Предложить лекцию</a>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-lang="ru">RU</button>
+          <button type="button" data-lang="en">EN</button>
+          <button type="button" data-lang="sr">SR</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="container page-head">
+      <span class="eyebrow" data-i18n="about.eyebrow">О нас</span>
+      <h1 class="display" data-i18n="about.title">Любознательность без пафоса</h1>
+      <p class="lead" data-i18n="about.lead">Мы — небольшое сообщество в Нише, которое занимается популяризацией науки, искусства и любых прикладных знаний. У нас может выступить каждый, кому есть что рассказать другим.</p>
+    </section>
+
+    <section class="container about-intro">
+      <div class="prose" data-list="about.intro" data-list-type="text"></div>
+    </section>
+
+    <section class="container section">
+      <div class="section-title">
+        <div>
+          <span class="eyebrow" data-i18n="about.valuesLabel">Во что мы верим</span>
+          <h2 class="h2" data-i18n="about.valuesTitle">Три простые вещи</h2>
+        </div>
+      </div>
+      <div class="points" data-list="about.values" data-list-type="point"></div>
+    </section>
+
+    <section class="container">
+      <div class="band band--quiet" data-reveal>
+        <div class="band__text">
+          <span class="eyebrow" data-i18n="about.freeLabel">Бесплатно</span>
+          <h2 class="h2" data-i18n="about.freeTitle">Вход всегда бесплатный</h2>
+          <p class="lead" data-i18n="about.freeText">Все наши встречи — 100% бесплатные: без взносов, «символических» билетов и скрытых условий. Если после лекции захочется отблагодарить лектора, мы собираем для него донаты. Это по желанию — и целиком ваша благодарность.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="section-title">
+        <div>
+          <span class="eyebrow" data-i18n="about.helpLabel">Помощь</span>
+          <h2 class="h2" data-i18n="about.helpTitle">Будем рады любой помощи</h2>
+        </div>
+        <p class="lead muted" data-i18n="about.helpLead">Лекторий живёт на энтузиазме. Если хочется поучаствовать — обсудим всё, что угодно:</p>
+      </div>
+      <ul class="about-help" data-list="about.help" data-list-type="learn"></ul>
+    </section>
+
+    <section class="container section" id="propose">
+      <div class="about-form-layout">
+        <div class="form-intro">
+          <span class="eyebrow" data-i18n="about.form.eyebrow">Твоя очередь</span>
+          <h2 class="h2" data-i18n="about.form.title">Есть тема? Расскажи нам.</h2>
+          <p class="lead" data-i18n="about.form.lead">Заполни короткую форму — предложи лекцию, встречу или просто тему, о которой хочется поговорить. Мы свяжемся и поможем всё организовать.</p>
+          <ul class="form-points">
+            <li data-i18n="about.form.point1">Любая тема и любой формат</li>
+            <li data-i18n="about.form.point2">Поможем с местом и афишей</li>
+            <li data-i18n="about.form.point3">Отвечаем в течение нескольких дней</li>
+          </ul>
+        </div>
+
+        <form
+          class="form"
+          name="lecture-request-about"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field">
+
+          <input type="hidden" name="form-name" value="lecture-request-about">
+          <p class="form-honeypot" aria-hidden="true">
+            <label>Don’t fill this out if you’re human: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+          </p>
+
+          <div class="field">
+            <label for="request-name" data-i18n="about.form.name.label">Имя</label>
+            <input id="request-name" name="name" type="text" required autocomplete="name"
+                   data-i18n-attr="placeholder:about.form.name.placeholder"
+                   placeholder="Как к тебе обращаться?">
+          </div>
+
+          <div class="field">
+            <label for="request-contact" data-i18n="about.form.contact.label">Как связаться</label>
+            <input id="request-contact" name="contact" type="text" required
+                   data-i18n-attr="placeholder:about.form.contact.placeholder"
+                   placeholder="Telegram, e-mail или телефон">
+            <span class="field__hint" data-i18n="about.form.contact.hint">Мы не делимся контактами с кем-либо.</span>
+          </div>
+
+          <div class="field">
+            <label for="request-comment" data-i18n="about.form.comment.label">Свободный комментарий</label>
+            <textarea id="request-comment" name="comment" rows="5"
+                      data-i18n-attr="placeholder:about.form.comment.placeholder"
+                      placeholder="О чём твоя лекция или встреча? Почему тебе это интересно?"></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn btn--primary" type="submit">
+              <span data-i18n="about.form.submit">Отправить</span>
+              <span class="btn__arrow" aria-hidden="true">↗</span>
+            </button>
+            <p class="form-note" data-i18n="about.form.note">Форма уходит напрямую нам. Спасибо!</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="band" data-reveal>
+        <div class="band__text">
+          <span class="eyebrow" data-i18n="about.contactLabel">Контакты</span>
+          <h2 class="h2" data-i18n="about.contactTitle">Есть идея? Напишите нам.</h2>
+          <p class="lead" data-i18n="about.contactText">Расскажите, о чём хотели бы поговорить или чем помочь, — ответим и всё обсудим. Мы открыты к любому формату сотрудничества.</p>
+          <p class="about-contact__note" data-i18n="about.contactNote">Также мы на связи в Telegram.</p>
+        </div>
+        <div class="about-contact__actions">
+          <p class="about-contact__email-label" data-i18n="about.emailLabel">Почта</p>
+          <p class="about-contact__email">viktorveretennikov58@gmail.com</p>
+          <p class="about-contact__email-hint" data-i18n="about.emailHint">Нажми, чтобы выделить адрес и скопировать.</p>
+          <a class="btn btn--ghost" href="https://t.me/NisLektorij" target="_blank" rel="noopener">
+            <span data-i18n="footer.telegram">Telegram</span>
+            <span class="btn__arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div>
+        <p class="footer-tag" data-i18n="footer.tagline">ZAJEDNO — LEARN · GROW · JOY</p>
+        <p class="site-footer__legal" data-i18n="footer.note">Нишский Лекторий · кафе «Звуки сердца», Niš</p>
+      </div>
+      <div class="footer-links">
+        <a class="tg-link" href="https://t.me/NisLektorij" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.3 18.8 19c-.2 1-.8 1.3-1.7.8l-4.6-3.4-2.2 2.1c-.2.2-.4.4-.9.4l.3-4.6 8.4-7.6c.4-.3-.1-.5-.6-.2L7.1 13 2.6 11.6c-1-.3-1-1 .2-1.5l17.7-6.8c.8-.3 1.5.2 1.4 1z"/></svg>
+          <span data-i18n="footer.telegram">Telegram</span>
+        </a>
+        <a href="about.html" data-i18n="nav.about">О нас</a>
+        <a href="newLectureRequest.html" data-i18n="nav.submit">Предложить лекцию</a>
+        <a href="archive.html" data-i18n="nav.archive">Архив</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/stars.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -11,11 +11,12 @@
 ```
 .
 ├── index.html                # главная: идея, афиша, архив, форма
+├── about.html                # о нас: сообщество, бесплатные лекции, помощь, контакты
 ├── archive.html              # прошедшие лекции (+ ссылки на материалы)
 ├── newLectureRequest.html    # Netlify-форма «предложить лекцию»
 ├── css/                      # общие стили (base + по странице)
 ├── js/                       # app.js (тексты + языки), stars.js (звёздное небо)
-├── data/                     # index.json / archive.json / newLectureRequest.json
+├── data/                     # index.json / about.json / archive.json / newLectureRequest.json
 └── lectures/
     └── <slug>/               # каждая лекция — отдельная папка
         ├── index.html

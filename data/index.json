@@ -6,7 +6,7 @@
     },
     "a11y": { "skip": "К содержанию", "menu": "Меню" },
     "brand": { "sub": "Project", "name": "Нишский Лекторий" },
-    "nav": { "schedule": "Афиша", "archive": "Архив", "submit": "Предложить лекцию" },
+    "nav": { "schedule": "Афиша", "archive": "Архив", "about": "О нас", "submit": "Предложить лекцию" },
     "hero": {
       "eyebrow": "Открытый лекторий в Нише",
       "title": "Расскажи о том, что тебе интересно.",
@@ -23,6 +23,13 @@
         { "title": "Живой формат", "text": "Тёплые встречи в кафе «Звуки сердца», где вместо цен — добровольные пожертвования." },
         { "title": "Для всех", "text": "Взрослым и детям: лекции интересны и тем, кто знает много, и тем, кто только начинает." }
       ]
+    },
+    "free": {
+      "eyebrow": "Бесплатно",
+      "title": "Лекции — бесплатные. Всегда.",
+      "text": "Вход на каждую встречу — 100% бесплатно, без взносов и «символических» билетов. Если после лекции захочется отблагодарить лектора, мы собираем для него донаты — по желанию и от чистого сердца.",
+      "note": "Хочется помочь иначе? Будем рады обсудить любую помощь — от идеи темы до места для встречи.",
+      "button": "О нас"
     },
     "upcoming": {
       "eyebrow": "Скоро",
@@ -79,7 +86,7 @@
     },
     "a11y": { "skip": "Skip to content", "menu": "Menu" },
     "brand": { "sub": "Project", "name": "Niš Lectorium" },
-    "nav": { "schedule": "Schedule", "archive": "Archive", "submit": "Propose a talk" },
+    "nav": { "schedule": "Schedule", "archive": "Archive", "about": "About us", "submit": "Propose a talk" },
     "hero": {
       "eyebrow": "An open lecture club in Niš",
       "title": "Tell us about what fascinates you.",
@@ -96,6 +103,13 @@
         { "title": "A live format", "text": "Warm gatherings at the Zvuci srca café, where you pay with a donation, not a price." },
         { "title": "For everyone", "text": "Adults and kids alike: talks work for experts and beginners both." }
       ]
+    },
+    "free": {
+      "eyebrow": "Free",
+      "title": "The lectures are free. Always.",
+      "text": "Entry to every gathering is 100% free — no fees, no “symbolic” tickets. If a talk leaves you wanting to thank the speaker, we collect donations for them: entirely optional, entirely from the heart.",
+      "note": "Would you rather help in another way? We're happy to discuss any kind of help — from a topic idea to a venue.",
+      "button": "About us"
     },
     "upcoming": {
       "eyebrow": "Soon",
@@ -152,7 +166,7 @@
     },
     "a11y": { "skip": "Na sadržaj", "menu": "Meni" },
     "brand": { "sub": "Project", "name": "Niški Lektorij" },
-    "nav": { "schedule": "Program", "archive": "Arhiva", "submit": "Predloži predavanje" },
+    "nav": { "schedule": "Program", "archive": "Arhiva", "about": "O nama", "submit": "Predloži predavanje" },
     "hero": {
       "eyebrow": "Otvoreni lektorij u Nišu",
       "title": "Ispričaj nam o onome što te zanima.",
@@ -169,6 +183,13 @@
         { "title": "Živi format", "text": "Tople večeri u kafiću „Zvuci srca“, gde umesto cene daješ dobrovoljni prilog." },
         { "title": "Za sve", "text": "I za odrasle i za decu: predavanja su zanimljiva i onima koji znaju mnogo i onima koji tek počinju." }
       ]
+    },
+    "free": {
+      "eyebrow": "Besplatno",
+      "title": "Predavanja su besplatna. Uvek.",
+      "text": "Ulaz na svaki susret je 100% besplatan — bez kotizacija i „simboličnih“ ulaznica. Ako posle predavanja poželiš da se zahvališ predavaču, prikupljamo donacije za njega — dobrovoljno i od srca.",
+      "note": "Želiš da pomogneš na drugi način? Rado ćemo razgovarati o svakoj pomoći — od ideje za temu do prostora za susret.",
+      "button": "O nama"
     },
     "upcoming": {
       "eyebrow": "Uskoro",

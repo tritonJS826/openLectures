@@ -83,28 +83,8 @@
 
 @keyframes spin { to { transform: rotate(360deg); } }
 
-/* Bands */
-.band {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 26px;
-  padding: clamp(28px, 4vw, 44px);
-  border: 1px solid var(--line);
-  border-radius: calc(var(--radius) + 6px);
-  background:
-    linear-gradient(120deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.012));
-}
-.band__text { max-width: 58ch; }
-.band__text .h2 { margin: 14px 0 10px; }
-
-.band--accent {
-  border-color: rgba(255, 179, 71, 0.35);
-  background:
-    radial-gradient(600px 300px at 12% 0%, rgba(255, 179, 71, 0.16), transparent 70%),
-    linear-gradient(120deg, rgba(255, 179, 71, 0.06), rgba(255, 255, 255, 0.012));
-}
+/* Keep the free/donations band from touching the archive band below */
+.home-free { margin-bottom: clamp(36px, 5vw, 60px); }
 
 @media (max-width: 880px) {
   .hero { grid-template-columns: 1fr; }

@@ -1,0 +1,190 @@
+{
+  "ru": {
+    "meta": {
+      "title": "О нас · Нишский Лекторий",
+      "description": "Нишский Лекторий — сообщество, которое популяризирует науку, искусство и прикладные знания. Бесплатные лекции и открытая площадка для каждого."
+    },
+    "a11y": { "skip": "К содержанию", "menu": "Меню" },
+    "brand": { "sub": "Project", "name": "Нишский Лекторий" },
+    "nav": { "schedule": "Афиша", "archive": "Архив", "about": "О нас", "submit": "Предложить лекцию" },
+    "about": {
+      "eyebrow": "О нас",
+      "title": "Любознательность без пафоса",
+      "lead": "Мы — небольшое сообщество в Нише, которое занимается популяризацией науки, искусства и любых прикладных знаний. У нас может выступить каждый, кому есть что рассказать другим.",
+      "intro": [
+        "Нишский Лекторий (Project Open Lectures) вырос из простой идеи: интересные знания не должны оставаться за стенами университетов. Мы собираемся в кафе «Звуки сердца», чтобы поговорить о космосе и пауках, электронике и поэзии, ремёслах и кулинарии — обо всём, что по-настоящему увлекает.",
+        "Нам не важны регалии и степень. Важно желание поделиться тем, что ты знаешь и любишь, — и уважение к тем, кто пришёл слушать. Поэтому лекции проходят в тёплом разговорном формате, а после можно задать вопросы, поспорить и познакомиться."
+      ],
+      "valuesLabel": "Во что мы верим",
+      "valuesTitle": "Три простые вещи",
+      "values": [
+        { "title": "Открытость", "text": "Выступить может каждый — с любой темой, без учёной степени и разрешений." },
+        { "title": "Наука и искусство", "text": "Популяризируем знания — и фундаментальные, и прикладные: от астрофизики до выпечки." },
+        { "title": "Честность", "text": "Лекции бесплатны, а донаты — только добровольная благодарность лектору." }
+      ],
+      "freeLabel": "Бесплатно",
+      "freeTitle": "Вход всегда бесплатный",
+      "freeText": "Все наши встречи — 100% бесплатные: без взносов, «символических» билетов и скрытых условий. Если после лекции захочется отблагодарить лектора, мы собираем для него донаты. Это по желанию — и целиком ваша благодарность.",
+      "helpLabel": "Помощь",
+      "helpTitle": "Будем рады любой помощи",
+      "helpLead": "Лекторий живёт на энтузиазме. Если хочется поучаствовать — обсудим всё, что угодно:",
+      "help": [
+        "Прийти на лекцию, привести друга или рассказать о нас знакомым.",
+        "Предложить тему — свою или чью-то ещё.",
+        "Выступить: поделиться тем, что вы знаете и любите.",
+        "Помочь с местом, техникой, фото, дизайном, переводом или материалами.",
+        "Просто написать нам с идеей или вопросом."
+      ],
+      "form": {
+        "eyebrow": "Твоя очередь",
+        "title": "Есть тема? Расскажи нам.",
+        "lead": "Заполни короткую форму — предложи лекцию, встречу или просто тему, о которой хочется поговорить. Мы свяжемся и поможем всё организовать.",
+        "point1": "Любая тема и любой формат",
+        "point2": "Поможем с местом и афишей",
+        "point3": "Отвечаем в течение нескольких дней",
+        "name": { "label": "Имя", "placeholder": "Как к тебе обращаться?" },
+        "contact": { "label": "Как связаться", "placeholder": "Telegram, e-mail или телефон", "hint": "Мы не делимся контактами с кем-либо." },
+        "comment": { "label": "Свободный комментарий", "placeholder": "О чём твоя лекция или встреча? Почему тебе это интересно?" },
+        "submit": "Отправить",
+        "note": "Форма уходит напрямую нам. Спасибо!"
+      },
+      "contactLabel": "Контакты",
+      "contactTitle": "Есть идея? Напишите нам.",
+      "contactText": "Расскажите, о чём хотели бы поговорить или чем помочь, — ответим и всё обсудим. Мы открыты к любому формату сотрудничества.",
+      "contactNote": "Также мы на связи в Telegram.",
+      "emailLabel": "Почта",
+      "emailHint": "Нажми, чтобы выделить адрес и скопировать."
+    },
+    "footer": {
+      "tagline": "ZAJEDNO — LEARN · GROW · JOY",
+      "note": "Нишский Лекторий · кафе «Звуки сердца», Niš",
+      "telegram": "Telegram"
+    }
+  },
+
+  "en": {
+    "meta": {
+      "title": "About · Niš Lectorium",
+      "description": "The Niš Lectorium is a community popularising science, art and practical knowledge. Free lectures and an open stage for everyone."
+    },
+    "a11y": { "skip": "Skip to content", "menu": "Menu" },
+    "brand": { "sub": "Project", "name": "Niš Lectorium" },
+    "nav": { "schedule": "Schedule", "archive": "Archive", "about": "About us", "submit": "Propose a talk" },
+    "about": {
+      "eyebrow": "About us",
+      "title": "Curiosity, without the fuss",
+      "lead": "We are a small community in Niš that popularises science, art and all kinds of practical knowledge. Anyone with something to share can speak here.",
+      "intro": [
+        "The Niš Lectorium (Project Open Lectures) grew from a simple idea: knowledge should not stay behind university walls. We meet at the Zvuci srca café to talk about space and spiders, electronics and poetry, crafts and cooking — about anything that genuinely fascinates us.",
+        "Titles and degrees don't matter to us. What matters is the wish to share what you know and love — and respect for those who came to listen. That is why the talks are warm and conversational, and afterwards you can ask questions, argue and meet people."
+      ],
+      "valuesLabel": "What we believe",
+      "valuesTitle": "Three simple things",
+      "values": [
+        { "title": "Openness", "text": "Anyone can speak — on any topic, without a degree or permission." },
+        { "title": "Science and art", "text": "We popularise knowledge, both fundamental and practical: from astrophysics to baking." },
+        { "title": "Honesty", "text": "The lectures are free, and donations are only a voluntary thank-you to the speaker." }
+      ],
+      "freeLabel": "Free",
+      "freeTitle": "Entry is always free",
+      "freeText": "Every gathering is 100% free: no fees, no “symbolic” tickets, no hidden conditions. If a talk leaves you wanting to thank the speaker, we collect donations for them. It is entirely optional — and entirely your thank-you.",
+      "helpLabel": "Help",
+      "helpTitle": "Any kind of help is welcome",
+      "helpLead": "The lectorium runs on enthusiasm. If you'd like to take part, we're happy to discuss anything:",
+      "help": [
+        "Come to a talk, bring a friend or tell others about us.",
+        "Suggest a topic — your own or someone else's.",
+        "Speak: share what you know and love.",
+        "Help with a venue, equipment, photos, design, translation or materials.",
+        "Just write to us with an idea or a question."
+      ],
+      "form": {
+        "eyebrow": "Your turn",
+        "title": "Got a topic? Tell us.",
+        "lead": "Fill in a short form — propose a talk, a gathering or simply a topic you'd love to discuss. We'll get in touch and help organise everything.",
+        "point1": "Any topic, any format",
+        "point2": "We'll help with the venue and the poster",
+        "point3": "We reply within a few days",
+        "name": { "label": "Name", "placeholder": "What should we call you?" },
+        "contact": { "label": "How to reach you", "placeholder": "Telegram, email or phone", "hint": "We never share your contacts with anyone." },
+        "comment": { "label": "Anything else", "placeholder": "What's your talk or gathering about? Why does it fascinate you?" },
+        "submit": "Send",
+        "note": "The form goes straight to us. Thank you!"
+      },
+      "contactLabel": "Contact",
+      "contactTitle": "Got an idea? Write to us.",
+      "contactText": "Tell us what you'd like to talk about or how you'd like to help — we'll reply and figure it out together. We're open to any kind of collaboration.",
+      "contactNote": "You can also reach us on Telegram.",
+      "emailLabel": "Email",
+      "emailHint": "Click to select the address and copy it."
+    },
+    "footer": {
+      "tagline": "ZAJEDNO — LEARN · GROW · JOY",
+      "note": "Niš Lectorium · Zvuci srca café, Niš",
+      "telegram": "Telegram"
+    }
+  },
+
+  "sr": {
+    "meta": {
+      "title": "O nama · Niški Lektorij",
+      "description": "Niški Lektorij je zajednica koja popularizuje nauku, umetnost i praktična znanja. Besplatna predavanja i otvorena platforma za sve."
+    },
+    "a11y": { "skip": "Na sadržaj", "menu": "Meni" },
+    "brand": { "sub": "Project", "name": "Niški Lektorij" },
+    "nav": { "schedule": "Program", "archive": "Arhiva", "about": "O nama", "submit": "Predloži predavanje" },
+    "about": {
+      "eyebrow": "O nama",
+      "title": "Radoznalost bez pompe",
+      "lead": "Mi smo mala zajednica u Nišu koja popularizuje nauku, umetnost i razna praktična znanja. Kod nas može da govori svako ko ima šta da kaže drugima.",
+      "intro": [
+        "Niški Lektorij (Project Open Lectures) nastao je iz jednostavne ideje: zanimljiva znanja ne treba da ostanu za univerzitetskim zidovima. Okupljamo se u kafiću „Zvuci srca“ da razgovaramo o kosmosu i paucima, elektronici i poeziji, zanatima i kuvanju — o svemu što nas istinski zanima.",
+        "Titule i diplome nam nisu važne. Važna je želja da podeliš ono što znaš i voliš — i poštovanje prema onima koji su došli da slušaju. Zato predavanja imaju topao, razgovorni format, a posle možeš da postaviš pitanje, raspravljaš i upoznaš ljude."
+      ],
+      "valuesLabel": "U šta verujemo",
+      "valuesTitle": "Tri jednostavne stvari",
+      "values": [
+        { "title": "Otvorenost", "text": "Svako može da govori — o bilo kojoj temi, bez diplome i dozvole." },
+        { "title": "Nauka i umetnost", "text": "Popularizujemo znanje, i fundamentalno i primenjeno: od astrofizike do pekarskog zanata." },
+        { "title": "Iskrenost", "text": "Predavanja su besplatna, a donacije su samo dobrovoljna zahvalnost predavaču." }
+      ],
+      "freeLabel": "Besplatno",
+      "freeTitle": "Ulaz je uvek besplatan",
+      "freeText": "Svi naši susreti su 100% besplatni: bez kotizacija, „simboličnih“ ulaznica i skrivenih uslova. Ako posle predavanja poželiš da se zahvališ predavaču, prikupljamo donacije za njega. To je dobrovoljno — i u potpunosti tvoja zahvalnost.",
+      "helpLabel": "Pomoć",
+      "helpTitle": "Rado prihvatamo svaku pomoć",
+      "helpLead": "Lektorij živi na entuzijazmu. Ako želiš da učestvuješ, rado ćemo razgovarati o svemu:",
+      "help": [
+        "Dođi na predavanje, povedi prijatelja ili pričaj o nama.",
+        "Predloži temu — svoju ili nečiju tuđu.",
+        "Govori: podeli ono što znaš i voliš.",
+        "Pomozi oko prostora, opreme, fotografija, dizajna, prevoda ili materijala.",
+        "Samo nam piši sa idejom ili pitanjem."
+      ],
+      "form": {
+        "eyebrow": "Tvoj red",
+        "title": "Imaš temu? Javi nam se.",
+        "lead": "Popuni kratak formular — predloži predavanje, susret ili jednostavno temu o kojoj želiš da razgovaraš. Javićemo se i pomoći da sve organizujemo.",
+        "point1": "Bilo koja tema i format",
+        "point2": "Pomažemo oko prostora i plakata",
+        "point3": "Odgovaramo u roku od nekoliko dana",
+        "name": { "label": "Ime", "placeholder": "Kako da te zovemo?" },
+        "contact": { "label": "Kontakt", "placeholder": "Telegram, imejl ili telefon", "hint": "Vaše kontakte ne delimo ni sa kim." },
+        "comment": { "label": "Slobodan komentar", "placeholder": "O čemu je vaše predavanje ili susret? Zašto vas to zanima?" },
+        "submit": "Pošalji",
+        "note": "Formular ide direktno nama. Hvala!"
+      },
+      "contactLabel": "Kontakt",
+      "contactTitle": "Imaš ideju? Piši nam.",
+      "contactText": "Reci nam o čemu bi želeo da govoriš ili kako bi želeo da pomogneš — javićemo se i sve dogovoriti. Otvoreni smo za svaki oblik saradnje.",
+      "contactNote": "Tu smo i na Telegramu.",
+      "emailLabel": "Imejl",
+      "emailHint": "Klikni da označiš adresu i kopiraš je."
+    },
+    "footer": {
+      "tagline": "ZAJEDNO — LEARN · GROW · JOY",
+      "note": "Niški Lektorij · kafić „Zvuci srca“, Niš",
+      "telegram": "Telegram"
+    }
+  }
+}

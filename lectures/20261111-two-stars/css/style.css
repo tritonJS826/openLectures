@@ -7,7 +7,7 @@ html { scroll-behavior: smooth; }
 
 .back-link {
   display: inline-flex;
-  align-items: top;
+  align-items: center;
   gap: 8px;
   margin-top: clamp(24px, 4vw, 40px);
   font-family: var(--font-mono);

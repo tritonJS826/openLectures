@@ -22,7 +22,7 @@ html { scroll-behavior: smooth; }
 .lecture-hero {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
-  align-items: center;
+  align-items: start;
   gap: clamp(28px, 5vw, 64px);
   padding-block: clamp(28px, 5vw, 52px) clamp(24px, 4vw, 48px);
 }

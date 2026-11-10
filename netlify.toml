@@ -1,19 +1,6 @@
 [build]
   publish = "."
 
-# The New Space lecture moved from Nov 7 to Nov 8; keep the old links alive.
-[[redirects]]
-  from = "/lectures/20261107-newspace"
-  to = "/lectures/20261108-newspace/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/lectures/20261107-newspace/*"
-  to = "/lectures/20261108-newspace/:splat"
-  status = 301
-  force = true
-
 # Basic security headers for a static site.
 [[headers]]
   for = "/*"

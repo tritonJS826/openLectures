@@ -37,17 +37,6 @@
       "lead": "Вход свободный — приходи один или всей семьёй.",
       "items": [
         {
-          "day": "08",
-          "mon": "ноя",
-          "badge": "Предстоящая лекция",
-          "title": "New Space: индустрия, орбитальные аппараты и космическая электроника",
-          "speaker": "Владимир Комиссаров · разработчик электроники для космических применений",
-          "dateText": "8 ноября 2026",
-          "time": "19:00",
-          "place": "кафе «Звуки сердца», Niš",
-          "url": "lectures/20261108-newspace/"
-        },
-        {
           "day": "11",
           "mon": "ноя",
           "badge": "Предстоящая лекция",
@@ -117,17 +106,6 @@
       "lead": "Free entry — come alone or bring the whole family.",
       "items": [
         {
-          "day": "08",
-          "mon": "NOV",
-          "badge": "Upcoming talk",
-          "title": "New Space: the industry, orbital vehicles and space electronics",
-          "speaker": "Vladimir Komissarov · electronics engineer for space applications",
-          "dateText": "November 8, 2026",
-          "time": "19:00",
-          "place": "Zvuci srca café, Niš",
-          "url": "lectures/20261108-newspace/"
-        },
-        {
           "day": "11",
           "mon": "NOV",
           "badge": "Upcoming talk",
@@ -196,17 +174,6 @@
       "title": "Predstojeća predavanja",
       "lead": "Ulaz je slobodan — dođi sam ili sa celom porodicom.",
       "items": [
-        {
-          "day": "08",
-          "mon": "nov",
-          "badge": "Predstojeće predavanje",
-          "title": "New Space: industrija, orbitalne letelice i svemirska elektronika",
-          "speaker": "Vladimir Komisarov · inženjer elektronike za svemirske primene",
-          "dateText": "8. novembar 2026.",
-          "time": "19:00",
-          "place": "kafić „Zvuci srca“, Niš",
-          "url": "lectures/20261108-newspace/"
-        },
         {
           "day": "11",
           "mon": "nov",

@@ -39,7 +39,9 @@
         "28 октября состоялось открытие Нишского Лектория. Нашим первым лектором стала Ксения Проскурякова — молодой учёный-биолог с темой о пауках-скакунчиках.",
         "«Пауки — страшно интересные»: вечер, после которого на пауков смотришь совсем другими глазами."
       ],
-      "imageAlt": "Паук-скакунчик видит сон, будто ведёт лекцию у доски"
+      "imageAlt": "Паук-скакунчик видит сон, будто ведёт лекцию у доски",
+      "galleryLabel": "Фото с лекции",
+      "galleryAlt": "Ксения Проскурякова рассказывает о пауках в кафе «Звуки сердца»; слушатели сидят за столами"
     },
     "footer": {
       "tagline": "ZAJEDNO — LEARN · GROW · JOY",
@@ -88,7 +90,9 @@
         "On October 28 the Niš Lectorium opened its doors. Our first speaker was Ksenia Proskuryakova, a young biologist who talked about jumping spiders.",
         "“Spiders — scary interesting”: an evening that leaves you looking at spiders in a whole new way."
       ],
-      "imageAlt": "A jumping spider dreams of giving a lecture at a chalkboard"
+      "imageAlt": "A jumping spider dreams of giving a lecture at a chalkboard",
+      "galleryLabel": "Photos from the talk",
+      "galleryAlt": "Ksenia Proskuryakova talks about spiders at the Zvuci srca café, with the audience seated at tables"
     },
     "footer": {
       "tagline": "ZAJEDNO — LEARN · GROW · JOY",
@@ -137,7 +141,9 @@
         "28. oktobra otvoren je Niški Lektorij. Naš prvi predavač bila je Ksenija Proskurjakova, mladi biolog, koja je govorila o paukovima skakačima.",
         "„Pauci — strašno zanimljivi“: veče posle kog na pauke gledate potpuno drugačijim očima."
       ],
-      "imageAlt": "Pauk skakač sanja da drži predavanje pored table"
+      "imageAlt": "Pauk skakač sanja da drži predavanje pored table",
+      "galleryLabel": "Fotografije sa predavanja",
+      "galleryAlt": "Ksenija Proskurjakova govori o paucima u kafiću „Zvuci srca“, publika sedi za stolovima"
     },
     "footer": {
       "tagline": "ZAJEDNO — LEARN · GROW · JOY",

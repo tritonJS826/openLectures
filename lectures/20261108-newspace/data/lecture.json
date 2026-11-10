@@ -9,9 +9,9 @@
     "nav": { "schedule": "Афиша", "archive": "Архив", "about": "О нас", "submit": "Предложить лекцию" },
     "lecture": {
       "back": "← Все лекции",
-      "status": "Предстоящая лекция",
+      "status": "Прошедшая лекция",
       "title": "New Space: индустрия, орбитальные аппараты и космическая электроника",
-      "summary": "Владимир Комиссаров, разработчик электроники для космических применений, расскажет о современной космической индустрии — от New Space до электроники, которой приходится работать на орбите.",
+      "summary": "Владимир Комиссаров, разработчик электроники для космических применений, рассказал о современной космической индустрии — от New Space до электроники, которой приходится работать на орбите.",
       "whenLabel": "Когда",
       "when": "8 ноября 2026, воскресенье, 19:00",
       "placeLabel": "Где",
@@ -21,8 +21,8 @@
       "imageAlt": "Два винтажных плаката о космосе: космонавт с поднятыми руками на фоне звёздного неба и человек в красном плаще, тянущийся к Луне и ракете",
       "aboutLabel": "О лекции",
       "about": [
-        "Владимир Комиссаров, разработчик электроники для космических применений, проведёт лекцию про современную индустрию New Space, орбитальные аппараты и космическую электронику.",
-        "Поговорим о том, как сегодня устроен космос: кто и зачем запускает спутники, чем New Space отличается от «классической» космонавтики и как выглядит электроника, которой приходится выживать на орбите."
+        "Владимир Комиссаров, разработчик электроники для космических применений, провёл лекцию про современную индустрию New Space, орбитальные аппараты и космическую электронику.",
+        "Поговорили о том, как сегодня устроен космос: кто и зачем запускает спутники, чем New Space отличается от «классической» космонавтики и как выглядит электроника, которой приходится выживать на орбите."
       ],
       "learnLabel": "Что узнаем",
       "learn": [
@@ -30,9 +30,18 @@
         "Как устроены орбитальные аппараты",
         "Космическая электроника: как она переживает космос"
       ],
-      "ctaLabel": "Приходите",
-      "ctaText": "Вход свободный. Приходите один или всей семьёй — будет по-настоящему космически.",
-      "ctaButton": "Напомнить в Telegram"
+      "materialsLabel": "Материалы",
+      "materialsText": "Слайды и заметки Владимира — в репозитории проекта на GitHub.",
+      "materialsButton": "Смотреть материалы",
+      "materialsUrl": "https://github.com/tritonJS826/openLectures/tree/main/lectures/20261108-newspace",
+      "recapLabel": "Как это было",
+      "recapTitle": "Космос ближе, чем кажется",
+      "recap": [
+        "8 ноября в кафе «Звуки сердца» прошла лекция Владимира Комиссарова о New Space — современной космической индустрии, орбитальных аппаратах и электронике, которой приходится работать в космосе.",
+        "Разобрались, кто и зачем запускает спутники, чем New Space отличается от «классической» космонавтики и как инженеры заставляют электронику выживать на орбите."
+      ],
+      "galleryLabel": "Фото с лекции",
+      "galleryAlt": "Владимир Комиссаров рассказывает о New Space в кафе «Звуки сердца»; на экране — слайд с космическим изображением, слушатели сидят за столами"
     },
     "footer": {
       "tagline": "ZAJEDNO — LEARN · GROW · JOY",
@@ -51,9 +60,9 @@
     "nav": { "schedule": "Schedule", "archive": "Archive", "about": "About us", "submit": "Propose a talk" },
     "lecture": {
       "back": "← All lectures",
-      "status": "Upcoming talk",
+      "status": "Past talk",
       "title": "New Space: the industry, orbital vehicles and space electronics",
-      "summary": "Vladimir Komissarov, an electronics engineer for space applications, walks us through today's space industry — from New Space to the electronics that has to survive in orbit.",
+      "summary": "Vladimir Komissarov, an electronics engineer for space applications, walked us through today's space industry — from New Space to the electronics that has to survive in orbit.",
       "whenLabel": "When",
       "when": "November 8, 2026, Sunday, 19:00",
       "placeLabel": "Where",
@@ -63,8 +72,8 @@
       "imageAlt": "Two vintage space posters: a cosmonaut with raised arms against a starry sky, and a figure in a red cloak reaching toward the Moon and a rocket",
       "aboutLabel": "About the talk",
       "about": [
-        "Vladimir Komissarov, an electronics engineer for space applications, will tell us about the modern New Space industry, orbital vehicles and space electronics.",
-        "We'll look at how space works today: who launches satellites and why, how New Space differs from “classic” spaceflight, and what the electronics that survive in orbit actually look like."
+        "Vladimir Komissarov, an electronics engineer for space applications, told us about the modern New Space industry, orbital vehicles and space electronics.",
+        "We looked at how space works today: who launches satellites and why, how New Space differs from “classic” spaceflight, and what the electronics that survive in orbit actually look like."
       ],
       "learnLabel": "What you'll discover",
       "learn": [
@@ -72,9 +81,18 @@
         "How orbital vehicles are built",
         "Space electronics: how it endures the environment of space"
       ],
-      "ctaLabel": "Come along",
-      "ctaText": "Free entry. Come alone or bring the whole family — it'll be genuinely cosmic.",
-      "ctaButton": "Remind me on Telegram"
+      "materialsLabel": "Materials",
+      "materialsText": "Vladimir's slides and notes live in the project repository on GitHub.",
+      "materialsButton": "View the materials",
+      "materialsUrl": "https://github.com/tritonJS826/openLectures/tree/main/lectures/20261108-newspace",
+      "recapLabel": "How it went",
+      "recapTitle": "Space is closer than it seems",
+      "recap": [
+        "On November 8, Vladimir Komissarov gave a talk at the Zvuci srca café about New Space — today's space industry, orbital vehicles and the electronics that has to work in space.",
+        "We looked at who launches satellites and why, how New Space differs from “classic” spaceflight, and how engineers keep electronics alive in orbit."
+      ],
+      "galleryLabel": "Photos from the talk",
+      "galleryAlt": "Vladimir Komissarov talks about New Space at the Zvuci srca café; a slide with a space image is on the screen and the audience is seated at tables"
     },
     "footer": {
       "tagline": "ZAJEDNO — LEARN · GROW · JOY",
@@ -93,9 +111,9 @@
     "nav": { "schedule": "Program", "archive": "Arhiva", "about": "O nama", "submit": "Predloži predavanje" },
     "lecture": {
       "back": "← Sva predavanja",
-      "status": "Predstojeće predavanje",
+      "status": "Prošlo predavanje",
       "title": "New Space: industrija, orbitalne letelice i svemirska elektronika",
-      "summary": "Vladimir Komisarov, inženjer elektronike za svemirske primene, provodi nas kroz savremenu svemirsku industriju — od New Space-a do elektronike koja mora da preživi u orbiti.",
+      "summary": "Vladimir Komisarov, inženjer elektronike za svemirske primene, proveo nas je kroz savremenu svemirsku industriju — od New Space-a do elektronike koja mora da preživi u orbiti.",
       "whenLabel": "Kada",
       "when": "8. novembar 2026, nedelja, 19:00",
       "placeLabel": "Gde",
@@ -105,8 +123,8 @@
       "imageAlt": "Dva vintage plakata o svemiru: kosmonaut podignutih ruku na zvezdanom nebu i lik u crvenom ogrtaču koji pruža ruku ka Mesecu i raketi",
       "aboutLabel": "O predavanju",
       "about": [
-        "Vladimir Komisarov, inženjer elektronike za svemirske primene, reći će o savremenoj New Space industriji, orbitalnim letelicama i svemirskoj elektronici.",
-        "Pričaćemo o tome kako danas funkcioniše svemir: ko i zašto lansira satelite, po čemu se New Space razlikuje od „klasične“ astronautike i kako izgleda elektronika koja mora da preživi u orbiti."
+        "Vladimir Komisarov, inženjer elektronike za svemirske primene, govorio je o savremenoj New Space industriji, orbitalnim letelicama i svemirskoj elektronici.",
+        "Pričali smo o tome kako danas funkcioniše svemir: ko i zašto lansira satelite, po čemu se New Space razlikuje od „klasične“ astronautike i kako izgleda elektronika koja mora da preživi u orbiti."
       ],
       "learnLabel": "Šta ćemo saznati",
       "learn": [
@@ -114,9 +132,18 @@
         "Kako su konstruisane orbitalne letelice",
         "Svemirska elektronika: kako izdržava uslove svemira"
       ],
-      "ctaLabel": "Dođite",
-      "ctaText": "Ulaz je slobodan. Dođite sami ili sa celom porodicom — biće zaista kosmički.",
-      "ctaButton": "Podseti me na Telegramu"
+      "materialsLabel": "Materijali",
+      "materialsText": "Vladimirovi slajdovi i beleške nalaze se u repozitorijumu projekta na GitHubu.",
+      "materialsButton": "Pogledaj materijale",
+      "materialsUrl": "https://github.com/tritonJS826/openLectures/tree/main/lectures/20261108-newspace",
+      "recapLabel": "Kako je bilo",
+      "recapTitle": "Svemir je bliži nego što izgleda",
+      "recap": [
+        "8. novembra u kafiću „Zvuci srca“ Vladimir Komisarov održao je predavanje o New Space-u — savremenoj svemirskoj industriji, orbitalnim letelicama i elektronici koja mora da radi u svemiru.",
+        "Pričali smo o tome ko i zašto lansira satelite, po čemu se New Space razlikuje od „klasične“ astronautike i kako inženjeri čine da elektronika preživi u orbiti."
+      ],
+      "galleryLabel": "Fotografije sa predavanja",
+      "galleryAlt": "Vladimir Komisarov govori o New Space-u u kafiću „Zvuci srca“; na ekranu je slajd sa svemirskom fotografijom, publika sedi za stolovima"
     },
     "footer": {
       "tagline": "ZAJEDNO — LEARN · GROW · JOY",

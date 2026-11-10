@@ -49,6 +49,8 @@ Slug = дата + смысл, например `20261108-newspace`. Дата в 
    - `footer.{tagline,note,telegram}`
    - `lecture.{back,status,title,summary,whenLabel,when,placeLabel,place,speakerLabel,speaker,aboutLabel,about[],learnLabel,learn[]}`
    - для прошедших лекций ещё: `lecture.{materialsLabel,materialsText,materialsButton,materialsUrl,recapLabel,recapTitle,recap[]}`
+   - если есть фото с лекции: `lecture.{galleryLabel,galleryAlt}` и блок
+     `<div class="gallery">` с `<figure class="gallery__item"><img src="images/…avif" …></figure>`
 3. `status`: `"Предстоящая лекция"` / `"Прошедшая лекция"` (и переводы).
 4. `about`, `learn`, `recap` — **массивы** (рендерятся через `data-list`).
 5. Обновите в `index.html`: `<title>`, `meta[name=description]`, `og:*` и `data-lecture` на `<body>`.

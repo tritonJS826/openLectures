@@ -36,7 +36,7 @@
       </button>
       <nav class="nav" id="site-nav" aria-label="Main">
         <a href="../../index.html#upcoming" data-i18n="nav.schedule">Афиша</a>
-        <a href="../../archive.html" data-i18n="nav.archive">Архив</a>
+        <a href="../../archive.html" aria-current="page" data-i18n="nav.archive">Архив</a>
         <a href="../../about.html" data-i18n="nav.about">О нас</a>
         <a href="../../newLectureRequest.html" class="nav-hide-sm" data-i18n="nav.submit">Предложить лекцию</a>
         <div class="lang-switch" role="group" aria-label="Language">
@@ -50,12 +50,12 @@
 
   <main id="main">
     <div class="container">
-      <a class="back-link" href="../../index.html#upcoming" data-i18n="lecture.back">← Все лекции</a>
+      <a class="back-link" href="../../archive.html" data-i18n="lecture.back">← Все лекции</a>
     </div>
 
     <section class="container lecture-hero">
       <div class="lecture-hero__text">
-        <span class="lecture-status" data-i18n="lecture.status">Предстоящая лекция</span>
+        <span class="lecture-status lecture-status--past" data-i18n="lecture.status">Прошедшая лекция</span>
         <h1 class="display lecture-title" data-i18n="lecture.title">«Две звезды, две светлых повести…»</h1>
         <p class="lead" data-i18n="lecture.summary"></p>
         <dl class="lecture-meta">
@@ -90,12 +90,50 @@
       </div>
 
       <div class="lecture-block lecture-block--materials">
-        <h2 class="h2" data-i18n="lecture.ctaLabel">Приходите</h2>
-        <p class="lead" data-i18n="lecture.ctaText"></p>
-        <a class="btn btn--primary" href="https://t.me/NisLektorij" target="_blank" rel="noopener">
-          <span data-i18n="lecture.ctaButton">Напомнить в Telegram</span>
+        <h2 class="h2" data-i18n="lecture.materialsLabel">Материалы</h2>
+        <p class="lead" data-i18n="lecture.materialsText"></p>
+        <a class="btn btn--primary" href="#" data-i18n-attr="href:lecture.materialsUrl" target="_blank" rel="noopener">
+          <span data-i18n="lecture.materialsButton">Смотреть материалы</span>
           <span class="btn__arrow" aria-hidden="true">↗</span>
         </a>
+      </div>
+
+      <div class="lecture-block lecture-block--recap">
+        <span class="eyebrow" data-i18n="lecture.recapLabel">Как это было</span>
+        <h2 class="h2" data-i18n="lecture.recapTitle"></h2>
+        <div class="prose" data-list="lecture.recap" data-list-type="text"></div>
+      </div>
+
+      <div class="lecture-block lecture-block--gallery">
+        <h2 class="h2" data-i18n="lecture.galleryLabel">Фото и видео с вечера</h2>
+        <div class="gallery">
+          <figure class="gallery__item">
+            <img src="images/talk-1.avif" data-i18n-attr="alt:lecture.galleryAlt" alt="Александр Деловеров держит миску с угощением, рядом улыбается Гульмира Динич" loading="lazy" decoding="async">
+          </figure>
+          <figure class="gallery__item">
+            <img src="images/talk-2.avif" data-i18n-attr="alt:lecture.galleryAlt2" alt="Гульмира Динич рассказывает гостям вечера, Александр Деловеров держит гитару" loading="lazy" decoding="async">
+          </figure>
+          <figure class="gallery__item">
+            <video controls playsinline preload="metadata" poster="images/video-1.avif" aria-label="Зрители слушают литературный вечер" data-i18n-attr="aria-label:lecture.videoAlt">
+              <source src="images/video-1.mp4" type="video/mp4">
+            </video>
+          </figure>
+          <figure class="gallery__item">
+            <video controls playsinline preload="metadata" poster="images/video-2.avif" aria-label="Александр Деловеров читает отрывок из книги" data-i18n-attr="aria-label:lecture.videoAlt2">
+              <source src="images/video-2.mp4" type="video/mp4">
+            </video>
+          </figure>
+          <figure class="gallery__item">
+            <video controls playsinline preload="metadata" poster="images/video-3.avif" aria-label="Гульмира Динич выступает перед гостями вечера" data-i18n-attr="aria-label:lecture.videoAlt3">
+              <source src="images/video-3.mp4" type="video/mp4">
+            </video>
+          </figure>
+          <figure class="gallery__item">
+            <video controls playsinline preload="metadata" poster="images/video-full.avif" aria-label="Полная запись творческого вечера" data-i18n-attr="aria-label:lecture.videoAlt4">
+              <source src="images/video-full.mp4" type="video/mp4">
+            </video>
+          </figure>
+        </div>
       </div>
     </section>
   </main>

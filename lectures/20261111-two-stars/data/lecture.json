@@ -9,9 +9,9 @@
     "nav": { "schedule": "Афиша", "archive": "Архив", "about": "О нас", "submit": "Предложить лекцию" },
     "lecture": {
       "back": "← Все лекции",
-      "status": "Предстоящая лекция",
+      "status": "Прошедшая лекция",
       "title": "«Две звезды, две светлых повести…»",
-      "summary": "Литературный вечер поэзии, прозы и песни: Гульмира Динич читает «Записки путешественницы автостопом по миру», Александр Деловеров представляет программу «День возРождения». Чай с тортом, песни под гитару и живое общение в кругу друзей.",
+      "summary": "Литературный вечер поэзии, прозы и песни: Гульмира Динич прочитала отрывки из «Записок путешественницы автостопом по миру», Александр Деловеров представил программу «День возРождения». Чай с тортом, песни под гитару и живое общение в кругу друзей.",
       "whenLabel": "Когда",
       "when": "11 ноября 2026, среда, 18:00",
       "placeLabel": "Где",
@@ -21,21 +21,36 @@
       "imageAlt": "Раскрытая книга со светящимися страницами и акустическая гитара на фоне звёздного ночного неба",
       "aboutLabel": "О вечере",
       "about": [
-        "Литературная гостиная Нишского Лектория распахивает двери: нас ждёт особенная, тёплая встреча в кругу друзей — поэзия, проза и песни под гитару.",
-        "Вечер откроет Гульмира Динич — та, кто в своё время вдохнула жизнь в сообщество Нишлије и объединила всех нас. Она прочитает отрывки из своих захватывающих «Записок путешественницы автостопом по миру» — о дорогах, смелости, доверии и удивительных встречах на разных континентах. Поддерживать маму на встрече будет мали Павле.",
-        "Вторая звезда — Александр Деловеров: писатель, поэт, DIY-музыкант-подпольщик, автор YouTube-канала «ПоЭтиkа: стихи и песни ручной работы». Для Александра это особенный день: он представит программу своего творческого вечера «День возРождения». Будут стихи, немного песен под гитару и просто живое общение в тёплой дружеской атмосфере.",
-        "А ещё — чай с тортом и печеньками и общее пение в финале. Приходите сами, приводите близких и зовите друзей! Вход свободный, по желанию — донаты Рассказчикам."
+        "Литературная гостиная Нишского Лектория распахнула двери: нас ждала особенная, тёплая встреча в кругу друзей — поэзия, проза и песни под гитару.",
+        "Вечер открыла Гульмира Динич — та, кто в своё время вдохнула жизнь в сообщество Нишлије и объединила всех нас. Она прочитала отрывки из своих захватывающих «Записок путешественницы автостопом по миру» — о дорогах, смелости, доверии и удивительных встречах на разных континентах. Поддерживал маму мали Павле.",
+        "Вторая звезда — Александр Деловеров: писатель, поэт, DIY-музыкант-подпольщик, автор YouTube-канала «ПоЭтиkа: стихи и песни ручной работы». Для Александра это был особенный день: он представил программу своего творческого вечера «День возРождения». Были стихи, немного песен под гитару и просто живое общение в тёплой дружеской атмосфере.",
+        "А ещё — чай с тортом и печеньками и общее пение в финале. Спасибо всем, кто пришёл, привёл близких и позвал друзей! Вход был свободный, по желанию — донаты Рассказчикам."
       ],
-      "learnLabel": "Что вас ждёт",
+      "learnLabel": "Что было",
       "learn": [
         "Отрывки из «Записок путешественницы автостопом по миру» Гульмиры Динич",
         "Лиричные стихи Александра Деловерова и его программу «День возРождения»",
         "Песни под гитару и совместное пение в финале",
         "Чай с тортом и печеньками в кругу друзей"
       ],
-      "ctaLabel": "Приходите",
-      "ctaText": "Вход свободный, по желанию — донаты Рассказчикам. Нас традиционно принимает инклюзивное кафе «Звуки сердца», где работают молодые люди с особенностями развития: кофе или чай можно заказать за добровольное пожертвование.",
-      "ctaButton": "Напомнить в Telegram"
+      "materialsLabel": "Материалы",
+      "materialsText": "Фотографии, видеозаписи и заметки о вечере — в репозитории проекта на GitHub.",
+      "materialsButton": "Смотреть материалы",
+      "materialsUrl": "https://github.com/tritonJS826/openLectures/tree/main/lectures/20261111-two-stars",
+      "recapLabel": "Как это было",
+      "recapTitle": "Две звезды, две светлые повести",
+      "recap": [
+        "11 ноября в кафе «Звуки сердца» прошёл литературный вечер Гульмиры Динич и Александра Деловерова — поэзия, проза и песни под гитару в тёплом кругу друзей.",
+        "Гульмира читала отрывки из «Записок путешественницы автостопом по миру» — о дорогах, смелости, доверии и удивительных встречах на разных континентах. Поддерживал маму мали Павле.",
+        "Александр представил программу «День возРождения»: стихи, песни под гитару и живое общение. А ещё был чай с тортом и печеньками и общее пение в финале."
+      ],
+      "galleryLabel": "Фото и видео с вечера",
+      "galleryAlt": "Александр Деловеров держит миску с угощением, рядом улыбается Гульмира Динич, гостья вечера сидит на жёлтом диване",
+      "galleryAlt2": "Гульмира Динич рассказывает гостям вечера, Александр Деловеров держит гитару, рядом стоит мали Павле, на столе чашки и угощения",
+      "videoAlt": "Зрители слушают литературный вечер в кафе «Звуки сердца»",
+      "videoAlt2": "Александр Деловеров читает отрывок из книги, Гульмира Динич и гости слушают",
+      "videoAlt3": "Гульмира Динич выступает перед гостями вечера",
+      "videoAlt4": "Полная запись творческого вечера: Александр Деловеров играет на гитаре, Гульмира Динич и зрители слушают"
     },
     "footer": {
       "tagline": "ZAJEDNO — LEARN · GROW · JOY",
@@ -47,16 +62,16 @@
   "en": {
     "meta": {
       "title": "Two stars, two bright tales… · Niš Lectorium",
-      "description": "An evening of poetry, prose and song: Gulmira Dinić reads from her hitchhiking travel notes and Aleksandar Deloverov presents his “Day of reBirth” programme. November 11, 2026, 18:00, Zvuci srca café, Niš."
+      "description": "An evening of poetry, prose and song: Gulmira Dinić read from her hitchhiking travel notes and Aleksandar Deloverov presented his “Day of reBirth” programme. November 11, 2026, Zvuci srca café, Niš."
     },
     "a11y": { "skip": "Skip to content", "menu": "Menu" },
     "brand": { "sub": "Project", "name": "Niš Lectorium" },
     "nav": { "schedule": "Schedule", "archive": "Archive", "about": "About us", "submit": "Propose a talk" },
     "lecture": {
       "back": "← All lectures",
-      "status": "Upcoming talk",
+      "status": "Past talk",
       "title": "“Two stars, two bright tales…”",
-      "summary": "An evening of poetry, prose and song: Gulmira Dinić reads from her hitchhiking travel notes, Aleksandar Deloverov presents his “Day of reBirth” programme. Tea and cake, songs with a guitar, and warm conversation among friends.",
+      "summary": "An evening of poetry, prose and song: Gulmira Dinić read from her hitchhiking travel notes and Aleksandar Deloverov presented his “Day of reBirth” programme. Tea and cake, songs with a guitar, and warm conversation among friends.",
       "whenLabel": "When",
       "when": "November 11, 2026, Wednesday, 18:00",
       "placeLabel": "Where",
@@ -66,21 +81,36 @@
       "imageAlt": "An open book with glowing pages and an acoustic guitar against a starry night sky",
       "aboutLabel": "About the evening",
       "about": [
-        "The literary drawing room of the Niš Lectorium opens its doors: a special, warm gathering among friends — poetry, prose and songs with a guitar.",
-        "The evening will be opened by Gulmira Dinić — the person who once breathed life into the Nišlije community and brought us all together. She will read excerpts from her captivating “Notes of a Hitchhiking Traveller” — about roads, courage, trust and remarkable encounters across continents. Mali Pavle will be there to support his mum.",
-        "The second star is Aleksandar Deloverov: writer, poet, DIY underground musician and author of the YouTube channel “PoEtika: handmade poems and songs”. For Aleksandar this is a special day — he presents the programme of his creative evening, “Day of reBirth”. There will be poems, a few songs with a guitar, and simply live conversation in a warm, friendly atmosphere.",
-        "And there will be tea with cake and biscuits, and everyone singing together at the end. Come yourself, bring your loved ones and invite your friends! Free entry, with donations for the Storytellers if you wish."
+        "The literary drawing room of the Niš Lectorium opened its doors: a special, warm gathering among friends — poetry, prose and songs with a guitar.",
+        "The evening was opened by Gulmira Dinić — the person who once breathed life into the Nišlije community and brought us all together. She read excerpts from her captivating “Notes of a Hitchhiking Traveller” — about roads, courage, trust and remarkable encounters across continents. Mali Pavle was there to support his mum.",
+        "The second star is Aleksandar Deloverov: writer, poet, DIY underground musician and author of the YouTube channel “PoEtika: handmade poems and songs”. For Aleksandar this was a special day — he presented the programme of his creative evening, “Day of reBirth”. There were poems, a few songs with a guitar, and simply live conversation in a warm, friendly atmosphere.",
+        "And there was tea with cake and biscuits, and everyone singing together at the end. Thank you to everyone who came, brought their loved ones and invited their friends! Entry was free, with donations for the Storytellers if you wished."
       ],
-      "learnLabel": "What to expect",
+      "learnLabel": "What we heard",
       "learn": [
         "Excerpts from Gulmira Dinić's “Notes of a Hitchhiking Traveller”",
         "Aleksandar Deloverov's lyrical poems and his “Day of reBirth” programme",
         "Songs with a guitar and everyone singing together at the end",
         "Tea with cake and biscuits among friends"
       ],
-      "ctaLabel": "Come along",
-      "ctaText": "Free entry, with donations for the Storytellers if you wish. We are hosted, as always, by the inclusive Zvuci srca café, where young people with developmental disabilities work: coffee or tea comes for a voluntary donation.",
-      "ctaButton": "Remind me on Telegram"
+      "materialsLabel": "Materials",
+      "materialsText": "Photos, videos and notes from the evening live in the project repository on GitHub.",
+      "materialsButton": "View the materials",
+      "materialsUrl": "https://github.com/tritonJS826/openLectures/tree/main/lectures/20261111-two-stars",
+      "recapLabel": "How it went",
+      "recapTitle": "Two stars, two bright tales",
+      "recap": [
+        "On November 11, the Zvuci srca café hosted a literary evening with Gulmira Dinić and Aleksandar Deloverov — poetry, prose and songs with a guitar among friends.",
+        "Gulmira read excerpts from her “Notes of a Hitchhiking Traveller” — about roads, courage, trust and remarkable encounters across continents. Mali Pavle was there to support his mum.",
+        "Aleksandar presented his “Day of reBirth” programme: poems, songs with a guitar and live conversation. And there was tea with cake and biscuits, and everyone singing together at the end."
+      ],
+      "galleryLabel": "Photos and videos from the evening",
+      "galleryAlt": "Aleksandar Deloverov holding a bowl of treats while Gulmira Dinić smiles behind him and a guest sits on a yellow sofa",
+      "galleryAlt2": "Gulmira Dinić speaking to the guests, Aleksandar Deloverov holding a guitar, mali Pavle standing nearby, cups and treats on the table",
+      "videoAlt": "The audience listening to the literary evening at the Zvuci srca café",
+      "videoAlt2": "Aleksandar Deloverov reading an excerpt from a book while Gulmira Dinić and the guests listen",
+      "videoAlt3": "Gulmira Dinić speaking to the guests of the evening",
+      "videoAlt4": "Full recording of the creative evening: Aleksandar Deloverov plays the guitar while Gulmira Dinić and the audience listen"
     },
     "footer": {
       "tagline": "ZAJEDNO — LEARN · GROW · JOY",
@@ -92,16 +122,16 @@
   "sr": {
     "meta": {
       "title": "Dve zvezde, dve svetle priče… · Niški Lektorij",
-      "description": "Književno veče poezije, proze i pesme: Gulmira Dinić čita „Beleške autostoperke putnice“, a Aleksandar Deloverov predstavlja program „Dan preporoda“. 11. novembar 2026, 18:00, kafić „Zvuci srca“, Niš."
+      "description": "Književno veče poezije, proze i pesme: Gulmira Dinić čitala je iz „Beleški autostoperke putnice“, a Aleksandar Deloverov predstavio program „Dan preporoda“. 11. novembar 2026, kafić „Zvuci srca“, Niš."
     },
     "a11y": { "skip": "Na sadržaj", "menu": "Meni" },
     "brand": { "sub": "Project", "name": "Niški Lektorij" },
     "nav": { "schedule": "Program", "archive": "Arhiva", "about": "O nama", "submit": "Predloži predavanje" },
     "lecture": {
       "back": "← Sva predavanja",
-      "status": "Predstojeće predavanje",
+      "status": "Prošlo predavanje",
       "title": "„Dve zvezde, dve svetle priče…“",
-      "summary": "Književno veče poezije, proze i pesme: Gulmira Dinić čita iz „Beleški autostoperke putnice“, Aleksandar Deloverov predstavlja program „Dan preporoda“. Čaj i torta, pesme uz gitaru i živa priča u krugu prijatelja.",
+      "summary": "Književno veče poezije, proze i pesme: Gulmira Dinić čitala je odlomke iz „Beleški autostoperke putnice“, a Aleksandar Deloverov predstavio je program „Dan preporoda“. Čaj i torta, pesme uz gitaru i živa priča u krugu prijatelja.",
       "whenLabel": "Kada",
       "when": "11. novembar 2026, sreda, 18:00",
       "placeLabel": "Gde",
@@ -111,21 +141,36 @@
       "imageAlt": "Otvorena knjiga sa blistavim stranicama i akustična gitara na zvezdanom noćnom nebu",
       "aboutLabel": "O večeri",
       "about": [
-        "Književna gostiona Niškog Lektorija otvara vrata: čeka nas poseban, topao susret u krugu prijatelja — poezija, proza i pesme uz gitaru.",
-        "Veče će otvoriti Gulmira Dinić — ona koja je svojevremeno udahnula život zajednici Nišlija i sve nas okupila. Čitaće odlomke iz svojih uzbudljivih „Beleški autostoperke putnice“ — o putevima, smelosti, poverenju i neverovatnim susretima na raznim kontinentima. Mamu će na susretu podržati mali Pavle.",
-        "Druga zvezda je Aleksandar Deloverov: pisac, pesnik, DIY muzičar-podzemljar i autor YouTube kanala „PoEtika: pesme i stihovi ručne izrade“. Za Aleksandra je ovo poseban dan — predstavlja program svog stvaralačkog večera „Dan preporoda“. Biće stihova, poneka pesma uz gitaru i jednostavno živi razgovor u toploj prijateljskoj atmosferi.",
-        "A biće i čaja sa tortom i keksima, i zajedničkog pevanja na kraju. Dođite sami, povedite najbliže i pozovite prijatelje! Ulaz je slobodan, a po želji — donacije Pričačima."
+        "Književna gostiona Niškog Lektorija otvorila je vrata: čekao nas je poseban, topao susret u krugu prijatelja — poezija, proza i pesme uz gitaru.",
+        "Veče je otvorila Gulmira Dinić — ona koja je svojevremeno udahnula život zajednici Nišlija i sve nas okupila. Čitala je odlomke iz svojih uzbudljivih „Beleški autostoperke putnice“ — o putevima, smelosti, poverenju i neverovatnim susretima na raznim kontinentima. Mamu je na susretu podržao mali Pavle.",
+        "Druga zvezda je Aleksandar Deloverov: pisac, pesnik, DIY muzičar-podzemljar i autor YouTube kanala „PoEtika: pesme i stihovi ručne izrade“. Za Aleksandra je ovo bio poseban dan — predstavio je program svog stvaralačkog večera „Dan preporoda“. Bilo je stihova, poneka pesma uz gitaru i jednostavno živi razgovor u toploj prijateljskoj atmosferi.",
+        "A bilo je i čaja sa tortom i keksima, i zajedničkog pevanja na kraju. Hvala svima koji su došli, poveli najbliže i pozvali prijatelje! Ulaz je bio slobodan, a po želji — donacije Pričačima."
       ],
-      "learnLabel": "Šta vas čeka",
+      "learnLabel": "Šta je bilo",
       "learn": [
         "Odlomci iz „Beleški autostoperke putnice“ Gulmire Dinić",
         "Lirični stihovi Aleksandra Deloverova i njegov program „Dan preporoda“",
         "Pesme uz gitaru i zajedničko pevanje na kraju",
         "Čaj sa tortom i keksima u krugu prijatelja"
       ],
-      "ctaLabel": "Dođite",
-      "ctaText": "Ulaz je slobodan, a po želji — donacije Pričačima. Nas tradicionalno prima inkluzivni kafić „Zvuci srca“, u kome rade mladi sa smetnjama u razvoju: kafu ili čaj možete naručiti uz dobrovoljni prilog.",
-      "ctaButton": "Podseti me na Telegramu"
+      "materialsLabel": "Materijali",
+      "materialsText": "Fotografije, snimci i beleške sa večeri nalaze se u repozitorijumu projekta na GitHubu.",
+      "materialsButton": "Pogledaj materijale",
+      "materialsUrl": "https://github.com/tritonJS826/openLectures/tree/main/lectures/20261111-two-stars",
+      "recapLabel": "Kako je bilo",
+      "recapTitle": "Dve zvezde, dve svetle priče",
+      "recap": [
+        "11. novembra u kafiću „Zvuci srca“ održano je književno veče Gulmire Dinić i Aleksandra Deloverova — poezija, proza i pesme uz gitaru u toplom krugu prijatelja.",
+        "Gulmira je čitala odlomke iz „Beleški autostoperke putnice“ — o putevima, smelosti, poverenju i neverovatnim susretima na raznim kontinentima. Mamu je podržao mali Pavle.",
+        "Aleksandar je predstavio program „Dan preporoda“: stihove, pesme uz gitaru i živi razgovor. A bilo je i čaja sa tortom i keksima, i zajedničkog pevanja na kraju."
+      ],
+      "galleryLabel": "Fotografije i video sa večeri",
+      "galleryAlt": "Aleksandar Deloverov drži činiju sa posluženjem, pored njega se smeje Gulmira Dinić, gošća večeri sedi na žutoj sofi",
+      "galleryAlt2": "Gulmira Dinić govori gostima večeri, Aleksandar Deloverov drži gitaru, pored stoji mali Pavle, na stolu su šolje i posluženje",
+      "videoAlt": "Publika sluša književno veče u kafiću „Zvuci srca“",
+      "videoAlt2": "Aleksandar Deloverov čita odlomak iz knjige, Gulmira Dinić i gosti slušaju",
+      "videoAlt3": "Gulmira Dinić govori pred gostima večeri",
+      "videoAlt4": "Kompletan snimak stvaralačkog večera: Aleksandar Deloverov svira gitaru, Gulmira Dinić i publika slušaju"
     },
     "footer": {
       "tagline": "ZAJEDNO — LEARN · GROW · JOY",

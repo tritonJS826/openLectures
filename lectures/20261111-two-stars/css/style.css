@@ -113,6 +113,33 @@ html { scroll-behavior: smooth; }
   background: linear-gradient(140deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.012));
 }
 
+/* Gallery ---------------------------------------------------------------- */
+.lecture-block--gallery { max-width: none; }
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 420px));
+  justify-content: center;
+  gap: 16px;
+}
+
+.gallery__item {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: calc(var(--radius) + 4px);
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.gallery__item img,
+.gallery__item video {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #000;
+}
+
 /* Per-lecture accents ---------------------------------------------------- */
 body[data-lecture="newspace"] {
   background-image:

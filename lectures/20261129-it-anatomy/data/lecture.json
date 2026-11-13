@@ -1,0 +1,142 @@
+{
+  "ru": {
+    "meta": {
+      "title": "Анатомия ИТ-проекта · Нишский Лекторий",
+      "description": "Диана Баязитова, Senior ИТ-архитектор и основатель B.A.D. FORENSIC: жизненный цикл продукта, роли в команде, ИТ-жаргон, скрытые риски и Tech Law. 29 ноября 2026, 18:00, кафе «Звуки сердца», Niš."
+    },
+    "a11y": { "skip": "К содержанию", "menu": "Меню" },
+    "brand": { "sub": "Project", "name": "Нишский Лекторий" },
+    "nav": { "schedule": "Афиша", "archive": "Архив", "about": "О нас", "submit": "Предложить лекцию" },
+    "lecture": {
+      "back": "← Все лекции",
+      "status": "Предстоящая лекция",
+      "title": "«Анатомия ИТ-проекта: от сырой идеи до запуска без капканов и фрода»",
+      "summary": "Как превратить абстрактную идею в работающий софт, не сжечь миллионные бюджеты и не разбиться о скрытый саботаж на этапе запуска. Диана Баязитова — Senior ИТ-архитектор, правовед и основатель B.A.D. FORENSIC — показывает изнанку ИТ-производства ледяными глазами forensic-аналитика.",
+      "whenLabel": "Когда",
+      "when": "29 ноября 2026, воскресенье, 18:00",
+      "placeLabel": "Где",
+      "place": "кафе «Звуки сердца», Branka Krsmanovića 17, Niš",
+      "speakerLabel": "Лектор",
+      "speaker": "Диана Баязитова — Senior ИТ-архитектор, правовед, основатель B.A.D. FORENSIC",
+      "imageAlt": "Футуристическая схема ИТ-проекта: ракета стартует из прозрачного интерфейса приложения, вокруг — светящиеся узлы, иконки команды и звёздное небо",
+      "aboutLabel": "О лекции",
+      "about": [
+        "Нишский Лекторий приглашает на новую увлекательную встречу: разберём анатомию ИТ-проекта — от сырой идеи до запуска. Как абстрактная задумка превращается в работающий софт, почему горят миллионные бюджеты и что на самом деле ломается перед самым релизом?",
+        "Диана Баязитова — Senior ИТ-архитектор, правовед и основатель международной консалтинговой компании B.A.D. FORENSIC. Она развеет шлейф таинственности вокруг ИТ-производства и покажет его реальную изнанку — глазами forensic-аналитика и руководителя ИТ-проектов.",
+        "Поговорим о жизненном цикле продукта, о том, кто все эти люди в команде (PM, SA, QA, Dev) и как устроено их взаимодействие, а также о том, как в ИТ спасаются от выгорания. Отдельно разберём жаргон: что на самом деле значат «задеплоить, пошерить, отфакапить, заэффортить, пофиксить и выкатить на прод».",
+        "Посмотрим на минное поле: скрытые сложности, комплаенс-риски и архитектурные капканы, из-за которых проекты заваливаются на финише. И на то, какие подходы — Agile, Scrum и Tech Law — используют передовые международные компании в 2026 году. Все эти знания и навыки прекрасно переносятся на любые другие проекты, да и в личной жизни пригодятся.",
+        "Приходите сами, приводите близких и зовите друзей! Вход свободный, по желанию — донаты Рассказчику."
+      ],
+      "learnLabel": "Что вас ждёт",
+      "learn": [
+        "Жизненный цикл продукта: какие критические этапы проходит проект на самом деле — от концепта и ТЗ до деплоя",
+        "Кто все эти люди: реальные роли PM, SA, QA и Dev и как устроено их взаимодействие",
+        "ИТ-жаргон: что на самом деле значат «задеплоить», «пошерить», «отфакапить» и «выкатить на прод»",
+        "Минное поле: скрытые сложности, комплаенс-риски и архитектурные капканы на пути к запуску",
+        "Agile, Scrum и Tech Law: подходы и юридические щиты международных компаний в 2026 году"
+      ],
+      "ctaLabel": "Приходите",
+      "ctaText": "Вход свободный, по желанию — донаты Рассказчику. Нас традиционно принимает инклюзивное кафе «Звуки сердца», где работают молодые люди с особенностями развития: кофе или чай можно заказать за добровольное пожертвование.",
+      "ctaButton": "Напомнить в Telegram"
+    },
+    "footer": {
+      "tagline": "ZAJEDNO — LEARN · GROW · JOY",
+      "note": "Нишский Лекторий · кафе «Звуки сердца», Niš",
+      "telegram": "Telegram"
+    }
+  },
+
+  "en": {
+    "meta": {
+      "title": "Anatomy of an IT project · Niš Lectorium",
+      "description": "Diana Bayazitova, Senior IT architect and founder of B.A.D. FORENSIC: the product lifecycle, team roles, IT jargon, hidden risks and Tech Law. November 29, 2026, 18:00, Zvuci srca café, Niš."
+    },
+    "a11y": { "skip": "Skip to content", "menu": "Menu" },
+    "brand": { "sub": "Project", "name": "Niš Lectorium" },
+    "nav": { "schedule": "Schedule", "archive": "Archive", "about": "About us", "submit": "Propose a talk" },
+    "lecture": {
+      "back": "← All lectures",
+      "status": "Upcoming talk",
+      "title": "“Anatomy of an IT project: from a raw idea to launch without traps and fraud”",
+      "summary": "How do you turn an abstract idea into working software without burning millions and crashing into hidden sabotage at launch? Diana Bayazitova — Senior IT architect, legal expert and founder of B.A.D. FORENSIC — reveals the inner workings of IT production through the cold eyes of a forensic analyst.",
+      "whenLabel": "When",
+      "when": "November 29, 2026, Sunday, 18:00",
+      "placeLabel": "Where",
+      "place": "Zvuci srca café, Branka Krsmanovića 17, Niš",
+      "speakerLabel": "Speaker",
+      "speaker": "Diana Bayazitova — Senior IT architect, legal expert, founder of B.A.D. FORENSIC",
+      "imageAlt": "A futuristic diagram of an IT project: a rocket launching out of a translucent app interface, surrounded by glowing nodes, team icons and a starry sky",
+      "aboutLabel": "About the talk",
+      "about": [
+        "The Niš Lectorium invites you to a new, fascinating gathering: we'll dissect an IT project — from a raw idea to launch. How does an abstract notion become working software, why do million-dollar budgets go up in smoke, and what actually breaks right before release?",
+        "Diana Bayazitova is a Senior IT architect, legal expert and founder of the international consulting company B.A.D. FORENSIC. She will clear away the mystique around IT production and show its real inner workings — through the eyes of a forensic analyst and IT project manager.",
+        "We'll talk about the product lifecycle, about who all these people on the team are (PM, SA, QA, Dev) and how they interact, and how people in IT avoid burnout. We'll also take a separate look at the jargon: what “to deploy, to share, to fuck up, to effort, to fix and to roll out to prod” actually mean.",
+        "Then we'll walk through the minefield: hidden complexities, compliance risks and architectural traps that make projects collapse at the finish line. And we'll see which approaches — Agile, Scrum and Tech Law — leading international companies use in 2026. All of these skills transfer beautifully to any other project, and to everyday life too.",
+        "Come yourself, bring your loved ones and invite your friends! Free entry, with donations for the Storyteller if you wish."
+      ],
+      "learnLabel": "What to expect",
+      "learn": [
+        "The product lifecycle: the critical stages a project really goes through, from concept and specs to deployment",
+        "Who all these people are: the real roles of PM, SA, QA and Dev, and how they work together",
+        "IT jargon: what “to deploy”, “to share”, “to fuck up” and “to roll out to prod” actually mean",
+        "The minefield: hidden complexities, compliance risks and architectural traps on the way to launch",
+        "Agile, Scrum and Tech Law: the approaches and legal shields used by international companies in 2026"
+      ],
+      "ctaLabel": "Come along",
+      "ctaText": "Free entry, with donations for the Storyteller if you wish. We are hosted, as always, by the inclusive Zvuci srca café, where young people with developmental disabilities work: coffee or tea comes for a voluntary donation.",
+      "ctaButton": "Remind me on Telegram"
+    },
+    "footer": {
+      "tagline": "ZAJEDNO — LEARN · GROW · JOY",
+      "note": "Niš Lectorium · Zvuci srca café, Niš",
+      "telegram": "Telegram"
+    }
+  },
+
+  "sr": {
+    "meta": {
+      "title": "Anatomija IT projekta · Niški Lektorij",
+      "description": "Dijana Bajazitova, senior IT arhitekta i osnivač B.A.D. FORENSIC: životni ciklus proizvoda, uloge u timu, IT žargon, skriveni rizici i Tech Law. 29. novembar 2026, 18:00, kafić „Zvuci srca“, Niš."
+    },
+    "a11y": { "skip": "Na sadržaj", "menu": "Meni" },
+    "brand": { "sub": "Project", "name": "Niški Lektorij" },
+    "nav": { "schedule": "Program", "archive": "Arhiva", "about": "O nama", "submit": "Predloži predavanje" },
+    "lecture": {
+      "back": "← Sva predavanja",
+      "status": "Predstojeće predavanje",
+      "title": "„Anatomija IT projekta: od sirove ideje do lansiranja bez zamki i prevara“",
+      "summary": "Kako pretvoriti apstraktnu ideju u softver koji radi, ne spaliti milionske budžete i ne razbiti se o skrivenu sabotažu pri lansiranju? Dijana Bajazitova — senior IT arhitekta, pravnik i osnivač B.A.D. FORENSIC — otkriva unutrašnjost IT proizvodnje hladnim očima forenzičkog analitičara.",
+      "whenLabel": "Kada",
+      "when": "29. novembar 2026, nedelja, 18:00",
+      "placeLabel": "Gde",
+      "place": "kafić „Zvuci srca“, Branka Krsmanovića 17, Niš",
+      "speakerLabel": "Predavač",
+      "speaker": "Dijana Bajazitova — senior IT arhitekta, pravnik, osnivač B.A.D. FORENSIC",
+      "imageAlt": "Futuristička šema IT projekta: raketa polazi iz providnog interfejsa aplikacije, okružena svetlećim čvorovima, ikonama tima i zvezdanim nebom",
+      "aboutLabel": "O predavanju",
+      "about": [
+        "Niški Lektorij vas poziva na novi uzbudljiv susret: razložićemo anatomiju IT projekta — od sirove ideje do lansiranja. Kako apstraktna zamisao postaje softver koji radi, zašto izgore milionski budžeti i šta se zaista lomi pred sami release?",
+        "Dijana Bajazitova je senior IT arhitekta, pravnik i osnivač međunarodne konsultantske kompanije B.A.D. FORENSIC. Ona će razvejati veo misterije oko IT proizvodnje i pokazati njenu stvarnu unutrašnjost — očima forenzičkog analitičara i rukovodioca IT projekata.",
+        "Pričaćemo o životnom ciklusu proizvoda, o tome ko su svi ti ljudi u timu (PM, SA, QA, Dev) i kako je uređena njihova saradnja, kao i o tome kako se u IT-u spašavaju od sagorevanja. Posebno ćemo razmotriti žargon: šta zaista znače „deployovati, šerovati, odfakapiti, zaefortovati, fiksirati i izbaciti na prod“.",
+        "Zatim ćemo proći kroz minsko polje: skrivene komplikacije, compliance rizike i arhitekturne zamke zbog kojih projekti propadaju na samom cilju. I videćemo koje pristupe — Agile, Scrum i Tech Law — koriste vodeće međunarodne kompanije u 2026. godini. Sva ta znanja i veštine lako se prenose na bilo koje druge projekte, a dobro dođu i u ličnom životu.",
+        "Dođite sami, povedite najbliže i pozovite prijatelje! Ulaz je slobodan, a po želji — donacije Pričaču."
+      ],
+      "learnLabel": "Šta vas čeka",
+      "learn": [
+        "Životni ciklus proizvoda: koje kritične etape projekat zaista prolazi — od koncepta i specifikacije do deploya",
+        "Ko su svi ti ljudi: stvarne uloge PM, SA, QA i Dev i kako je uređena njihova saradnja",
+        "IT žargon: šta zaista znače „deployovati“, „šerovati“, „odfakapiti“ i „izbaciti na prod“",
+        "Minsko polje: skrivene komplikacije, compliance rizici i arhitekturne zamke na putu do lansiranja",
+        "Agile, Scrum i Tech Law: pristupi i pravni štitovi međunarodnih kompanija u 2026. godini"
+      ],
+      "ctaLabel": "Dođite",
+      "ctaText": "Ulaz je slobodan, a po želji — donacije Pričaču. Nas tradicionalno prima inkluzivni kafić „Zvuci srca“, u kome rade mladi sa smetnjama u razvoju: kafu ili čaj možete naručiti uz dobrovoljni prilog.",
+      "ctaButton": "Podseti me na Telegramu"
+    },
+    "footer": {
+      "tagline": "ZAJEDNO — LEARN · GROW · JOY",
+      "note": "Niški Lektorij · kafić „Zvuci srca“, Niš",
+      "telegram": "Telegram"
+    }
+  }
+}

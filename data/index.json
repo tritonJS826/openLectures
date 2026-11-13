@@ -37,15 +37,15 @@
       "lead": "Вход свободный — приходи один или всей семьёй.",
       "items": [
         {
-          "day": "11",
+          "day": "29",
           "mon": "ноя",
           "badge": "Предстоящая лекция",
-          "title": "Две звезды, две светлых повести… Литературный вечер поэзии, прозы и песни",
-          "speaker": "Гульмира Динич и Александр Деловеров",
-          "dateText": "11 ноября 2026",
+          "title": "Анатомия ИТ-проекта: от сырой идеи до запуска без капканов и фрода",
+          "speaker": "Диана Баязитова · Senior ИТ-архитектор, основатель B.A.D. FORENSIC",
+          "dateText": "29 ноября 2026",
           "time": "18:00",
           "place": "кафе «Звуки сердца», Niš",
-          "url": "lectures/20261111-two-stars/"
+          "url": "lectures/20261129-it-anatomy/"
         }
       ]
     },
@@ -106,15 +106,15 @@
       "lead": "Free entry — come alone or bring the whole family.",
       "items": [
         {
-          "day": "11",
+          "day": "29",
           "mon": "NOV",
           "badge": "Upcoming talk",
-          "title": "“Two stars, two bright tales…” — an evening of poetry, prose and song",
-          "speaker": "Gulmira Dinić and Aleksandar Deloverov",
-          "dateText": "November 11, 2026",
+          "title": "Anatomy of an IT project: from a raw idea to launch without traps and fraud",
+          "speaker": "Diana Bayazitova · Senior IT architect, founder of B.A.D. FORENSIC",
+          "dateText": "November 29, 2026",
           "time": "18:00",
           "place": "Zvuci srca café, Niš",
-          "url": "lectures/20261111-two-stars/"
+          "url": "lectures/20261129-it-anatomy/"
         }
       ]
     },
@@ -175,15 +175,15 @@
       "lead": "Ulaz je slobodan — dođi sam ili sa celom porodicom.",
       "items": [
         {
-          "day": "11",
+          "day": "29",
           "mon": "nov",
           "badge": "Predstojeće predavanje",
-          "title": "„Dve zvezde, dve svetle priče…“ — književno veče poezije, proze i pesme",
-          "speaker": "Gulmira Dinić i Aleksandar Deloverov",
-          "dateText": "11. novembar 2026.",
+          "title": "Anatomija IT projekta: od sirove ideje do lansiranja bez zamki i prevara",
+          "speaker": "Dijana Bajazitova · senior IT arhitekta, osnivač B.A.D. FORENSIC",
+          "dateText": "29. novembar 2026.",
           "time": "18:00",
           "place": "kafić „Zvuci srca“, Niš",
-          "url": "lectures/20261111-two-stars/"
+          "url": "lectures/20261129-it-anatomy/"
         }
       ]
     },

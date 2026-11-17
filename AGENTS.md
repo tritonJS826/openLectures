@@ -116,7 +116,7 @@ Slug = дата + смысл, например `20261108-newspace`. Дата в 
 `day`/`mon` локализуйте: `ноя` / `NOV` / `nov`; `окт` / `OCT` / `okt`.
 
 **Не забудьте про SEO:** на **главной странице** (`index.html`) в `<head>` должен остаться
-`<meta name="google-site-verification" content="YtSwlFEp5vGbZiv7uLnDcR10Dz6iUtGWKsSzwi5iZsE">`
+`<meta name="google-site-verification" content="pf5xCPJNGuaX6KXcMd13fm-gsItBwLHK9rma9XsoFcU" />`
 — только там его проверяет Google Search Console (на остальных страницах он не нужен).
 Адрес новой лекции добавьте в `sitemap.xml` (`https://openlectures.netlify.app/lectures/<slug>/`).
 `robots.txt` разрешает обход и указывает на `sitemap.xml`.

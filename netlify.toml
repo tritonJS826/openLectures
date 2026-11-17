@@ -1,6 +1,35 @@
 [build]
   publish = "."
 
+# --- Duplicate URL cleanup ---------------------------------------------------
+# Every page also answers on its /index.html form (/index.html,
+# /lectures/<slug>/index.html). Redirect the file form to the directory form so
+# Google indexes one URL per page. force = true is required: the file exists, and
+# a real file always wins over a redirect rule otherwise.
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = true
+
+# Lectures live exactly two levels deep, so one placeholder rule covers all of
+# them — including lectures added later. (A splat cannot be used mid-path.)
+[[redirects]]
+  from = "/:section/:slug/index.html"
+  to = "/:section/:slug/"
+  status = 301
+  force = true
+
+# --- Deploy contexts ---------------------------------------------------------
+# Production is published as-is, with no build step. Previews and branch deploys
+# get a generated _headers with X-Robots-Tag: noindex, so a copy of the site on
+# another hostname can't outrank the real one.
+[context.deploy-preview]
+  command = "sh scripts/preview-headers.sh"
+
+[context.branch-deploy]
+  command = "sh scripts/preview-headers.sh"
+
 # Basic security headers for a static site.
 [[headers]]
   for = "/*"

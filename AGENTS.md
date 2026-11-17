@@ -148,6 +148,17 @@ Slug = дата + смысл, например `20261108-newspace`. Дата в 
   ```
 - `<meta name="google-site-verification">` живёт только в корневом `index.html`; при
   копировании папки лекции в неё он не попадает — так и должно быть.
+- **Один адрес на страницу.** Каждая страница живёт по одному адресу: `/`,
+  `/archive.html`, `/lectures/<slug>/` — без `/index.html` на конце. `netlify.toml`
+  отдаёт 301 с `/index.html` → `/` и с `/:section/:slug/index.html` → `/:section/:slug/`.
+  Ссылки на главную поэтому пишем как `./` (из корня) и `../../` (из папки лекции),
+  а не `index.html` / `../../index.html` — иначе каждая ссылка идёт через лишний 301.
+- **Deploy previews и branch deploys не индексируются.** Сборки на
+  `*--openlectures.netlify.app` запускают `scripts/preview-headers.sh`, который кладёт
+  в корень `_headers` с `X-Robots-Tag: noindex, nofollow` (в `netlify.toml` хедеры по
+  deploy context не настраиваются). Файл `_headers` добавлен в `.gitignore` — **не
+  коммитьте его**, иначе `noindex` уедет на продакшен. Продакшен собирается без команды
+  сборки, скрипт на него не влияет.
 
 ## 9. Страница 404
 

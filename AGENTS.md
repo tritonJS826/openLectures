@@ -54,6 +54,15 @@ Slug = дата + смысл, например `20261108-newspace`. Дата в 
 3. `status`: `"Предстоящая лекция"` / `"Прошедшая лекция"` (и переводы).
 4. `about`, `learn`, `recap` — **массивы** (рендерятся через `data-list`).
 5. Обновите в `index.html`: `<title>`, `meta[name=description]`, `og:*` и `data-lecture` на `<body>`.
+6. **Добавьте страницу в `sitemap.xml`** — иначе Google о ней не узнает:
+   ```xml
+   <url>
+     <loc>https://openlectures.netlify.app/lectures/&lt;slug&gt;/</loc>
+     <changefreq>monthly</changefreq>
+     <priority>0.7</priority>
+   </url>
+   ```
+   Адрес — со **слэшем на конце** и на `https://openlectures.netlify.app` (не на GitHub Pages).
 
 Акценты страницы задаются одним атрибутом: `<body data-lecture="newspace">` →
 стили `body[data-lecture="newspace"] { … }` в `css/style.css`.
@@ -106,6 +115,12 @@ Slug = дата + смысл, например `20261108-newspace`. Дата в 
 
 `day`/`mon` локализуйте: `ноя` / `NOV` / `nov`; `окт` / `OCT` / `okt`.
 
+**Не забудьте про SEO:** на **главной странице** (`index.html`) в `<head>` должен остаться
+`<meta name="google-site-verification" content="YtSwlFEp5vGbZiv7uLnDcR10Dz6iUtGWKsSzwi5iZsE">`
+— только там его проверяет Google Search Console (на остальных страницах он не нужен).
+Адрес новой лекции добавьте в `sitemap.xml` (`https://openlectures.netlify.app/lectures/<slug>/`).
+`robots.txt` разрешает обход и указывает на `sitemap.xml`.
+
 ## 7. Механика текстов (i18n)
 
 Общие файлы `js/app.js` и `js/stars.js` — не переписывать. Разметка использует:
@@ -123,3 +138,12 @@ Slug = дата + смысл, например `20261108-newspace`. Дата в 
 - Проверка локально: `python3 -m http.server 5173` → http://localhost:5173
   (открывать как `file://` нельзя — браузер блокирует `fetch` JSON).
 - Проверьте: все три языка, список будущих, архив и **обе** ссылки в архиве.
+- **SEO:** все HTML-страницы проекта должны быть перечислены в `sitemap.xml` ровно одним
+  адресом (`https://openlectures.netlify.app/…`) — ни одной лишней и ни одной забытой.
+  Быстрая сверка:
+  ```bash
+  find . -name '*.html' -not -path './.git/*' | sort
+  grep -o '<loc>[^<]*</loc>' sitemap.xml
+  ```
+- `<meta name="google-site-verification">` живёт только в корневом `index.html`; при
+  копировании папки лекции в неё он не попадает — так и должно быть.

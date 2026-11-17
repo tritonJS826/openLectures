@@ -14,6 +14,8 @@
 ├── about.html                # о нас: сообщество, бесплатные лекции, помощь, контакты
 ├── archive.html              # прошедшие лекции (+ ссылки на материалы)
 ├── newLectureRequest.html    # Netlify-форма «предложить лекцию»
+├── robots.txt                # разрешает обход + ссылается на sitemap.xml
+├── sitemap.xml               # список страниц для Google
 ├── css/                      # общие стили (base + по странице)
 ├── js/                       # app.js (тексты + языки), stars.js (звёздное небо)
 ├── data/                     # index.json / about.json / archive.json / newLectureRequest.json

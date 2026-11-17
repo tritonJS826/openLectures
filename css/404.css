@@ -1,0 +1,68 @@
+/* ==========================================================================
+   404 — not found
+   ========================================================================== */
+
+.notfound {
+  min-height: min(64vh, 620px);
+  display: grid;
+  place-items: center;
+  padding-block: clamp(56px, 9vw, 112px) clamp(48px, 7vw, 88px);
+}
+
+.notfound__inner {
+  max-width: 34rem;
+  text-align: center;
+}
+
+.notfound__code {
+  margin: 0 0 6px;
+  font-family: var(--font-mono);
+  font-size: clamp(4.5rem, 17vw, 8.5rem);
+  font-weight: 600;
+  line-height: 0.95;
+  letter-spacing: -0.045em;
+  color: var(--accent);
+  text-shadow: 0 0 70px rgba(255, 179, 71, 0.28);
+}
+
+.notfound__title {
+  margin: 16px 0 18px;
+  /* Keep the headline below the 404 numeral on wide screens, but hold
+     roughly the current size on phones (where it already fits well). */
+  font-size: min(2.8rem, 8.4vw);
+  line-height: 1.12;
+}
+
+.notfound__lead {
+  margin-inline: auto;
+}
+
+.notfound__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+  margin-top: clamp(28px, 4vw, 40px);
+}
+
+.notfound__hint {
+  margin-top: 22px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.notfound__hint a {
+  color: var(--ink-dim);
+  border-bottom: 1px solid var(--line-strong);
+  transition: color 0.2s var(--ease), border-color 0.2s var(--ease);
+}
+
+.notfound__hint a:hover,
+.notfound__hint a:focus-visible {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+@media (max-width: 520px) {
+  .notfound__actions .btn { width: 100%; justify-content: center; }
+}

@@ -1,0 +1,70 @@
+{
+  "ru": {
+    "meta": {
+      "title": "Страница не найдена · Нишский Лекторий",
+      "description": "Такой страницы нет — но афиша и архив лекций Нишского Лектория всегда рядом."
+    },
+    "a11y": { "skip": "К содержанию", "menu": "Меню" },
+    "brand": { "sub": "Project", "name": "Нишский Лекторий" },
+    "nav": { "schedule": "Афиша", "archive": "Архив", "about": "О нас", "submit": "Предложить лекцию" },
+    "notfound": {
+      "eyebrow": "Ошибка 404",
+      "title": "Кажется, такой страницы нет",
+      "lead": "Адрес мог измениться, или в ссылке опечатка. Ничего страшного — всё самое интересное рядом.",
+      "schedule": "Смотреть афишу",
+      "archive": "Архив лекций",
+      "hint": "Или начните с главной — там всё интересное."
+    },
+    "footer": {
+      "tagline": "ZAJEDNO — LEARN · GROW · JOY",
+      "note": "Нишский Лекторий · кафе «Звуки сердца», Niš",
+      "telegram": "Telegram"
+    }
+  },
+
+  "en": {
+    "meta": {
+      "title": "Page not found · Niš Lectorium",
+      "description": "There is no such page — but the Niš Lectorium schedule and lecture archive are one click away."
+    },
+    "a11y": { "skip": "Skip to content", "menu": "Menu" },
+    "brand": { "sub": "Project", "name": "Niš Lectorium" },
+    "nav": { "schedule": "Schedule", "archive": "Archive", "about": "About us", "submit": "Propose a talk" },
+    "notfound": {
+      "eyebrow": "Error 404",
+      "title": "This page doesn’t exist",
+      "lead": "The address may have changed, or there’s a typo in the link. No worries — everything interesting is right here.",
+      "schedule": "See the schedule",
+      "archive": "Lecture archive",
+      "hint": "Or start from the home page — that’s where it all is."
+    },
+    "footer": {
+      "tagline": "ZAJEDNO — LEARN · GROW · JOY",
+      "note": "Niš Lectorium · café “Zvuci srca”, Niš",
+      "telegram": "Telegram"
+    }
+  },
+
+  "sr": {
+    "meta": {
+      "title": "Stranica nije pronađena · Niški Lektorij",
+      "description": "Ove stranice nema — ali su raspored i arhiva predavanja Niškog Lektorija na jedan klik."
+    },
+    "a11y": { "skip": "Na sadržaj", "menu": "Meni" },
+    "brand": { "sub": "Project", "name": "Niški Lektorij" },
+    "nav": { "schedule": "Raspored", "archive": "Arhiva", "about": "O nama", "submit": "Predloži predavanje" },
+    "notfound": {
+      "eyebrow": "Greška 404",
+      "title": "Ove stranice nema",
+      "lead": "Adresa se možda promenila ili je u linku greška. Nema problema — sve zanimljivo je na dohvat ruke.",
+      "schedule": "Pogledaj raspored",
+      "archive": "Arhiva predavanja",
+      "hint": "Ili počni od početne strane — tamo je sve najzanimljivije."
+    },
+    "footer": {
+      "tagline": "ZAJEDNO — LEARN · GROW · JOY",
+      "note": "Niški Lektorij · kafić „Zvuci srca”, Niš",
+      "telegram": "Telegram"
+    }
+  }
+}

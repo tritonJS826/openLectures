@@ -55,7 +55,7 @@
     "materials": {
       "eyebrow": "Материалы",
       "title": "Файлы лекции",
-      "note": "Все файлы хранятся в репозитории проекта на GitHub — можно посмотреть или скачать.",
+      "note": "Каждый файл скачивается прямо с сайта. Все они также лежат в репозитории проекта на GitHub.",
       "folderCta": "Открыть папку на GitHub",
       "groupImages": "Фото и обложки",
       "groupFiles": "Файлы лекции",
@@ -63,6 +63,7 @@
       "empty": "Пока здесь нет файлов.",
       "error": "Не удалось загрузить список файлов. Откройте папку на GitHub.",
       "close": "Закрыть",
+      "download": "Скачать",
       "b": "Б",
       "kb": "КБ",
       "mb": "МБ"
@@ -130,7 +131,7 @@
     "materials": {
       "eyebrow": "Materials",
       "title": "Lecture files",
-      "note": "Every file lives in the project repository on GitHub — open it there or download it.",
+      "note": "Each file downloads straight from this site. They all also live in the project repository on GitHub.",
       "folderCta": "Open the folder on GitHub",
       "groupImages": "Photos & covers",
       "groupFiles": "Lecture files",
@@ -138,6 +139,7 @@
       "empty": "No files here yet.",
       "error": "Couldn't load the file list. Open the folder on GitHub.",
       "close": "Close",
+      "download": "Download",
       "b": "B",
       "kb": "KB",
       "mb": "MB"
@@ -205,7 +207,7 @@
     "materials": {
       "eyebrow": "Materijali",
       "title": "Fajlovi predavanja",
-      "note": "Svi fajlovi se čuvaju u repozitorijumu projekta na GitHubu — tamo ih možete pogledati ili preuzeti.",
+      "note": "Svaki fajl se preuzima direktno sa sajta. Svi se takođe nalaze u repozitorijumu projekta na GitHubu.",
       "folderCta": "Otvori folder na GitHubu",
       "groupImages": "Fotografije i naslovnice",
       "groupFiles": "Fajlovi predavanja",
@@ -213,6 +215,7 @@
       "empty": "Ovde još nema fajlova.",
       "error": "Nije uspelo učitavanje liste fajlova. Otvorite folder na GitHubu.",
       "close": "Zatvori",
+      "download": "Preuzmi",
       "b": "B",
       "kb": "KB",
       "mb": "MB"

@@ -287,15 +287,22 @@
       (group.files || []).forEach(function (file) {
         var item = el("li", "materials-dialog__item");
         var link = el("a", "materials-dialog__file");
-        link.href = file.url;
-        link.target = "_blank";
-        link.rel = "noopener";
+        // Files are served by the site itself, so `download` makes the browser
+        // save them instead of opening GitHub (or the image inline).
+        if (file.path) {
+          link.href = sitePrefix() + file.path;
+          link.setAttribute("download", file.name);
+        } else {
+          link.href = file.url;
+          link.target = "_blank";
+          link.rel = "noopener";
+        }
+        link.title = txt("materials.download");
 
         if (file.kind === "image" && file.path) {
           var thumb = el("img", "materials-dialog__file-thumb");
           thumb.src = sitePrefix() + file.path;
           thumb.alt = "";
-          thumb.loading = "lazy";
           thumb.decoding = "async";
           link.appendChild(thumb);
         } else {
@@ -306,6 +313,9 @@
 
         link.appendChild(el("span", "materials-dialog__file-name", file.name));
         link.appendChild(el("span", "materials-dialog__file-size", sizeText(file.size)));
+        var dl = el("span", "materials-dialog__file-dl", "↧");
+        dl.setAttribute("aria-hidden", "true");
+        link.appendChild(dl);
         item.appendChild(link);
         list.appendChild(item);
       });

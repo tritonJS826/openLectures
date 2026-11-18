@@ -61,6 +61,18 @@
           "thumb": "lectures/20261206-mountain-school/images/cover.avif"
         },
         {
+          "day": "13",
+          "mon": "дек",
+          "badge": "Предстоящая лекция",
+          "title": "Уборка — легко и просто",
+          "speaker": "Наталья Кадулина",
+          "dateText": "13 декабря 2026",
+          "time": "18:00",
+          "place": "кафе «Звуки сердца», Niš",
+          "url": "lectures/20261213-cleaning/",
+          "thumb": "lectures/20261213-cleaning/images/cover.avif"
+        },
+        {
           "day": "17",
           "mon": "янв",
           "badge": "Предстоящая лекция",
@@ -155,6 +167,18 @@
           "thumb": "lectures/20261206-mountain-school/images/cover.avif"
         },
         {
+          "day": "13",
+          "mon": "DEC",
+          "badge": "Upcoming talk",
+          "title": "Cleaning — easy and simple",
+          "speaker": "Natalia Kadulina",
+          "dateText": "December 13, 2026",
+          "time": "18:00",
+          "place": "Zvuci srca café, Niš",
+          "url": "lectures/20261213-cleaning/",
+          "thumb": "lectures/20261213-cleaning/images/cover.avif"
+        },
+        {
           "day": "17",
           "mon": "JAN",
           "badge": "Upcoming talk",
@@ -247,6 +271,18 @@
           "place": "kafić „Zvuci srca“, Niš",
           "url": "lectures/20261206-mountain-school/",
           "thumb": "lectures/20261206-mountain-school/images/cover.avif"
+        },
+        {
+          "day": "13",
+          "mon": "dec",
+          "badge": "Predstojeće predavanje",
+          "title": "Čišćenje — lako i jednostavno",
+          "speaker": "Natalija Kadulina",
+          "dateText": "13. decembar 2026.",
+          "time": "18:00",
+          "place": "kafić „Zvuci srca“, Niš",
+          "url": "lectures/20261213-cleaning/",
+          "thumb": "lectures/20261213-cleaning/images/cover.avif"
         },
         {
           "day": "17",

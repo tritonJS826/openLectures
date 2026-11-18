@@ -1,0 +1,18 @@
+{
+  "slug": "20261213-cleaning",
+  "repoUrl": "https://github.com/tritonJS826/openLectures/tree/main/lectures/20261213-cleaning",
+  "groups": [
+    {
+      "id": "images",
+      "files": [
+        {
+          "name": "cover.avif",
+          "size": 29225,
+          "kind": "image",
+          "path": "lectures/20261213-cleaning/images/cover.avif",
+          "url": "https://github.com/tritonJS826/openLectures/blob/main/lectures/20261213-cleaning/images/cover.avif"
+        }
+      ]
+    }
+  ]
+}

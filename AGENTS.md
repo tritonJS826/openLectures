@@ -95,7 +95,8 @@ Slug = дата + смысл, например `20261108-newspace`. Дата в 
   "title": "…", "speaker": "…",
   "dateText": "8 ноября 2026", "time": "19:00",
   "place": "кафе «Звуки сердца», Niš",
-  "url": "lectures/20261108-newspace/"
+  "url": "lectures/20261108-newspace/",
+  "thumb": "lectures/20261108-newspace/images/cover.avif"
 }
 ```
 
@@ -108,10 +109,15 @@ Slug = дата + смысл, например `20261108-newspace`. Дата в 
   "dateText": "28 октября 2026", "time": "19:00",
   "place": "кафе «Звуки сердца», Niš",
   "url": "lectures/20261028-spiders/",
+  "thumb": "lectures/20261028-spiders/images/spider.avif",
   "materialUrl": "https://github.com/tritonJS826/openLectures/tree/main/lectures/20261028-spiders",
   "materialLabel": "Материалы"
 }
 ```
+
+`thumb` — уменьшенная обложка для карточки списка (путь от корня сайта, обычно
+`lectures/<slug>/images/cover.avif`). Если её нет, карточка покажет заглушку; для
+карточек на телефоне превью скрывается, чтобы не сжимать заголовок.
 
 `day`/`mon` локализуйте: `ноя` / `NOV` / `nov`; `окт` / `OCT` / `okt`.
 

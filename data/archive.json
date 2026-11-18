@@ -23,6 +23,7 @@
           "time": "18:00",
           "place": "кафе «Звуки сердца», Niš",
           "url": "lectures/20261111-two-stars/",
+          "thumb": "lectures/20261111-two-stars/images/cover.avif",
           "materialUrl": "https://github.com/tritonJS826/openLectures/tree/main/lectures/20261111-two-stars",
           "materialLabel": "Материалы"
         },
@@ -36,6 +37,7 @@
           "time": "19:00",
           "place": "кафе «Звуки сердца», Niš",
           "url": "lectures/20261108-newspace/",
+          "thumb": "lectures/20261108-newspace/images/cover.avif",
           "materialUrl": "https://github.com/tritonJS826/openLectures/tree/main/lectures/20261108-newspace",
           "materialLabel": "Материалы"
         },
@@ -49,6 +51,7 @@
           "time": "19:00",
           "place": "кафе «Звуки сердца», Niš",
           "url": "lectures/20261028-spiders/",
+          "thumb": "lectures/20261028-spiders/images/spider.avif",
           "materialUrl": "https://github.com/tritonJS826/openLectures/tree/main/lectures/20261028-spiders",
           "materialLabel": "Материалы"
         }
@@ -85,6 +88,7 @@
           "time": "18:00",
           "place": "Zvuci srca café, Niš",
           "url": "lectures/20261111-two-stars/",
+          "thumb": "lectures/20261111-two-stars/images/cover.avif",
           "materialUrl": "https://github.com/tritonJS826/openLectures/tree/main/lectures/20261111-two-stars",
           "materialLabel": "Materials"
         },
@@ -98,6 +102,7 @@
           "time": "19:00",
           "place": "Zvuci srca café, Niš",
           "url": "lectures/20261108-newspace/",
+          "thumb": "lectures/20261108-newspace/images/cover.avif",
           "materialUrl": "https://github.com/tritonJS826/openLectures/tree/main/lectures/20261108-newspace",
           "materialLabel": "Materials"
         },
@@ -111,6 +116,7 @@
           "time": "19:00",
           "place": "Zvuci srca café, Niš",
           "url": "lectures/20261028-spiders/",
+          "thumb": "lectures/20261028-spiders/images/spider.avif",
           "materialUrl": "https://github.com/tritonJS826/openLectures/tree/main/lectures/20261028-spiders",
           "materialLabel": "Materials"
         }
@@ -147,6 +153,7 @@
           "time": "18:00",
           "place": "kafić „Zvuci srca“, Niš",
           "url": "lectures/20261111-two-stars/",
+          "thumb": "lectures/20261111-two-stars/images/cover.avif",
           "materialUrl": "https://github.com/tritonJS826/openLectures/tree/main/lectures/20261111-two-stars",
           "materialLabel": "Materijali"
         },
@@ -160,6 +167,7 @@
           "time": "19:00",
           "place": "kafić „Zvuci srca“, Niš",
           "url": "lectures/20261108-newspace/",
+          "thumb": "lectures/20261108-newspace/images/cover.avif",
           "materialUrl": "https://github.com/tritonJS826/openLectures/tree/main/lectures/20261108-newspace",
           "materialLabel": "Materijali"
         },
@@ -173,6 +181,7 @@
           "time": "19:00",
           "place": "kafić „Zvuci srca“, Niš",
           "url": "lectures/20261028-spiders/",
+          "thumb": "lectures/20261028-spiders/images/spider.avif",
           "materialUrl": "https://github.com/tritonJS826/openLectures/tree/main/lectures/20261028-spiders",
           "materialLabel": "Materijali"
         }

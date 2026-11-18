@@ -84,6 +84,23 @@
     return rail;
   }
 
+  /* Cover thumbnail. Kept decorative (alt="") — the card title carries the
+     meaning — and always rendered so the card grid stays aligned. */
+  function cardThumb(item) {
+    var box = el("span", "card-thumb");
+    if (!item.thumb) {
+      box.className = "card-thumb card-thumb--empty";
+      return box;
+    }
+    var img = el("img");
+    img.src = item.thumb;
+    img.alt = "";
+    img.loading = "lazy";
+    img.decoding = "async";
+    box.appendChild(img);
+    return box;
+  }
+
   function cardMeta(item) {
     var meta = el("div", "card-meta");
     if (item.speaker) meta.appendChild(el("span", null, item.speaker));
@@ -98,6 +115,7 @@
     var a = el("a", "lecture-card");
     a.href = item.url;
     a.appendChild(cardRail(item));
+    a.appendChild(cardThumb(item));
     var bodyEl = el("div", "card-body");
     bodyEl.appendChild(el("span", "card-badge", item.badge || ""));
     bodyEl.appendChild(el("h3", "card-title", item.title));
@@ -118,6 +136,7 @@
     var main = el("a", "card-main");
     main.href = item.url;
     main.appendChild(cardRail(item));
+    main.appendChild(cardThumb(item));
     var bodyEl = el("div", "card-body");
     if (item.badge) bodyEl.appendChild(el("span", "card-badge card-badge--past", item.badge));
     bodyEl.appendChild(el("h3", "card-title", item.title));
@@ -152,7 +171,6 @@
 
   function buildPoint(item, i) {
     var art = el("article", "point");
-    art.appendChild(el("span", "point__no", String(i + 1).padStart(2, "0")));
     art.appendChild(el("h3", null, item.title));
     art.appendChild(el("p", null, item.text));
     return art;

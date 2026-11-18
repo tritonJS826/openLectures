@@ -45,7 +45,8 @@
           "dateText": "29 ноября 2026",
           "time": "18:00",
           "place": "кафе «Звуки сердца», Niš",
-          "url": "lectures/20261129-it-anatomy/"
+          "url": "lectures/20261129-it-anatomy/",
+          "thumb": "lectures/20261129-it-anatomy/images/cover.avif"
         },
         {
           "day": "06",
@@ -56,7 +57,8 @@
           "dateText": "6 декабря 2026",
           "time": "18:00",
           "place": "кафе «Звуки сердца», Niš",
-          "url": "lectures/20261206-mountain-school/"
+          "url": "lectures/20261206-mountain-school/",
+          "thumb": "lectures/20261206-mountain-school/images/cover.avif"
         },
         {
           "day": "17",
@@ -67,7 +69,8 @@
           "dateText": "17 января 2027",
           "time": "18:00",
           "place": "кафе «Звуки сердца», Niš",
-          "url": "lectures/20270117-india/"
+          "url": "lectures/20270117-india/",
+          "thumb": "lectures/20270117-india/images/cover.avif"
         }
       ]
     },
@@ -136,7 +139,8 @@
           "dateText": "November 29, 2026",
           "time": "18:00",
           "place": "Zvuci srca café, Niš",
-          "url": "lectures/20261129-it-anatomy/"
+          "url": "lectures/20261129-it-anatomy/",
+          "thumb": "lectures/20261129-it-anatomy/images/cover.avif"
         },
         {
           "day": "06",
@@ -147,7 +151,8 @@
           "dateText": "December 6, 2026",
           "time": "18:00",
           "place": "Zvuci srca café, Niš",
-          "url": "lectures/20261206-mountain-school/"
+          "url": "lectures/20261206-mountain-school/",
+          "thumb": "lectures/20261206-mountain-school/images/cover.avif"
         },
         {
           "day": "17",
@@ -158,7 +163,8 @@
           "dateText": "January 17, 2027",
           "time": "18:00",
           "place": "Zvuci srca café, Niš",
-          "url": "lectures/20270117-india/"
+          "url": "lectures/20270117-india/",
+          "thumb": "lectures/20270117-india/images/cover.avif"
         }
       ]
     },
@@ -227,7 +233,8 @@
           "dateText": "29. novembar 2026.",
           "time": "18:00",
           "place": "kafić „Zvuci srca“, Niš",
-          "url": "lectures/20261129-it-anatomy/"
+          "url": "lectures/20261129-it-anatomy/",
+          "thumb": "lectures/20261129-it-anatomy/images/cover.avif"
         },
         {
           "day": "06",
@@ -238,7 +245,8 @@
           "dateText": "6. decembar 2026.",
           "time": "18:00",
           "place": "kafić „Zvuci srca“, Niš",
-          "url": "lectures/20261206-mountain-school/"
+          "url": "lectures/20261206-mountain-school/",
+          "thumb": "lectures/20261206-mountain-school/images/cover.avif"
         },
         {
           "day": "17",
@@ -249,7 +257,8 @@
           "dateText": "17. januar 2027.",
           "time": "18:00",
           "place": "kafić „Zvuci srca“, Niš",
-          "url": "lectures/20270117-india/"
+          "url": "lectures/20270117-india/",
+          "thumb": "lectures/20270117-india/images/cover.avif"
         }
       ]
     },

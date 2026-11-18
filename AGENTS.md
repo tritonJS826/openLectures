@@ -22,7 +22,7 @@ HTML/CSS/JS. Соблюдайте структуру — от неё завис�
 - Лекция **не может** быть одновременно в `upcoming` и `archive`.
 - **Материалы** всегда ведут на папку лекции в GitHub:
   `https://github.com/tritonJS826/openLectures/tree/main/lectures/<slug>/`
-- Ссылка на Telegram `https://t.me/NisLektorij` — в футере **каждой** страницы.
+- Ссылка на Telegram `https://t.me/NisLrktor` — в футере **каждой** страницы.
 - Когда будущая лекция проходит: **удалить** её из `upcoming.items` (во всех языках),
   **добавить** в `archive.items`, сменить статус на «прошедшая», добавить материалы и recap.
 
@@ -34,7 +34,9 @@ lectures/<YYYYMMDD-slug>/
 ├── css/style.css       # копия из существующей лекции; акцент — через body[data-lecture="<slug>"]
 ├── js/main.js          # копировать как есть
 ├── data/lecture.json   # все три языка
-└── images/             # только AVIF
+├── data/materials.json # список файлов для окна «Материалы» (генерируется)
+├── images/             # только AVIF
+└── materials/          # файлы лекции: слайды, PDF, архивы (необязательно)
 ```
 
 Slug = дата + смысл, например `20261108-newspace`. Дата в slug — дата лекции.
@@ -48,7 +50,8 @@ Slug = дата + смысл, например `20261108-newspace`. Дата в 
    - `a11y.skip`, `brand.sub`, `brand.name`, `nav.{schedule,archive,about,submit}`
    - `footer.{tagline,note,telegram}`
    - `lecture.{back,status,title,summary,whenLabel,when,placeLabel,place,speakerLabel,speaker,aboutLabel,about[],learnLabel,learn[]}`
-   - для прошедших лекций ещё: `lecture.{materialsLabel,materialsText,materialsButton,materialsUrl,recapLabel,recapTitle,recap[]}`
+   - для прошедших лекций ещё: `lecture.{materialsLabel,materialsText,materialsButton,materialsUrl,recapLabel,recapTitle,recap[]}`,
+    блок `materials.*` (см. §6.1) и `data-materials="<slug>"` на кнопке «Смотреть материалы»
    - если есть фото с лекции: `lecture.{galleryLabel,galleryAlt}` и блок
      `<div class="gallery">` с `<figure class="gallery__item"><img src="images/…avif" …></figure>`
 3. `status`: `"Предстоящая лекция"` / `"Прошедшая лекция"` (и переводы).
@@ -116,8 +119,9 @@ Slug = дата + смысл, например `20261108-newspace`. Дата в 
 ```
 
 `thumb` — уменьшенная обложка для карточки списка (путь от корня сайта, обычно
-`lectures/<slug>/images/cover.avif`). Если её нет, карточка покажет заглушку; для
-карточек на телефоне превью скрывается, чтобы не сжимать заголовок.
+`lectures/<slug>/images/cover.avif`). Если её нет, карточка покажет заглушку.
+На телефоне дата и обложка выстраиваются в одну узкую колонку друг под другом,
+чтобы заголовок не сжимался.
 
 `day`/`mon` локализуйте: `ноя` / `NOV` / `nov`; `окт` / `OCT` / `okt`.
 
@@ -126,6 +130,29 @@ Slug = дата + смысл, например `20261108-newspace`. Дата в 
 — только там его проверяет Google Search Console (на остальных страницах он не нужен).
 Адрес новой лекции добавьте в `sitemap.xml` (`https://openlectures.netlify.app/lectures/<slug>/`).
 `robots.txt` разрешает обход и указывает на `sitemap.xml`.
+
+## 6.1. Окно «Материалы»
+
+Клик по «Материалам» (в архиве — боковая полоса карточки, на странице лекции — кнопка
+в блоке «Материалы») открывает `<dialog>` со списком файлов лекции и кнопкой «Открыть
+папку на GitHub». Код — в `js/app.js` (`initMaterials`), стили — в `css/base.css`.
+Без JS и в старых браузерах ссылки ведут прямо на GitHub, как раньше.
+
+Список берётся из `lectures/<slug>/data/materials.json`, который собирается по
+папкам `images/` и `materials/`:
+
+```bash
+node scripts/build-materials.mjs
+```
+
+Скрипт идемпотентный, без зависимостей. Прогоняйте его после добавления или
+удаления файлов в `images/` / `materials/` и коммитьте обновлённый
+`data/materials.json`. Новых URL он не создаёт — `sitemap.xml` не меняется.
+
+Тексты окна — блок `materials.*` в `data/archive.json` и в `data/lecture.json`
+прошедших лекций (`title`, `note`, `folderCta`, `groupImages`, `groupFiles`,
+`loading`, `empty`, `error`, `close`, `b`, `kb`, `mb`) — во всех трёх языках.
+Превью файлов в окне — те же картинки из `images/`.
 
 ## 7. Механика текстов (i18n)
 

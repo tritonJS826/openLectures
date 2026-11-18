@@ -154,11 +154,217 @@
       mat.href = item.materialUrl;
       mat.target = "_blank";
       mat.rel = "noopener";
+      // Opens the "Materials" dialog; without JS the href still goes to GitHub.
+      var slug = slugFromUrl(item.url);
+      if (slug) mat.setAttribute("data-materials", slug);
       mat.appendChild(el("span", "icon", "↧"));
       mat.appendChild(el("span", null, item.materialLabel || "Materials"));
       wrap.appendChild(mat);
     }
     return wrap;
+  }
+
+  /* ---- materials dialog ------------------------------------------------ */
+  var SLUG_RE = /lectures\/([^/]+)\/?$/;
+  var ICONS = { image: "▦", video: "▶", doc: "▤", other: "◆" };
+  var matCache = {};
+  var matDialog = null;
+  var matTrigger = null;
+
+  function slugFromUrl(url) {
+    var m = SLUG_RE.exec(url || "");
+    return m ? m[1] : "";
+  }
+
+  function txt(key) {
+    var v = resolve(key);
+    return typeof v === "string" ? v : "";
+  }
+
+  function locale() {
+    return lang === "ru" ? "ru-RU" : lang === "sr" ? "sr-RS" : "en-US";
+  }
+
+  function sizeText(bytes) {
+    var b = Number(bytes) || 0;
+    var fmt = function (n) {
+      try {
+        return new Intl.NumberFormat(locale(), { maximumFractionDigits: 1 }).format(n);
+      } catch (e) {
+        return String(Math.round(n * 10) / 10);
+      }
+    };
+    if (b >= 1048576) return fmt(b / 1048576) + " " + txt("materials.mb");
+    if (b >= 1024) return fmt(b / 1024) + " " + txt("materials.kb");
+    return fmt(b) + " " + txt("materials.b");
+  }
+
+  function supportsDialog() {
+    return typeof window.HTMLDialogElement !== "undefined" &&
+      typeof HTMLDialogElement.prototype.showModal === "function";
+  }
+
+  // Files live two levels up on lecture pages, at the site root elsewhere.
+  function sitePrefix() {
+    return page === "lecture" ? "../../" : "";
+  }
+
+  function ensureDialog() {
+    if (matDialog) return matDialog;
+
+    var dlg = el("dialog", "materials-dialog");
+    dlg.setAttribute("aria-labelledby", "materials-title");
+
+    var panel = el("div", "materials-dialog__panel");
+    var head = el("div", "materials-dialog__head");
+    var titles = el("div", "materials-dialog__titles");
+    var eyebrow = el("span", "eyebrow");
+    eyebrow.setAttribute("data-i18n", "materials.eyebrow");
+    var heading = el("h2", "h2 materials-dialog__title");
+    heading.id = "materials-title";
+    heading.setAttribute("data-i18n", "materials.title");
+    var note = el("p", "materials-dialog__note");
+    note.setAttribute("data-i18n", "materials.note");
+    titles.appendChild(eyebrow);
+    titles.appendChild(heading);
+    titles.appendChild(note);
+
+    var close = el("button", "materials-dialog__close", "×");
+    close.type = "button";
+    close.setAttribute("data-i18n-attr", "aria-label:materials.close");
+    head.appendChild(titles);
+    head.appendChild(close);
+
+    var body = el("div", "materials-dialog__body");
+    var foot = el("div", "materials-dialog__foot");
+    var folder = el("a", "btn btn--primary");
+    folder.target = "_blank";
+    folder.rel = "noopener";
+    var folderText = el("span");
+    folderText.setAttribute("data-i18n", "materials.folderCta");
+    folder.appendChild(folderText);
+    folder.appendChild(el("span", "btn__arrow", "↗"));
+    foot.appendChild(folder);
+
+    panel.appendChild(head);
+    panel.appendChild(body);
+    panel.appendChild(foot);
+    dlg.appendChild(panel);
+    document.body.appendChild(dlg);
+
+    close.addEventListener("click", function () { dlg.close(); });
+    dlg.addEventListener("click", function (e) {
+      if (e.target === dlg) dlg.close(); // click on the backdrop
+    });
+    dlg.addEventListener("close", function () {
+      document.body.classList.remove("materials-open");
+      if (matTrigger && matTrigger.focus) matTrigger.focus();
+      matTrigger = null;
+    });
+
+    matDialog = dlg;
+    bindText(); // fill the dialog's own labels
+    return dlg;
+  }
+
+  function renderMaterials(manifest) {
+    var body = matDialog.querySelector(".materials-dialog__body");
+    body.innerHTML = "";
+    body.removeAttribute("aria-busy");
+
+    var groups = (manifest && manifest.groups) || [];
+    if (!groups.length) {
+      body.appendChild(el("p", "materials-dialog__status", txt("materials.empty")));
+      return;
+    }
+
+    groups.forEach(function (group) {
+      var section = el("section", "materials-dialog__group");
+      var label = group.id === "materials" ? "materials.groupFiles" : "materials.groupImages";
+      section.appendChild(el("h3", "materials-dialog__group-title", txt(label)));
+      var list = el("ul", "materials-dialog__list");
+
+      (group.files || []).forEach(function (file) {
+        var item = el("li", "materials-dialog__item");
+        var link = el("a", "materials-dialog__file");
+        link.href = file.url;
+        link.target = "_blank";
+        link.rel = "noopener";
+
+        if (file.kind === "image" && file.path) {
+          var thumb = el("img", "materials-dialog__file-thumb");
+          thumb.src = sitePrefix() + file.path;
+          thumb.alt = "";
+          thumb.loading = "lazy";
+          thumb.decoding = "async";
+          link.appendChild(thumb);
+        } else {
+          var icon = el("span", "materials-dialog__file-icon", ICONS[file.kind] || ICONS.other);
+          icon.setAttribute("aria-hidden", "true");
+          link.appendChild(icon);
+        }
+
+        link.appendChild(el("span", "materials-dialog__file-name", file.name));
+        link.appendChild(el("span", "materials-dialog__file-size", sizeText(file.size)));
+        item.appendChild(link);
+        list.appendChild(item);
+      });
+
+      section.appendChild(list);
+      body.appendChild(section);
+    });
+  }
+
+  function openMaterials(slug, trigger) {
+    if (!slug) return;
+    var dlg = ensureDialog();
+    matTrigger = trigger || document.activeElement;
+    dlg.setAttribute("data-slug", slug);
+    document.body.classList.add("materials-open");
+
+    var folder = dlg.querySelector(".materials-dialog__foot .btn");
+    folder.href = "https://github.com/tritonJS826/openLectures/tree/main/lectures/" + slug;
+
+    var body = dlg.querySelector(".materials-dialog__body");
+    body.setAttribute("aria-busy", "true");
+    body.innerHTML = "";
+    body.appendChild(el("p", "materials-dialog__status", txt("materials.loading")));
+
+    if (!dlg.open) dlg.showModal();
+
+    if (matCache[slug]) {
+      renderMaterials(matCache[slug]);
+      return;
+    }
+
+    fetch(sitePrefix() + "lectures/" + slug + "/data/materials.json", { cache: "no-cache" })
+      .then(function (r) {
+        if (!r.ok) throw new Error("HTTP " + r.status);
+        return r.json();
+      })
+      .then(function (json) {
+        matCache[slug] = json;
+        if (dlg.open && dlg.getAttribute("data-slug") === slug) renderMaterials(json);
+      })
+      .catch(function () {
+        if (!dlg.open || dlg.getAttribute("data-slug") !== slug) return;
+        body.removeAttribute("aria-busy");
+        body.innerHTML = "";
+        body.appendChild(el("p", "materials-dialog__status materials-dialog__status--error", txt("materials.error")));
+      });
+  }
+
+  function initMaterials() {
+    if (!supportsDialog()) return; // keep the plain GitHub links
+    document.addEventListener("click", function (e) {
+      if (!e.target.closest) return;
+      var trigger = e.target.closest("[data-materials]");
+      if (!trigger) return;
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+      if (typeof e.button === "number" && e.button !== 0) return;
+      e.preventDefault();
+      openMaterials(trigger.getAttribute("data-materials"), trigger);
+    });
   }
 
   function buildLearn(item) {
@@ -214,6 +420,11 @@
     bindText();
     renderLists();
     updateSwitch();
+    // Keep an open materials dialog in the new language.
+    if (matDialog && matDialog.open) {
+      var slug = matDialog.getAttribute("data-slug");
+      if (slug && matCache[slug]) renderMaterials(matCache[slug]);
+    }
   }
 
   function setLang(next) {
@@ -332,6 +543,7 @@
   }
 
   initNav();
+  initMaterials();
 
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", boot);

@@ -43,6 +43,21 @@
       "galleryLabel": "Фото с лекции",
       "galleryAlt": "Владимир Комиссаров рассказывает о New Space в кафе «Звуки сердца»; на экране — слайд с космическим изображением, слушатели сидят за столами"
     },
+    "materials": {
+      "eyebrow": "Материалы",
+      "title": "Файлы лекции",
+      "note": "Все файлы хранятся в репозитории проекта на GitHub — можно посмотреть или скачать.",
+      "folderCta": "Открыть папку на GitHub",
+      "groupImages": "Фото и обложки",
+      "groupFiles": "Файлы лекции",
+      "loading": "Загружаем список…",
+      "empty": "Пока здесь нет файлов.",
+      "error": "Не удалось загрузить список файлов. Откройте папку на GitHub.",
+      "close": "Закрыть",
+      "b": "Б",
+      "kb": "КБ",
+      "mb": "МБ"
+    },
     "footer": {
       "tagline": "ZAJEDNO — LEARN · GROW · JOY",
       "note": "Нишский Лекторий · кафе «Звуки сердца», Niš",
@@ -94,6 +109,21 @@
       "galleryLabel": "Photos from the talk",
       "galleryAlt": "Vladimir Komissarov talks about New Space at the Zvuci srca café; a slide with a space image is on the screen and the audience is seated at tables"
     },
+    "materials": {
+      "eyebrow": "Materials",
+      "title": "Lecture files",
+      "note": "Every file lives in the project repository on GitHub — open it there or download it.",
+      "folderCta": "Open the folder on GitHub",
+      "groupImages": "Photos & covers",
+      "groupFiles": "Lecture files",
+      "loading": "Loading the list…",
+      "empty": "No files here yet.",
+      "error": "Couldn't load the file list. Open the folder on GitHub.",
+      "close": "Close",
+      "b": "B",
+      "kb": "KB",
+      "mb": "MB"
+    },
     "footer": {
       "tagline": "ZAJEDNO — LEARN · GROW · JOY",
       "note": "Niš Lectorium · Zvuci srca café, Niš",
@@ -144,6 +174,21 @@
       ],
       "galleryLabel": "Fotografije sa predavanja",
       "galleryAlt": "Vladimir Komisarov govori o New Space-u u kafiću „Zvuci srca“; na ekranu je slajd sa svemirskom fotografijom, publika sedi za stolovima"
+    },
+    "materials": {
+      "eyebrow": "Materijali",
+      "title": "Fajlovi predavanja",
+      "note": "Svi fajlovi se čuvaju u repozitorijumu projekta na GitHubu — tamo ih možete pogledati ili preuzeti.",
+      "folderCta": "Otvori folder na GitHubu",
+      "groupImages": "Fotografije i naslovnice",
+      "groupFiles": "Fajlovi predavanja",
+      "loading": "Učitavamo listu…",
+      "empty": "Ovde još nema fajlova.",
+      "error": "Nije uspelo učitavanje liste fajlova. Otvorite folder na GitHubu.",
+      "close": "Zatvori",
+      "b": "B",
+      "kb": "KB",
+      "mb": "MB"
     },
     "footer": {
       "tagline": "ZAJEDNO — LEARN · GROW · JOY",

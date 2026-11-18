@@ -1,0 +1,25 @@
+{
+  "slug": "20261108-newspace",
+  "repoUrl": "https://github.com/tritonJS826/openLectures/tree/main/lectures/20261108-newspace",
+  "groups": [
+    {
+      "id": "images",
+      "files": [
+        {
+          "name": "cover.avif",
+          "size": 35274,
+          "kind": "image",
+          "path": "lectures/20261108-newspace/images/cover.avif",
+          "url": "https://github.com/tritonJS826/openLectures/blob/main/lectures/20261108-newspace/images/cover.avif"
+        },
+        {
+          "name": "talk.avif",
+          "size": 48976,
+          "kind": "image",
+          "path": "lectures/20261108-newspace/images/talk.avif",
+          "url": "https://github.com/tritonJS826/openLectures/blob/main/lectures/20261108-newspace/images/talk.avif"
+        }
+      ]
+    }
+  ]
+}

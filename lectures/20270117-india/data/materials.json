@@ -1,0 +1,18 @@
+{
+  "slug": "20270117-india",
+  "repoUrl": "https://github.com/tritonJS826/openLectures/tree/main/lectures/20270117-india",
+  "groups": [
+    {
+      "id": "images",
+      "files": [
+        {
+          "name": "cover.avif",
+          "size": 26989,
+          "kind": "image",
+          "path": "lectures/20270117-india/images/cover.avif",
+          "url": "https://github.com/tritonJS826/openLectures/blob/main/lectures/20270117-india/images/cover.avif"
+        }
+      ]
+    }
+  ]
+}

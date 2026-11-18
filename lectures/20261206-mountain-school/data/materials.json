@@ -1,0 +1,18 @@
+{
+  "slug": "20261206-mountain-school",
+  "repoUrl": "https://github.com/tritonJS826/openLectures/tree/main/lectures/20261206-mountain-school",
+  "groups": [
+    {
+      "id": "images",
+      "files": [
+        {
+          "name": "cover.avif",
+          "size": 53316,
+          "kind": "image",
+          "path": "lectures/20261206-mountain-school/images/cover.avif",
+          "url": "https://github.com/tritonJS826/openLectures/blob/main/lectures/20261206-mountain-school/images/cover.avif"
+        }
+      ]
+    }
+  ]
+}

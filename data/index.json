@@ -46,6 +46,17 @@
           "time": "18:00",
           "place": "кафе «Звуки сердца», Niš",
           "url": "lectures/20261129-it-anatomy/"
+        },
+        {
+          "day": "06",
+          "mon": "дек",
+          "badge": "Предстоящая лекция",
+          "title": "Школа гор: навыки, снаряжение, безопасность",
+          "speaker": "Роман Алдушин · горный гид и инструктор по выживанию",
+          "dateText": "6 декабря 2026",
+          "time": "18:00",
+          "place": "кафе «Звуки сердца», Niš",
+          "url": "lectures/20261206-mountain-school/"
         }
       ]
     },
@@ -115,6 +126,17 @@
           "time": "18:00",
           "place": "Zvuci srca café, Niš",
           "url": "lectures/20261129-it-anatomy/"
+        },
+        {
+          "day": "06",
+          "mon": "DEC",
+          "badge": "Upcoming talk",
+          "title": "Mountain school: skills, gear, safety",
+          "speaker": "Roman Aldushin · mountain guide and survival instructor",
+          "dateText": "December 6, 2026",
+          "time": "18:00",
+          "place": "Zvuci srca café, Niš",
+          "url": "lectures/20261206-mountain-school/"
         }
       ]
     },
@@ -184,6 +206,17 @@
           "time": "18:00",
           "place": "kafić „Zvuci srca“, Niš",
           "url": "lectures/20261129-it-anatomy/"
+        },
+        {
+          "day": "06",
+          "mon": "dec",
+          "badge": "Predstojeće predavanje",
+          "title": "Škola planina: veštine, oprema, bezbednost",
+          "speaker": "Roman Aldušin · planinski vodič i instruktor preživljavanja",
+          "dateText": "6. decembar 2026.",
+          "time": "18:00",
+          "place": "kafić „Zvuci srca“, Niš",
+          "url": "lectures/20261206-mountain-school/"
         }
       ]
     },

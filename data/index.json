@@ -57,6 +57,17 @@
           "time": "18:00",
           "place": "кафе «Звуки сердца», Niš",
           "url": "lectures/20261206-mountain-school/"
+        },
+        {
+          "day": "17",
+          "mon": "янв",
+          "badge": "Предстоящая лекция",
+          "title": "Индия: страна контрастов",
+          "speaker": "Анна Деловерова",
+          "dateText": "17 января 2027",
+          "time": "18:00",
+          "place": "кафе «Звуки сердца», Niš",
+          "url": "lectures/20270117-india/"
         }
       ]
     },
@@ -137,6 +148,17 @@
           "time": "18:00",
           "place": "Zvuci srca café, Niš",
           "url": "lectures/20261206-mountain-school/"
+        },
+        {
+          "day": "17",
+          "mon": "JAN",
+          "badge": "Upcoming talk",
+          "title": "India: a country of contrasts",
+          "speaker": "Anna Deloverova",
+          "dateText": "January 17, 2027",
+          "time": "18:00",
+          "place": "Zvuci srca café, Niš",
+          "url": "lectures/20270117-india/"
         }
       ]
     },
@@ -217,6 +239,17 @@
           "time": "18:00",
           "place": "kafić „Zvuci srca“, Niš",
           "url": "lectures/20261206-mountain-school/"
+        },
+        {
+          "day": "17",
+          "mon": "jan",
+          "badge": "Predstojeće predavanje",
+          "title": "Indija: zemlja kontrasta",
+          "speaker": "Ana Deloverova",
+          "dateText": "17. januar 2027.",
+          "time": "18:00",
+          "place": "kafić „Zvuci srca“, Niš",
+          "url": "lectures/20270117-india/"
         }
       ]
     },

@@ -1,0 +1,59 @@
+---
+import { parseWhen, dayMon, lectureHref, imageSrc, materialsRepo } from "../lib/site.js";
+
+const { lang, city, entry, variant = "upcoming", ui } = Astro.props;
+const d = entry.data;
+const L = d.translations[lang];
+const { dateText, time } = parseWhen(L.lecture.when);
+const { day, mon } = dayMon(d.date, lang);
+const href = lectureHref(lang, city.slug, d.slug);
+const thumb = imageSrc(city.slug, d.slug, d.image);
+const materialLabel = L.lecture.materialsLabel || (lang === "ru" ? "Материалы" : lang === "sr" ? "Materijali" : "Materials");
+const materialUrl = L.lecture.materialsUrl || materialsRepo(city.slug, d.slug);
+const key = `${city.slug}/${d.slug}`;
+---
+
+{
+  variant === "archive" ? (
+    <article class="lecture-card lecture-card--archive">
+      <a class="card-main" href={href}>
+        <div class="card-rail">
+          <span class="day">{day}</span>
+          <span class="mon">{mon}</span>
+        </div>
+        <span class="card-thumb"><img src={thumb} alt="" loading="lazy" decoding="async" /></span>
+        <div class="card-body">
+          <span class="card-badge card-badge--past">{L.lecture.status}</span>
+          <h3 class="card-title">{L.lecture.title}</h3>
+          <div class="card-meta">
+            <span>{L.lecture.speaker}</span>
+            <span>{dateText}{time ? ` · ${time}` : ""}</span>
+          </div>
+          <div class="card-foot"><span>{L.lecture.place}</span></div>
+        </div>
+      </a>
+      <a class="card-material" href={materialUrl} target="_blank" rel="noopener" data-materials={key}>
+        <span class="icon" aria-hidden="true">↧</span>
+        <span>{materialLabel}</span>
+      </a>
+    </article>
+  ) : (
+    <a class="lecture-card" href={href}>
+      <div class="card-rail">
+        <span class="day">{day}</span>
+        <span class="mon">{mon}</span>
+      </div>
+      <span class="card-thumb"><img src={thumb} alt="" loading="lazy" decoding="async" /></span>
+      <div class="card-body">
+        <span class="card-badge">{L.lecture.status}</span>
+        <h3 class="card-title">{L.lecture.title}</h3>
+        <div class="card-meta">
+          <span>{L.lecture.speaker}</span>
+          <span>{dateText}{time ? ` · ${time}` : ""}</span>
+        </div>
+        <div class="card-foot"><span>{L.lecture.place}</span></div>
+      </div>
+      <span class="card-arrow" aria-hidden="true">↗</span>
+    </a>
+  )
+}

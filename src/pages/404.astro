@@ -1,0 +1,46 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import errorData from "../data/error404.json";
+import uiData from "../i18n/ui.json";
+import "../styles/404.css";
+
+const lang = "ru";
+const ui = uiData[lang];
+const nf = errorData[lang].notfound;
+const title = errorData[lang].meta.title;
+const description = errorData[lang].meta.description;
+---
+
+<BaseLayout
+  lang={lang}
+  ui={ui}
+  page="404"
+  title={title}
+  description={description}
+  canonical="/ru/"
+  noindex={true}
+>
+  <section class="container notfound">
+    <div class="notfound__inner">
+      <p class="notfound__code" aria-hidden="true">404</p>
+      <span class="eyebrow">{nf.eyebrow}</span>
+      <h1 class="display notfound__title">{nf.title}</h1>
+      <p class="lead muted notfound__lead">{nf.lead}</p>
+
+      <div class="notfound__actions">
+        <a class="btn btn--primary" href="/ru/">
+          <span>{nf.schedule}</span>
+          <span class="btn__arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="btn btn--ghost" href="/ru/nis/archive/">
+          <span>{nf.archive}</span>
+          <span class="btn__arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+
+      <p class="notfound__hint">
+        {nf.hint} <a href="/ru/">Project Open Lectures</a>
+      </p>
+    </div>
+  </section>
+</BaseLayout>

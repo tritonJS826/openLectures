@@ -1,0 +1,51 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import LectureCard from "../../../components/LectureCard.astro";
+import archiveData from "../../../data/archive.json";
+import uiData from "../../../i18n/ui.json";
+import { LANGS } from "../../../lib/site.js";
+import { loadCities, loadLectures, forCity } from "../../../lib/content.js";
+import "../../../styles/archive.css";
+
+export async function getStaticPaths() {
+  const cities = await loadCities();
+  return LANGS.flatMap((lang) =>
+    cities.map((city) => ({ params: { lang, city: city.data.slug } })),
+  );
+}
+
+const lang = Astro.params.lang;
+const ui = uiData[lang];
+const archive = archiveData[lang].archive;
+const cities = await loadCities();
+const city = cities.find((c) => c.data.slug === Astro.params.city);
+const lectures = await loadLectures();
+const past = forCity(lectures, city.data.slug, "past");
+
+const title = `${archive.title} · ${city.data.name[lang]} — ${ui.brand.name}`;
+const description = archive.lead;
+const canonical = `/${lang}/${city.data.slug}/archive/`;
+---
+
+<BaseLayout lang={lang} ui={ui} city={city.data} page="archive" title={title} description={description} canonical={canonical}>
+  <section class="container page-head">
+    <span class="eyebrow">{archive.eyebrow} · {city.data.name[lang]}</span>
+    <h1 class="display">{archive.title}</h1>
+    <p class="lead">{archive.lead}</p>
+  </section>
+
+  <section class="container section--tight">
+    <div class="archive-note">
+      <span class="mono">{archive.note}</span>
+    </div>
+    {past.length ? (
+      <div class="lecture-list">
+        {past.map((entry) => (
+          <LectureCard lang={lang} city={city.data} entry={entry} variant="archive" ui={ui} />
+        ))}
+      </div>
+    ) : (
+      <p class="lead muted">{ui.city.emptyArchive}</p>
+    )}
+  </section>
+</BaseLayout>

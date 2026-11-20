@@ -1,0 +1,132 @@
+{
+  "slug": "20261206-mountain-school",
+  "city": "nis",
+  "type": "lecture",
+  "status": "upcoming",
+  "date": "2026-12-06",
+  "time": "18:00",
+  "image": "cover.avif",
+  "media": [],
+  "translations": {
+    "ru": {
+      "meta": {
+        "title": "Школа гор: навыки, снаряжение, безопасность · Нишский Лекторий",
+        "description": "Лекция-презентация программы по жизненным навыкам, основам горного туризма и выживанию в природе: подготовка к походу, навигация, снаряжение, костёр, вода, первая помощь. 6 декабря 2026, 18:00, кафе «Звуки сердца», Niš."
+      },
+      "lecture": {
+        "back": "← Все лекции",
+        "status": "Предстоящая лекция",
+        "title": "Школа гор: навыки, снаряжение, безопасность",
+        "summary": "Вечер-презентация программы по жизненным навыкам, основам горного туризма и выживанию в природе. Роман Алдушин расскажет, как подготовиться к походу, выбрать маршрут, ориентироваться на местности и уверенно чувствовать себя в горах, а также как устроены сами занятия. Приглашаем новых участников.",
+        "whenLabel": "Когда",
+        "when": "6 декабря 2026, воскресенье, 18:00",
+        "placeLabel": "Где",
+        "place": "кафе «Звуки сердца», Branka Krsmanovića 17, Niš",
+        "speakerLabel": "Лектор",
+        "speaker": "Роман Алдушин — профессиональный горный гид и инструктор по выживанию",
+        "imageAlt": "Горный гид в камуфляжной куртке, чёрной кепке и с рюкзаком стоит на скалистой вершине; внизу — осенняя горная долина",
+        "aboutLabel": "О лекции",
+        "about": [
+          "Программа обучения жизненным навыкам и основам выживания в горах.",
+          "Приглашаем новых участников на вечер-презентацию программы по жизненным навыкам, основам горного туризма и выживанию в природе. Встреча пройдёт в лекционном формате, в тёплом зале кафе: Роман Алдушин расскажет и покажет, как правильно подготовиться к походу, выбрать маршрут, пользоваться картами и навигационными приложениями, ориентироваться на местности, рассчитывать свои силы и безопасно передвигаться в горах.",
+          "В программу обучения входят: выбор туристического снаряжения, рюкзаков, палаток, спальников и одежды; правильная укладка и регулировка рюкзака; основы горного дела, техника передвижения по сложному рельефу, работа с верёвками и узлами, правильное дыхание, разведение костра, организация лагеря, поиск и очистка воды, строительство временных укрытий, основы первой помощи и действия в чрезвычайных ситуациях.",
+          "На лекции разберём, из чего состоит программа и чего ждать от занятий: практические упражнения, небольшие походы и разбор реальных ситуаций начнутся уже в рамках курса, а не в этот вечер. Здесь же можно будет задать любые вопросы и понять, подходит ли вам формат.",
+          "Главная цель занятий — научить вас уверенно и безопасно чувствовать себя на природе. Обучение проходит в доступной форме, без сложной теории. Программа подходит начинающим, взрослым и подросткам — специальная подготовка не требуется.",
+          "Занятия проводит Роман Алдушин — профессиональный горный гид и инструктор по выживанию. Приходите сами, приводите близких и зовите друзей! Вход свободный, по желанию — донаты Рассказчику."
+        ],
+        "learnLabel": "О чём поговорим",
+        "learn": [
+          "Как подготовиться к походу и выбрать маршрут по своим силам",
+          "Карты и навигационные приложения: ориентирование на местности без паники",
+          "Снаряжение: рюкзак, палатка, спальник и одежда — что выбрать и как уложить",
+          "Техника передвижения по сложному рельефу, работа с верёвками и узлами",
+          "Костёр, лагерь, поиск и очистка воды, строительство временных укрытий",
+          "Первая помощь и грамотные действия в чрезвычайных ситуациях"
+        ],
+        "ctaLabel": "Приходите",
+        "ctaText": "Вход свободный, по желанию — донаты Рассказчику. Нас традиционно принимает инклюзивное кафе «Звуки сердца», где работают молодые люди с особенностями развития: кофе или чай можно заказать за добровольное пожертвование.",
+        "ctaButton": "Напомнить в Telegram"
+      }
+    },
+    "en": {
+      "meta": {
+        "title": "Mountain school: skills, gear, safety · Niš Lectorium",
+        "description": "An evening introducing a programme on life skills, the basics of mountain travel and survival in the wild: preparing for a hike, navigation, gear, fire, water, first aid. December 6, 2026, 18:00, Zvuci srca café, Niš."
+      },
+      "lecture": {
+        "back": "← All lectures",
+        "status": "Upcoming talk",
+        "title": "Mountain school: skills, gear, safety",
+        "summary": "An evening introducing a programme on life skills, the basics of mountain travel and survival in the wild. Roman Aldushin will explain how to prepare for a hike, choose a route, find your way in the terrain and feel confident in the mountains — and how the sessions themselves work. New participants are welcome.",
+        "whenLabel": "When",
+        "when": "December 6, 2026, Sunday, 18:00",
+        "placeLabel": "Where",
+        "place": "Zvuci srca café, Branka Krsmanovića 17, Niš",
+        "speakerLabel": "Speaker",
+        "speaker": "Roman Aldushin — professional mountain guide and survival instructor",
+        "imageAlt": "A mountain guide in a camo jacket, black cap and backpack stands on a rocky summit, with an autumn mountain valley below",
+        "aboutLabel": "About the talk",
+        "about": [
+          "A learning programme on life skills and the basics of survival in the mountains.",
+          "We invite new participants to an introductory evening about the programme on life skills, the fundamentals of mountain travel and survival in the wild. The meeting runs as a lecture in the warm hall of the café: Roman Aldushin will explain and show how to prepare for a hike properly, choose a route, work with maps and navigation apps, find your way in the terrain, judge your own strength and move safely in the mountains.",
+          "The programme covers choosing tourist gear — backpacks, tents, sleeping bags and clothing; packing and adjusting a backpack correctly; the basics of mountaineering, movement technique on difficult terrain, working with ropes and knots, proper breathing, building a fire, setting up camp, finding and purifying water, building temporary shelters, first aid and what to do in an emergency.",
+          "At the talk we'll go through what the programme consists of and what to expect from the sessions: the practical exercises, short hikes and real-life case studies begin later, within the course itself — not on this evening. Here you can ask any questions, look at the gear and see whether the format suits you.",
+          "The main goal is to help you feel confident and safe outdoors. The teaching is accessible, with no heavy theory. The programme suits beginners, adults and teenagers — no prior experience is required.",
+          "The sessions are led by Roman Aldushin, a professional mountain guide and survival instructor. Come yourself, bring your loved ones and invite your friends! Free entry, with donations for the Storyteller if you wish."
+        ],
+        "learnLabel": "What we'll talk about",
+        "learn": [
+          "How to prepare for a hike and pick a route that matches your strength",
+          "Maps and navigation apps: finding your way in the terrain without panic",
+          "Gear: backpack, tent, sleeping bag and clothing — what to choose and how to pack it",
+          "Movement technique on difficult terrain, working with ropes and knots",
+          "Fire, camp, finding and purifying water, building temporary shelters",
+          "First aid and the right actions in an emergency"
+        ],
+        "ctaLabel": "Come along",
+        "ctaText": "Free entry, with donations for the Storyteller if you wish. We are hosted, as always, by the inclusive Zvuci srca café, where young people with developmental disabilities work: coffee or tea comes for a voluntary donation.",
+        "ctaButton": "Remind me on Telegram"
+      }
+    },
+    "sr": {
+      "meta": {
+        "title": "Škola planina: veštine, oprema, bezbednost · Niški Lektorij",
+        "description": "Veče predstavljanja programa o životnim veštinama, osnovama planinarenja i preživljavanju u prirodi: priprema za pohod, navigacija, oprema, vatra, voda, prva pomoć. 6. decembar 2026, 18:00, kafić „Zvuci srca“, Niš."
+      },
+      "lecture": {
+        "back": "← Sva predavanja",
+        "status": "Predstojeće predavanje",
+        "title": "Škola planina: veštine, oprema, bezbednost",
+        "summary": "Veče predstavljanja programa o životnim veštinama, osnovama planinarenja i preživljavanju u prirodi. Roman Aldušin će objasniti kako se pripremiti za pohod, izabrati maršrutu, snalaziti se u prostoru i osećati sigurno u planinama — kao i kako funkcionišu sami časovi. Pozivamo nove polaznike.",
+        "whenLabel": "Kada",
+        "when": "6. decembar 2026, nedelja, 18:00",
+        "placeLabel": "Gde",
+        "place": "kafić „Zvuci srca“, Branka Krsmanovića 17, Niš",
+        "speakerLabel": "Predavač",
+        "speaker": "Roman Aldušin — profesionalni planinski vodič i instruktor preživljavanja",
+        "imageAlt": "Planinski vodič u kamuflažnoj jakni, crnoj kapi i sa rancem stoji na stenovitom vrhu; u dolini ispod — jesenji planinski pejzaž",
+        "aboutLabel": "O predavanju",
+        "about": [
+          "Program obuke životnim veštinama i osnovama preživljavanja u planinama.",
+          "Pozivamo nove polaznike na uvodno veče o programu životnih veština, osnovama planinarenja i preživljavanju u prirodi. Susret će proteći u predavačkom formatu, u toploj sali kafića: Roman Aldušin će objasniti i pokazati kako da se pravilno pripremite za pohod, izaberete maršrutu, koristite karte i navigacione aplikacije, snalazite se u prostoru, procenite svoje snage i bezbedno se krećete u planinama.",
+          "Program obuhvata: izbor turističke opreme, ranaca, šatora, vreća za spavanje i odeće; pravilno pakovanje i podešavanje ranca; osnove planinarstva, tehniku kretanja po teškom terenu, rad s užadima i čvorovima, pravilno disanje, paljenje vatre, organizaciju kampa, pronalaženje i prečišćavanje vode, gradnju privremenih skloništa, osnove prve pomoći i postupanje u vanrednim situacijama.",
+          "Na predavanju ćemo proći kroz to od čega se program sastoji i šta očekivati od časova: praktične vežbe, kratki pohodi i analiza stvarnih situacija počinju kasnije, u okviru samog kursa — ne te večeri. Ovde možete postaviti sva pitanja, pogledati opremu i videti da li vam format odgovara.",
+          "Glavni cilj časova je da se u prirodi osećate sigurno i samouvereno. Obuka je pristupačna, bez komplikovane teorije. Program je namenjen početnicima, odraslima i tinejdžerima — posebna priprema nije potrebna.",
+          "Časove vodi Roman Aldušin — profesionalni planinski vodič i instruktor preživljavanja. Dođite sami, povedite najbliže i pozovite prijatelje! Ulaz je slobodan, a po želji — donacije Pričaču."
+        ],
+        "learnLabel": "O čemu ćemo govoriti",
+        "learn": [
+          "Kako se pripremiti za pohod i izabrati maršrutu prema svojim snagama",
+          "Karte i navigacione aplikacije: snalaženje u prostoru bez panike",
+          "Oprema: ranac, šator, vreća za spavanje i odeća — šta izabrati i kako spakovati",
+          "Tehnika kretanja po teškom terenu, rad s užadima i čvorovima",
+          "Vatra, kamp, pronalaženje i prečišćavanje vode, gradnja privremenih skloništa",
+          "Prva pomoć i pravilno postupanje u vanrednim situacijama"
+        ],
+        "ctaLabel": "Dođite",
+        "ctaText": "Ulaz je slobodan, a po želji — donacije Pričaču. Nas tradicionalno prima inkluzivni kafić „Zvuci srca“, u kome rade mladi sa smetnjama u razvoju: kafu ili čaj možete naručiti uz dobrovoljni prilog.",
+        "ctaButton": "Podseti me na Telegramu"
+      }
+    }
+  }
+}

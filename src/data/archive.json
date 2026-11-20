@@ -1,0 +1,26 @@
+{
+  "ru": {
+    "archive": {
+      "eyebrow": "Прошлое",
+      "title": "Архив лекций",
+      "lead": "Темы, которые мы уже обсудили. У каждой — страница лекции и материалы лектора.",
+      "note": "У каждой лекции два действия: открыть страницу и посмотреть материалы."
+    }
+  },
+  "en": {
+    "archive": {
+      "eyebrow": "Past",
+      "title": "Lecture archive",
+      "lead": "The topics we've already covered. Each has a lecture page and the speaker's materials.",
+      "note": "Each lecture has two actions: open the page, and view the materials."
+    }
+  },
+  "sr": {
+    "archive": {
+      "eyebrow": "Prošlost",
+      "title": "Arhiva predavanja",
+      "lead": "Teme o kojima smo već govorili. Uz svaku idu stranica predavanja i materijali predavača.",
+      "note": "Svako predavanje ima dve radnje: otvori stranicu i pogledaj materijale."
+    }
+  }
+}

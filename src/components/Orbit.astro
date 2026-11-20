@@ -1,0 +1,16 @@
+---
+// Decorative orbit artwork used in heroes when there is no photo.
+const { large = false } = Astro.props;
+---
+
+<div class="hero__art" aria-hidden="true">
+  <div class:list={["orbit", { "orbit--lg": large }]}>
+    <span class="orbit__ring orbit__ring--1"></span>
+    <span class="orbit__ring orbit__ring--2"></span>
+    <span class="orbit__ring orbit__ring--3"></span>
+    <span class="orbit__electron orbit__electron--1"><i></i></span>
+    <span class="orbit__electron orbit__electron--2"><i></i></span>
+    <span class="orbit__electron orbit__electron--3"><i></i></span>
+    <span class="orbit__core"></span>
+  </div>
+</div>

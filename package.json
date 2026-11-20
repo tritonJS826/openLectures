@@ -1,0 +1,20 @@
+{
+  "name": "open-lectures",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "predev": "node scripts/build-materials.mjs",
+    "build": "astro build",
+    "prebuild": "node scripts/build-materials.mjs",
+    "preview": "astro preview",
+    "astro": "astro",
+    "materials": "node scripts/build-materials.mjs"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.6.0",
+    "astro": "^5.14.0",
+    "sharp": "^0.35.5"
+  }
+}

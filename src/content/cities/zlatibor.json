@@ -1,0 +1,8 @@
+{
+  "slug": "zlatibor",
+  "order": 4,
+  "status": "coming-soon",
+  "name": { "ru": "Златибор", "en": "Zlatibor", "sr": "Zlatibor" },
+  "venue": { "ru": "адрес скоро", "en": "venue to be announced", "sr": "adresa uskoro" },
+  "address": ""
+}

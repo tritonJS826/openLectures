@@ -1,0 +1,8 @@
+{
+  "slug": "beograd",
+  "order": 2,
+  "status": "coming-soon",
+  "name": { "ru": "Белград", "en": "Belgrade", "sr": "Beograd" },
+  "venue": { "ru": "адрес скоро", "en": "venue to be announced", "sr": "adresa uskoro" },
+  "address": ""
+}

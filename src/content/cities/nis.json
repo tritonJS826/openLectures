@@ -1,0 +1,13 @@
+{
+  "slug": "nis",
+  "order": 1,
+  "status": "active",
+  "isDefault": true,
+  "name": { "ru": "Ниш", "en": "Niš", "sr": "Niš" },
+  "venue": {
+    "ru": "кафе «Звуки сердца»",
+    "en": "Zvuci srca café",
+    "sr": "kafić „Zvuci srca“"
+  },
+  "address": "Branka Krsmanovića 17, Niš"
+}

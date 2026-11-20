@@ -1,0 +1,126 @@
+{
+  "slug": "20270117-india",
+  "city": "nis",
+  "type": "lecture",
+  "status": "upcoming",
+  "date": "2027-01-17",
+  "time": "18:00",
+  "image": "cover.avif",
+  "media": [],
+  "translations": {
+    "ru": {
+      "meta": {
+        "title": "Индия: страна контрастов · Нишский Лекторий",
+        "description": "Лекция о самой удивительной стране мира: Индия без прикрас — «ужас-ужас» или «супер!», индийские угощения, музыка и яркие видео. 17 января 2027, 18:00, кафе «Звуки сердца», Niš."
+      },
+      "lecture": {
+        "back": "← Все лекции",
+        "status": "Предстоящая лекция",
+        "title": "Индия: страна контрастов",
+        "summary": "Вечер-путешествие в Индию — страну, которая не оставляет равнодушным никого: восторг и шок, яркие краски и громкая музыка, уличная еда и древние храмы. Анна Деловерова расскажет, каково это — увидеть Индию своими глазами, и пригласит гостей поделиться своими историями.",
+        "whenLabel": "Когда",
+        "when": "17 января 2027, воскресенье, 18:00",
+        "placeLabel": "Где",
+        "place": "кафе «Звуки сердца», Branka Krsmanovića 17, Niš",
+        "speakerLabel": "Лектор",
+        "speaker": "Анна Деловерова",
+        "imageAlt": "Две девочки в костюмах индийского классического танца держат на ладонях горящие лампады; рядом с ними улыбается женщина в пёстром платке",
+        "aboutLabel": "О лекции",
+        "about": [
+          "Приглашаем на очередную лекцию — теперь по географии.",
+          "Рассказы о самой удивительной стране мира — Индии, которая не оставляет равнодушным никого. Это страна контрастов: у одних она вызывает «Ужас ужас», у других — «Супер!!!». Равнодушных не бывает.",
+          "В программе вечера — индийские угощения, музыка и яркие видео.",
+          "Готовьте ваши вопросы.",
+          "А кто там был и хочет поделиться — welcome! Пишите нам и вписывайтесь в программу вечера."
+        ],
+        "learnLabel": "О чём поговорим",
+        "learn": [
+          "Почему Индия у одних вызывает «Ужас ужас», а у других «Супер!!!» — и куда смотреть, чтобы увидеть второе",
+          "Самая удивительная страна мира: истории, люди, краски и контрасты",
+          "Индийские угощения — попробуем то, о чём пойдёт речь",
+          "Музыка и яркие видео",
+          "Ваши вопросы — и истории тех, кто уже был в Индии"
+        ],
+        "ctaLabel": "Приходите",
+        "ctaText": "Вход свободный, по желанию — донаты Рассказчику. Нас традиционно принимает инклюзивное кафе «Звуки сердца», где работают молодые люди с особенностями развития: кофе или чай можно заказать за добровольное пожертвование.",
+        "ctaButton": "Напомнить в Telegram"
+      }
+    },
+    "en": {
+      "meta": {
+        "title": "India: a country of contrasts · Niš Lectorium",
+        "description": "A talk about the most amazing country in the world: India without filters — “absolutely awful” or “absolutely awesome!”, Indian treats, music and vivid videos. January 17, 2027, 18:00, Zvuci srca café, Niš."
+      },
+      "lecture": {
+        "back": "← All lectures",
+        "status": "Upcoming talk",
+        "title": "India: a country of contrasts",
+        "summary": "An evening of travel to India — a country that leaves nobody indifferent: delight and shock, bright colours and loud music, street food and ancient temples. Anna Deloverova shares what it is like to see India with your own eyes and invites guests to add their own stories.",
+        "whenLabel": "When",
+        "when": "January 17, 2027, Sunday, 18:00",
+        "placeLabel": "Where",
+        "place": "Zvuci srca café, Branka Krsmanovića 17, Niš",
+        "speakerLabel": "Speaker",
+        "speaker": "Anna Deloverova",
+        "imageAlt": "Two girls in Indian classical dance costumes hold burning oil lamps in their palms, next to a smiling woman in a patterned shawl",
+        "aboutLabel": "About the talk",
+        "about": [
+          "Join us for the next lecture — this time on geography.",
+          "Stories about the most amazing country in the world — India, which leaves nobody indifferent. It is a country of contrasts: for some it is “absolutely awful”, for others “absolutely awesome!”. Nobody stays neutral.",
+          "The evening includes Indian treats, music and vivid videos.",
+          "Bring your questions.",
+          "And if you have been there and want to share — welcome! Write to us and join the evening's programme."
+        ],
+        "learnLabel": "What we'll talk about",
+        "learn": [
+          "Why India is “absolutely awful” for some and “absolutely awesome!” for others — and where to look to see the second",
+          "The most amazing country in the world: stories, people, colours and contrasts",
+          "Indian treats — we'll taste what we talk about",
+          "Music and vivid videos",
+          "Your questions — and stories from those who have already been to India"
+        ],
+        "ctaLabel": "Come along",
+        "ctaText": "Free entry, with donations for the Storyteller if you wish. We are hosted, as always, by the inclusive Zvuci srca café, where young people with developmental disabilities work: coffee or tea comes for a voluntary donation.",
+        "ctaButton": "Remind me on Telegram"
+      }
+    },
+    "sr": {
+      "meta": {
+        "title": "Indija: zemlja kontrasta · Niški Lektorij",
+        "description": "Predavanje o najneverovatnijoj zemlji sveta: Indija bez ukrasa — „užas“ ili „super!“, indijske đakonije, muzika i žive slike. 17. januar 2027, 18:00, kafić „Zvuci srca“, Niš."
+      },
+      "lecture": {
+        "back": "← Sva predavanja",
+        "status": "Predstojeće predavanje",
+        "title": "Indija: zemlja kontrasta",
+        "summary": "Veče putovanja u Indiju — zemlju koja nikoga ne ostavlja ravnodušnim: oduševljenje i šok, jarke boje i glasna muzika, ulična hrana i drevni hramovi. Ana Deloverova će ispričati kako je to videti Indiju svojim očima i pozvati goste da podele svoje priče.",
+        "whenLabel": "Kada",
+        "when": "17. januar 2027, nedelja, 18:00",
+        "placeLabel": "Gde",
+        "place": "kafić „Zvuci srca“, Branka Krsmanovića 17, Niš",
+        "speakerLabel": "Predavač",
+        "speaker": "Ana Deloverova",
+        "imageAlt": "Dve devojčice u kostimima indijskog klasičnog plesa drže upaljene uljane lampe na dlanovima; pored njih se smeši žena u šarenom šalu",
+        "aboutLabel": "O predavanju",
+        "about": [
+          "Pozivamo vas na novo predavanje — ovaj put iz geografije.",
+          "Priče o najneverovatnijoj zemlji sveta — Indiji, koja nikoga ne ostavlja ravnodušnim. To je zemlja kontrasta: za nekoga je „užas“, za nekoga „super!“. Ravnodušnih nema.",
+          "U programu večeri su indijske đakonije, muzika i žive slike.",
+          "Pripremite svoja pitanja.",
+          "A ko je bio tamo i želi da podeli — welcome! Pišite nam i upišite se u program večeri."
+        ],
+        "learnLabel": "O čemu ćemo govoriti",
+        "learn": [
+          "Zašto je Indija nekome „užas“, a nekome „super!“ — i gde gledati da biste videli ovo drugo",
+          "Najneverovatnija zemlja sveta: priče, ljudi, boje i kontrasti",
+          "Indijske đakonije — probaćemo ono o čemu govorimo",
+          "Muzika i žive slike",
+          "Vaša pitanja — i priče onih koji su već bili u Indiji"
+        ],
+        "ctaLabel": "Dođite",
+        "ctaText": "Ulaz je slobodan, a po želji — donacije Pričaču. Nas tradicionalno prima inkluzivni kafić „Zvuci srca“, u kome rade mladi sa smetnjama u razvoju: kafu ili čaj možete naručiti uz dobrovoljni prilog.",
+        "ctaButton": "Podseti me na Telegramu"
+      }
+    }
+  }
+}

@@ -1,0 +1,147 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import aboutData from "../../data/about.json";
+import uiData from "../../i18n/ui.json";
+import { LANGS, TG } from "../../lib/site.js";
+import "../../styles/newLectureRequest.css";
+import "../../styles/about.css";
+
+export function getStaticPaths() {
+  return LANGS.map((lang) => ({ params: { lang } }));
+}
+
+const lang = Astro.params.lang;
+const ui = uiData[lang];
+const about = aboutData[lang].about;
+const title = `${about.eyebrow} — ${ui.brand.name}`;
+const description = about.lead;
+const canonical = `/${lang}/about/`;
+const email = "viktorveretennikov58@gmail.com";
+---
+
+<BaseLayout lang={lang} ui={ui} page="about" title={title} description={description} canonical={canonical}>
+  <section class="container page-head">
+    <span class="eyebrow">{about.eyebrow}</span>
+    <h1 class="display">{about.title}</h1>
+    <p class="lead">{about.lead}</p>
+  </section>
+
+  <section class="container about-intro">
+    <div class="prose">
+      {about.intro.map((p) => <p>{p}</p>)}
+    </div>
+  </section>
+
+  <section class="container section">
+    <div class="section-title">
+      <div>
+        <span class="eyebrow">{about.valuesLabel}</span>
+        <h2 class="h2">{about.valuesTitle}</h2>
+      </div>
+    </div>
+    <div class="points">
+      {about.values.map((p) => (
+        <article class="point">
+          <h3>{p.title}</h3>
+          <p>{p.text}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="band band--quiet" data-reveal>
+      <div class="band__text">
+        <span class="eyebrow">{about.freeLabel}</span>
+        <h2 class="h2">{about.freeTitle}</h2>
+        <p class="lead">{about.freeText}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container section">
+    <div class="section-title">
+      <div>
+        <span class="eyebrow">{about.helpLabel}</span>
+        <h2 class="h2">{about.helpTitle}</h2>
+      </div>
+      <p class="lead muted">{about.helpLead}</p>
+    </div>
+    <ul class="about-help">
+      {about.help.map((item) => <li>{item}</li>)}
+    </ul>
+  </section>
+
+  <section class="container section" id="propose">
+    <div class="about-form-layout">
+      <div class="form-intro">
+        <span class="eyebrow">{about.form.eyebrow}</span>
+        <h2 class="h2">{about.form.title}</h2>
+        <p class="lead">{about.form.lead}</p>
+        <ul class="form-points">
+          <li>{about.form.point1}</li>
+          <li>{about.form.point2}</li>
+          <li>{about.form.point3}</li>
+        </ul>
+      </div>
+
+      <form class="form" name="lecture-request-about" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="lecture-request-about" />
+        <p class="form-honeypot" aria-hidden="true">
+          <label>Don’t fill this out if you’re human: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+        </p>
+
+        <div class="field">
+          <label for="request-name">{about.form.name.label}</label>
+          <input id="request-name" name="name" type="text" required autocomplete="name" placeholder={about.form.name.placeholder} />
+        </div>
+
+        <div class="field">
+          <label for="request-contact">{about.form.contact.label}</label>
+          <input id="request-contact" name="contact" type="text" required placeholder={about.form.contact.placeholder} />
+          <span class="field__hint">{about.form.contact.hint}</span>
+        </div>
+
+        <div class="field">
+          <label for="request-comment">{about.form.comment.label}</label>
+          <textarea id="request-comment" name="comment" rows="5" placeholder={about.form.comment.placeholder}></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button class="btn btn--primary" type="submit">
+            <span>{about.form.submit}</span>
+            <span class="btn__arrow" aria-hidden="true">↗</span>
+          </button>
+          <p class="form-note">{about.form.note}</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="container section">
+    <div class="band" data-reveal>
+      <div class="band__text">
+        <span class="eyebrow">{about.contactLabel}</span>
+        <h2 class="h2">{about.contactTitle}</h2>
+        <p class="lead">{about.contactText}</p>
+        <p class="about-contact__note">{about.contactNote}</p>
+      </div>
+      <div class="about-contact__actions">
+        <p class="about-contact__email-label">{about.emailLabel}</p>
+        <div class="about-contact__email-row">
+          <button class="about-contact__email" type="button" data-copy-email={email} aria-describedby="email-hint">{email}</button>
+          <span class="about-contact__copied" data-copy-status role="status" hidden>{about.emailCopied}</span>
+        </div>
+        <p class="about-contact__email-hint" id="email-hint">{about.emailHint}</p>
+        <a class="btn btn--ghost" href={TG} target="_blank" rel="noopener">
+          <span>{ui.footer.telegram}</span>
+          <span class="btn__arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    import "../../scripts/about.js";
+  </script>
+</BaseLayout>

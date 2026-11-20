@@ -1,0 +1,19 @@
+{
+  "slug": "20261227-new-year-guitar",
+  "city": "nis",
+  "repoUrl": "https://github.com/tritonJS826/openLectures/tree/main/public/lectures/nis/20261227-new-year-guitar",
+  "groups": [
+    {
+      "id": "images",
+      "files": [
+        {
+          "name": "cover.avif",
+          "size": 102809,
+          "kind": "image",
+          "path": "lectures/nis/20261227-new-year-guitar/images/cover.avif",
+          "url": "https://github.com/tritonJS826/openLectures/blob/main/public/lectures/nis/20261227-new-year-guitar/images/cover.avif"
+        }
+      ]
+    }
+  ]
+}

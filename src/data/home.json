@@ -1,0 +1,137 @@
+{
+  "ru": {
+    "idea": {
+      "eyebrow": "Что это",
+      "title": "Любой может рассказать о чём угодно",
+      "lead": "Космос, пауки, электроника или выпечка — если это зажигает тебя, это заинтересует и других.",
+      "points": [
+        {
+          "title": "Любая тема",
+          "text": "Не нужна учёная степень. Достаточно искреннего интереса и желания поделиться."
+        },
+        {
+          "title": "Живой формат",
+          "text": "Тёплые встречи в кафе «Звуки сердца», где вместо цен — добровольные пожертвования."
+        },
+        {
+          "title": "Для всех",
+          "text": "Взрослым и детям: лекции интересны и тем, кто знает много, и тем, кто только начинает."
+        }
+      ]
+    },
+    "free": {
+      "eyebrow": "Бесплатно",
+      "title": "Лекции — бесплатные. Всегда.",
+      "text": "Вход на каждую встречу — 100% бесплатно, без взносов и «символических» билетов. Если после лекции захочется отблагодарить лектора, мы собираем для него донаты — по желанию и от чистого сердца.",
+      "note": "Хочется помочь иначе? Будем рады обсудить любую помощь — от идеи темы до места для встречи.",
+      "button": "О нас"
+    },
+    "upcoming": {
+      "eyebrow": "Скоро",
+      "title": "Предстоящие лекции",
+      "lead": "Вход свободный — приходи один или всей семьёй."
+    },
+    "archiveCta": {
+      "eyebrow": "Прошлое",
+      "title": "Уже состоялось",
+      "text": "Темы, которые мы уже обсудили, — вместе с материалами лекторов.",
+      "button": "Архив лекций"
+    },
+    "formCta": {
+      "eyebrow": "Твоя очередь",
+      "title": "Есть тема? Расскажи нам.",
+      "text": "Заполни короткую форму — и мы свяжемся с тобой, чтобы всё организовать.",
+      "button": "Заполнить форму"
+    }
+  },
+  "en": {
+    "idea": {
+      "eyebrow": "What it is",
+      "title": "Anyone can talk about anything",
+      "lead": "Space, spiders, electronics or baking — if it lights you up, it will interest others too.",
+      "points": [
+        {
+          "title": "Any topic",
+          "text": "No degree required. Genuine curiosity and a wish to share are enough."
+        },
+        {
+          "title": "A live format",
+          "text": "Warm gatherings at the Zvuci srca café, where you pay with a donation, not a price."
+        },
+        {
+          "title": "For everyone",
+          "text": "Adults and kids alike: talks work for experts and beginners both."
+        }
+      ]
+    },
+    "free": {
+      "eyebrow": "Free",
+      "title": "The lectures are free. Always.",
+      "text": "Entry to every gathering is 100% free — no fees, no “symbolic” tickets. If a talk leaves you wanting to thank the speaker, we collect donations for them: entirely optional, entirely from the heart.",
+      "note": "Would you rather help in another way? We're happy to discuss any kind of help — from a topic idea to a venue.",
+      "button": "About us"
+    },
+    "upcoming": {
+      "eyebrow": "Soon",
+      "title": "Upcoming talks",
+      "lead": "Free entry — come alone or bring the whole family."
+    },
+    "archiveCta": {
+      "eyebrow": "Past",
+      "title": "Already happened",
+      "text": "The topics we've covered, along with the speakers' materials.",
+      "button": "Lecture archive"
+    },
+    "formCta": {
+      "eyebrow": "Your turn",
+      "title": "Got a topic? Tell us.",
+      "text": "Fill in a short form and we'll reach out to organise everything.",
+      "button": "Open the form"
+    }
+  },
+  "sr": {
+    "idea": {
+      "eyebrow": "Šta je ovo",
+      "title": "Svako može da govori o čemu god želi",
+      "lead": "Kosmos, pauci, elektronika ili pekarski zanat — ako to pali tebe, zainteresovaće i druge.",
+      "points": [
+        {
+          "title": "Bilo koja tema",
+          "text": "Nije potrebna akademska titula. Dovoljno je iskreno interesovanje i želja da podeliš."
+        },
+        {
+          "title": "Živi format",
+          "text": "Tople večeri u kafiću „Zvuci srca“, gde umesto cene daješ dobrovoljni prilog."
+        },
+        {
+          "title": "Za sve",
+          "text": "I za odrasle i za decu: predavanja su zanimljiva i onima koji znaju mnogo i onima koji tek počinju."
+        }
+      ]
+    },
+    "free": {
+      "eyebrow": "Besplatno",
+      "title": "Predavanja su besplatna. Uvek.",
+      "text": "Ulaz na svaki susret je 100% besplatan — bez kotizacija i „simboličnih“ ulaznica. Ako posle predavanja poželiš da se zahvališ predavaču, prikupljamo donacije za njega — dobrovoljno i od srca.",
+      "note": "Želiš da pomogneš na drugi način? Rado ćemo razgovarati o svakoj pomoći — od ideje za temu do prostora za susret.",
+      "button": "O nama"
+    },
+    "upcoming": {
+      "eyebrow": "Uskoro",
+      "title": "Predstojeća predavanja",
+      "lead": "Ulaz je slobodan — dođi sam ili sa celom porodicom."
+    },
+    "archiveCta": {
+      "eyebrow": "Prošlost",
+      "title": "Već se održalo",
+      "text": "Teme o kojima smo govorili, zajedno sa materijalima predavača.",
+      "button": "Arhiva predavanja"
+    },
+    "formCta": {
+      "eyebrow": "Tvoj red",
+      "title": "Imaš temu? Javi nam se.",
+      "text": "Popuni kratak formular i mi ćemo ti se javiti da sve organizujemo.",
+      "button": "Otvori formular"
+    }
+  }
+}

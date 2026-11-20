@@ -1,53 +1,55 @@
-# Нишский Лекторий · Project Open Lectures
+# Project Open Lectures
 
-Открытый лекторий в Нише: любой может рассказать о чём угодно — просто заполните форму, и мы свяжемся.
-
-Статический сайт на чистом HTML/CSS/JS. Без сборки и зависимостей.
+Открытый лекторий в нескольких городах — Ниш, Белград, Нови-Сад, Златибор.
+Любой может предложить тему и выступить; вход на встречи бесплатный.
 
 **Сайт:** https://openlectures.netlify.app/
+
+Сайт собирается на [Astro](https://astro.build/) в статический HTML. Тексты лежат в
+JSON, интерфейс — чистый CSS и немного ванильного JS. UI-фреймворков нет.
+
+## Быстрый старт
+
+```bash
+npm install
+npm run dev        # http://localhost:4321
+npm run build      # сборка в dist/
+npm run preview    # локальный просмотр сборки
+```
+
+## Адреса
+
+```
+/ru/                                  # выбор города (RU — язык по умолчанию)
+/ru/nis/                              # афиша города
+/ru/nis/archive/                      # прошедшие лекции
+/ru/nis/new-lecture/                  # предложить лекцию
+/ru/nis/lectures/<slug>/              # страница лекции
+/ru/about/                            # о проекте
+/en/… и /sr/…                         # то же на английском и сербском (латиница)
+```
+
+`/` перенаправляется на `/ru/`. Старые адреса (`/archive.html`, `/about.html`,
+`/newLectureRequest.html`, `/lectures/<slug>/`) перенаправляются на новые — см.
+`netlify.toml`.
 
 ## Структура
 
 ```
-.
-├── index.html                # главная: идея, афиша, архив, форма
-├── about.html                # о нас: сообщество, бесплатные лекции, помощь, контакты
-├── archive.html              # прошедшие лекции (+ ссылки на материалы)
-├── newLectureRequest.html    # Netlify-форма «предложить лекцию»
-├── 404.html                  # страница «не найдено» (абсолютные пути!)
-├── robots.txt                # разрешает обход + ссылается на sitemap.xml
-├── sitemap.xml               # список страниц для Google (404.html сюда не входит)
-├── css/                      # общие стили (base + по странице)
-├── js/                       # app.js (тексты + языки), stars.js (звёздное небо)
-├── data/                     # index.json / about.json / archive.json / newLectureRequest.json
-└── lectures/
-    └── <slug>/               # каждая лекция — отдельная папка
-        ├── index.html
-        ├── css/style.css
-        ├── js/main.js
-        ├── data/lecture.json
-        └── images/
+src/
+├── content/cities/<slug>.json           # города
+├── content/lectures/<city>/<slug>.json  # лекции (ru/en/sr внутри)
+├── content.config.ts                    # Zod-схемы коллекций
+├── data/                                # тексты страниц
+├── i18n/ui.json                         # навигация, футер, общие строки
+├── layouts/BaseLayout.astro
+├── components/                          # карточки и декор
+├── pages/                               # маршруты
+├── scripts/                             # звёзды, меню, диалог материалов
+└── styles/                              # base.css + стили страниц
+public/
+└── lectures/<city>/<slug>/              # изображения, материалы, манифест файлов
 ```
 
-## Языки
-
-Тексты каждой страницы лежат в одном JSON-файле: `{ "ru": {…}, "en": {…}, "sr": {…} }`
-(сербский — латиницей). Переключатель RU/EN/SR в шапке; выбор сохраняется в `localStorage`,
-по умолчанию — русский. Скрипт `js/app.js` берёт данные из файла, указанного в `data-json`
-у `<body>`, и подставляет их по атрибутам `data-i18n` / `data-list`.
-
-## Добавить новую лекцию
-
-1. Скопируйте папку `lectures/20261028-spiders` → `lectures/<YYYYMMDD-slug>`.
-2. Поправьте `data/lecture.json` (все три языка) и стили/картинки при необходимости.
-3. Добавьте запись в `data/index.json` (афиша) или `data/archive.json` (архив).
-
-Полные правила — в [`AGENTS.md`](./AGENTS.md): где появляются ссылки (1 ссылка у будущих
-лекций, 2 у прошедших), структура папки лекции, обязательные ключи JSON и правила по картинкам.
-
-**Картинки — только в формате AVIF** (компактнее JPEG). Конвертация через ffmpeg:
-
-```bash
-ffmpeg -y -i source.png -frames:v 1 -c:v libaom-av1 \
-  -crf 30 -b:v 0 -cpu-used 6 -still-picture 1 -pix_fmt yuv420p out.avif
-```
+Как добавить лекцию или город, где появляются ссылки, правила для картинок и текстов —
+в [`AGENTS.md`](./AGENTS.md).

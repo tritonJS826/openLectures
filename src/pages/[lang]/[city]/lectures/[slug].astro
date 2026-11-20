@@ -1,0 +1,162 @@
+---
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import uiData from "../../../../i18n/ui.json";
+import { LANGS, imageSrc, cityBrandName } from "../../../../lib/site.js";
+import { loadCities, loadLectures } from "../../../../lib/content.js";
+import "../../../../styles/lecture.css";
+
+export async function getStaticPaths() {
+  const cities = await loadCities();
+  const lectures = await loadLectures();
+  return LANGS.flatMap((lang) =>
+    lectures.map((entry) => ({
+      params: { lang, city: entry.data.city, slug: entry.data.slug },
+    })),
+  );
+}
+
+const lang = Astro.params.lang;
+const ui = uiData[lang];
+const cities = await loadCities();
+const city = cities.find((c) => c.data.slug === Astro.params.city);
+const lectures = await loadLectures();
+const entry = lectures.find((e) => e.data.slug === Astro.params.slug);
+const d = entry.data;
+const L = d.translations[lang];
+const past = d.status === "past";
+const accent = d.slug.replace(/^\d{8}-/, "");
+const key = `${city.data.slug}/${d.slug}`;
+const cover = imageSrc(city.data.slug, d.slug, d.image);
+const backHref = past ? `/${lang}/${city.data.slug}/archive/` : `/${lang}/${city.data.slug}/`;
+const title = `${L.lecture.title} · ${cityBrandName(ui, city.data, lang)}`;
+const description = L.meta.description;
+const canonical = `/${lang}/${city.data.slug}/lectures/${d.slug}/`;
+---
+
+<BaseLayout
+  lang={lang}
+  ui={ui}
+  city={city.data}
+  page="lecture"
+  title={title}
+  description={description}
+  canonical={canonical}
+  accent={accent}
+>
+  <div class="container">
+    <a class="back-link" href={backHref}>{L.lecture.back}</a>
+  </div>
+
+  <section class="container lecture-hero">
+    <div class="lecture-hero__text">
+      <span class:list={["lecture-status", { "lecture-status--past": past }]}>{L.lecture.status}</span>
+      <h1 class="display lecture-title">{L.lecture.title}</h1>
+      <p class="lead">{L.lecture.summary}</p>
+      <dl class="lecture-meta">
+        <div>
+          <dt>{L.lecture.whenLabel}</dt>
+          <dd>{L.lecture.when}</dd>
+        </div>
+        <div>
+          <dt>{L.lecture.placeLabel}</dt>
+          <dd>{L.lecture.place}</dd>
+        </div>
+        <div>
+          <dt>{L.lecture.speakerLabel}</dt>
+          <dd>{L.lecture.speaker}</dd>
+        </div>
+      </dl>
+    </div>
+    <figure class="lecture-hero__media">
+      <img src={cover} alt={L.lecture.imageAlt} />
+    </figure>
+  </section>
+
+  <section class="container lecture-body">
+    <div class="lecture-block">
+      <h2 class="h2">{L.lecture.aboutLabel}</h2>
+      <div class="prose">
+        {L.lecture.about.map((p) => <p>{p}</p>)}
+      </div>
+    </div>
+
+    <div class="lecture-block">
+      <h2 class="h2">{L.lecture.learnLabel}</h2>
+      <ul class="prose">
+        {L.lecture.learn.map((item) => <li>{item}</li>)}
+      </ul>
+    </div>
+
+    {past ? (
+      <>
+        {L.lecture.materialsLabel && (
+          <div class="lecture-block lecture-block--materials">
+            <h2 class="h2">{L.lecture.materialsLabel}</h2>
+            <p class="lead">{L.lecture.materialsText}</p>
+            <a
+              class="btn btn--primary"
+              href={L.lecture.materialsUrl}
+              data-materials={key}
+              target="_blank"
+              rel="noopener"
+            >
+              <span>{L.lecture.materialsButton}</span>
+              <span class="btn__arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        )}
+
+        {L.lecture.recapLabel && (
+          <div class="lecture-block lecture-block--recap">
+            <span class="eyebrow">{L.lecture.recapLabel}</span>
+            <h2 class="h2">{L.lecture.recapTitle}</h2>
+            <div class="prose">
+              {(L.lecture.recap || []).map((p) => <p>{p}</p>)}
+            </div>
+          </div>
+        )}
+
+        {d.media.length > 0 && (
+          <div class="lecture-block lecture-block--gallery">
+            <h2 class="h2">{L.lecture.galleryLabel}</h2>
+            <div class="gallery">
+              {d.media.map((m) => (
+                <figure class="gallery__item">
+                  {m.type === "video" ? (
+                    <video
+                      controls
+                      playsinline
+                      preload="metadata"
+                      poster={imageSrc(city.data.slug, d.slug, m.poster)}
+                      aria-label={L.lecture[m.altKey]}
+                    >
+                      <source src={imageSrc(city.data.slug, d.slug, m.src)} type="video/mp4" />
+                    </video>
+                  ) : (
+                    <img
+                      src={imageSrc(city.data.slug, d.slug, m.src)}
+                      alt={L.lecture[m.altKey]}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  )}
+                </figure>
+              ))}
+            </div>
+          </div>
+        )}
+      </>
+    ) : (
+      L.lecture.ctaLabel && (
+        <div class="lecture-block lecture-block--materials">
+          <h2 class="h2">{L.lecture.ctaLabel}</h2>
+          <p class="lead">{L.lecture.ctaText}</p>
+          <a class="btn btn--primary" href="https://t.me/NisLrktor" target="_blank" rel="noopener">
+            <span>{L.lecture.ctaButton}</span>
+            <span class="btn__arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      )
+    )}
+  </section>
+</BaseLayout>

@@ -1,0 +1,111 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import LectureCard from "../../../components/LectureCard.astro";
+import homeData from "../../../data/home.json";
+import uiData from "../../../i18n/ui.json";
+import { LANGS } from "../../../lib/site.js";
+import { loadCities, loadLectures, forCity } from "../../../lib/content.js";
+import "../../../styles/home.css";
+
+export async function getStaticPaths() {
+  const cities = await loadCities();
+  return LANGS.flatMap((lang) =>
+    cities.map((city) => ({ params: { lang, city: city.data.slug } })),
+  );
+}
+
+const lang = Astro.params.lang;
+const ui = uiData[lang];
+const home = homeData[lang];
+const cities = await loadCities();
+const city = cities.find((c) => c.data.slug === Astro.params.city);
+const lectures = await loadLectures();
+const upcoming = forCity(lectures, city.data.slug, "upcoming");
+const past = forCity(lectures, city.data.slug, "past");
+const soon = city.data.status === "coming-soon";
+
+const title = `${city.data.name[lang]} — ${ui.brand.name}`;
+const description = soon
+  ? `${ui.umbrella.soon}: ${city.data.name[lang]}. ${ui.city.comingSoonText}`
+  : `${ui.city.scheduleLabel} · ${city.data.name[lang]}. ${city.data.venue[lang]}${city.data.address ? `, ${city.data.address}` : ""}`;
+const canonical = `/${lang}/${city.data.slug}/`;
+const archiveHref = `/${lang}/${city.data.slug}/archive/`;
+const submitHref = `/${lang}/${city.data.slug}/new-lecture/`;
+---
+
+<BaseLayout lang={lang} ui={ui} city={city.data} page="home" title={title} description={description} canonical={canonical}>
+  <section class="container page-head">
+    <span class="eyebrow">{ui.city.scheduleLabel} · {ui.brand.name}</span>
+    <h1 class="display">{city.data.name[lang]}</h1>
+    <p class="lead">
+      {soon ? ui.city.comingSoonText : `${city.data.venue[lang]}, ${city.data.address}`}
+    </p>
+  </section>
+
+  {soon ? (
+    <section class="container section">
+      <div class="band band--quiet" data-reveal>
+        <div class="band__text">
+          <span class="eyebrow">{ui.umbrella.soon}</span>
+          <h2 class="h2">{ui.city.comingSoonTitle}</h2>
+          <p class="lead">{ui.city.comingSoonText}</p>
+        </div>
+        <a class="btn btn--primary" href={submitHref}>
+          <span>{ui.nav.submit}</span>
+          <span class="btn__arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+  ) : (
+    <section class="container section" id="upcoming">
+      <div class="section-title">
+        <div>
+          <span class="eyebrow">{home.upcoming.eyebrow}</span>
+          <h2 class="h2">{home.upcoming.title}</h2>
+        </div>
+        <p class="lead muted">{home.upcoming.lead}</p>
+      </div>
+      {upcoming.length ? (
+        <div class="lecture-list">
+          {upcoming.map((entry) => (
+            <LectureCard lang={lang} city={city.data} entry={entry} variant="upcoming" ui={ui} />
+          ))}
+        </div>
+      ) : (
+        <p class="lead muted">{ui.city.emptySchedule}</p>
+      )}
+    </section>
+  )}
+
+  {!soon && past.length > 0 && (
+    <section class="container">
+      <div class="band" data-reveal>
+        <div class="band__text">
+          <span class="eyebrow">{home.archiveCta.eyebrow}</span>
+          <h2 class="h2">{home.archiveCta.title}</h2>
+          <p class="lead muted">{home.archiveCta.text}</p>
+        </div>
+        <a class="btn" href={archiveHref}>
+          <span>{ui.city.archiveLink}</span>
+          <span class="btn__arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+  )}
+
+  {!soon && (
+    <section class="container section">
+      <div class="band band--accent" data-reveal>
+        <div class="band__text">
+          <span class="eyebrow">{home.formCta.eyebrow}</span>
+          <h2 class="h2">{home.formCta.title}</h2>
+          <p class="lead">{home.formCta.text}</p>
+        </div>
+        <a class="btn btn--primary" href={submitHref}>
+          <span>{home.formCta.button}</span>
+          <span class="btn__arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+  )}
+</BaseLayout>

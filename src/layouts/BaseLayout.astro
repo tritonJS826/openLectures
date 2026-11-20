@@ -1,0 +1,186 @@
+---
+import "../styles/base.css";
+import { LANGS, SITE, TG, cityBrandName } from "../lib/site.js";
+
+const {
+  lang,
+  ui,
+  city = null,
+  page = "home",
+  title,
+  description,
+  canonical,
+  accent = null,
+  verify = false,
+  noindex = false,
+} = Astro.props;
+
+const favicon =
+  "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2306070d'/%3E%3Ccircle cx='16' cy='16' r='6.5' fill='%23ffb347'/%3E%3C/svg%3E";
+
+// Swap the language prefix of the current path for hreflang + the switcher.
+const prefix = "/" + lang;
+const rest = canonical.startsWith(prefix) ? canonical.slice(prefix.length) : "/";
+const altPaths = Object.fromEntries(LANGS.map((l) => [l, "/" + l + rest]));
+
+const brandName = cityBrandName(ui, city, lang);
+const base = city ? `/${lang}/${city.slug}` : `/${lang}`;
+// Without a city context, link to the default city so the URL always carries a city.
+const DEFAULT_CITY = "nis";
+const scheduleHref = city ? `${base}/` : `/${lang}/${DEFAULT_CITY}/`;
+const archiveHref = city ? `${base}/archive/` : `/${lang}/${DEFAULT_CITY}/archive/`;
+const aboutHref = `/${lang}/about/`;
+const submitHref = city ? `${base}/new-lecture/` : `/${lang}/${DEFAULT_CITY}/new-lecture/`;
+const locale = lang === "ru" ? "ru-RU" : lang === "sr" ? "sr-Latn-RS" : "en-US";
+const m = ui.materials;
+const dir = city ? `dir="auto"` : "";
+---
+
+<!doctype html>
+<html lang={lang === "sr" ? "sr-Latn" : lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#06070d" />
+    <link rel="icon" href={favicon} />
+    {verify && <meta name="google-site-verification" content="pf5xCPJNGuaX6KXcMd13fm-gsItBwLHK9rma9XsoFcU" />}
+
+    <meta property="og:type" content={page === "lecture" ? "article" : "website"} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={`${SITE}${canonical}`} />
+
+    {noindex ? (
+      <meta name="robots" content="noindex, follow" />
+    ) : (
+      <>
+        <link rel="canonical" href={`${SITE}${canonical}`} />
+        {LANGS.map((l) => (
+          <link rel="alternate" hreflang={l} href={`${SITE}/${l}${rest}`} />
+        ))}
+        <link rel="alternate" hreflang="x-default" href={`${SITE}/ru${rest}`} />
+      </>
+    )}
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body data-page={page} data-lecture={accent || undefined}>
+    <a class="skip-link" href="#main">{ui.a11y.skip}</a>
+    <canvas id="stars" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href={city ? `${base}/` : `/${lang}/`}>
+          <span class="brand__dot" aria-hidden="true"></span>
+          <span>
+            <span class="brand__sub">{ui.brand.sub}</span>
+            <span class="brand__name">{brandName}</span>
+          </span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label={ui.a11y.menu}
+        >
+          <span class="nav-toggle__bars" aria-hidden="true"><i></i><i></i><i></i></span>
+        </button>
+        <nav class="nav" id="site-nav" aria-label="Main">
+          <a href={scheduleHref} aria-current={page === "home" ? "page" : undefined}>
+            {ui.nav.schedule}
+          </a>
+          <a href={archiveHref} aria-current={page === "archive" ? "page" : undefined}>
+            {ui.nav.archive}
+          </a>
+          <a href={aboutHref} aria-current={page === "about" ? "page" : undefined}>
+            {ui.nav.about}
+          </a>
+          <a href={submitHref} class="nav-hide-sm" aria-current={page === "submit" ? "page" : undefined}>
+            {ui.nav.submit}
+          </a>
+          <div class="lang-switch" role="group" aria-label={ui.lang.label}>
+            {LANGS.map((l) => (
+              <a href={altPaths[l]} aria-current={l === lang ? "true" : undefined}>
+                {ui.lang.names[l]}
+              </a>
+            ))}
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <div>
+          <p class="footer-tag">{ui.footer.tagline}</p>
+          <p class="site-footer__legal">
+            {city ? `Project Open Lectures · ${city.name[lang]}` : ui.footer.note}
+          </p>
+        </div>
+        <div class="footer-links">
+          <a class="tg-link" href={TG} target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"
+              ><path
+                d="M21.9 4.3 18.8 19c-.2 1-.8 1.3-1.7.8l-4.6-3.4-2.2 2.1c-.2.2-.4.4-.9.4l.3-4.6 8.4-7.6c.4-.3-.1-.5-.6-.2L7.1 13 2.6 11.6c-1-.3-1-1 .2-1.5l17.7-6.8c.8-.3 1.5.2 1.4 1z"
+              ></path></svg>
+            <span>{ui.footer.telegram}</span>
+          </a>
+          <a href={aboutHref}>{ui.nav.about}</a>
+          <a href={scheduleHref}>{ui.nav.schedule}</a>
+          <a href={archiveHref}>{ui.nav.archive}</a>
+        </div>
+      </div>
+    </footer>
+
+    <dialog
+      class="materials-dialog"
+      id="materials-dialog"
+      aria-labelledby="materials-title"
+      data-locale={locale}
+      data-lbl-images={m.groupImages}
+      data-lbl-files={m.groupFiles}
+      data-txt-loading={m.loading}
+      data-txt-empty={m.empty}
+      data-txt-error={m.error}
+      data-txt-download={m.download}
+      data-unit-b={m.b}
+      data-unit-kb={m.kb}
+      data-unit-mb={m.mb}
+    >
+      <div class="materials-dialog__panel">
+        <div class="materials-dialog__head">
+          <div class="materials-dialog__titles">
+            <span class="eyebrow">{m.eyebrow}</span>
+            <h2 class="h2 materials-dialog__title" id="materials-title">{m.title}</h2>
+            <p class="materials-dialog__note">{m.note}</p>
+          </div>
+          <button class="materials-dialog__close" type="button" aria-label={m.close}>×</button>
+        </div>
+        <div class="materials-dialog__body"></div>
+        <div class="materials-dialog__foot">
+          <a class="btn btn--primary" target="_blank" rel="noopener">
+            <span>{m.folderCta}</span>
+            <span class="btn__arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </dialog>
+
+    <script>
+      import "../scripts/stars.js";
+      import "../scripts/ui.js";
+    </script>
+  </body>
+</html>

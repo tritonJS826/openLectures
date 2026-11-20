@@ -1,0 +1,141 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Orbit from "../../components/Orbit.astro";
+import CityCard from "../../components/CityCard.astro";
+import LectureCard from "../../components/LectureCard.astro";
+import homeData from "../../data/home.json";
+import uiData from "../../i18n/ui.json";
+import { LANGS, SITE, byDate } from "../../lib/site.js";
+import { loadCities, loadLectures, upcomingAcrossCities } from "../../lib/content.js";
+import "../../styles/home.css";
+import "../../styles/cities.css";
+
+export function getStaticPaths() {
+  return LANGS.map((lang) => ({ params: { lang } }));
+}
+
+const lang = Astro.params.lang;
+const ui = uiData[lang];
+const home = homeData[lang];
+const cities = await loadCities();
+const lectures = await loadLectures();
+const upcoming = upcomingAcrossCities(lectures).slice(0, 8);
+
+const title = `${ui.brand.name} — ${ui.umbrella.title}`;
+const description = ui.umbrella.lead;
+const canonical = `/${lang}/`;
+const submitHref = `/${lang}/nis/new-lecture/`;
+---
+
+<BaseLayout lang={lang} ui={ui} page="home" title={title} description={description} canonical={canonical} verify={lang === "ru"}>
+  <section class="container hero">
+    <div class="hero__text">
+      <span class="eyebrow">{ui.umbrella.eyebrow}</span>
+      <h1 class="display">{ui.umbrella.title}</h1>
+      <p class="lead">{ui.umbrella.lead}</p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href={submitHref}>
+          <span>{ui.nav.submit}</span>
+          <span class="btn__arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="btn btn--ghost" href="#cities">
+          <span>{ui.umbrella.citiesTitle}</span>
+        </a>
+      </div>
+    </div>
+    <Orbit />
+  </section>
+
+  <section class="container section" id="cities">
+    <div class="section-title">
+      <div>
+        <span class="eyebrow">{ui.umbrella.citiesLabel}</span>
+        <h2 class="h2">{ui.umbrella.citiesTitle}</h2>
+      </div>
+    </div>
+    <div class="city-grid">
+      {cities.map((city) => <CityCard lang={lang} city={city.data} ui={ui} />)}
+    </div>
+  </section>
+
+  <section class="container section" id="upcoming">
+    <div class="section-title">
+      <div>
+        <span class="eyebrow">{home.upcoming.eyebrow}</span>
+        <h2 class="h2">{ui.umbrella.upcomingTitle}</h2>
+      </div>
+      <p class="lead muted">{home.upcoming.lead}</p>
+    </div>
+    {upcoming.length ? (
+      <div class="lecture-list">
+        {byDate(upcoming, "asc").map((entry) => {
+          const city = cities.find((c) => c.data.slug === entry.data.city);
+          return <LectureCard lang={lang} city={city.data} entry={entry} variant="upcoming" ui={ui} />;
+        })}
+      </div>
+    ) : (
+      <p class="lead muted">{ui.city.emptySchedule}</p>
+    )}
+  </section>
+
+  <section class="container section" id="idea">
+    <div class="section-title">
+      <div>
+        <span class="eyebrow">{home.idea.eyebrow}</span>
+        <h2 class="h2">{home.idea.title}</h2>
+      </div>
+      <p class="lead muted">{home.idea.lead}</p>
+    </div>
+    <div class="points">
+      {home.idea.points.map((p) => (
+        <article class="point">
+          <h3>{p.title}</h3>
+          <p>{p.text}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="container home-free">
+    <div class="band band--quiet" data-reveal>
+      <div class="band__text">
+        <span class="eyebrow">{home.free.eyebrow}</span>
+        <h2 class="h2">{home.free.title}</h2>
+        <p class="lead">{home.free.text}</p>
+        <p class="band__note">{home.free.note}</p>
+      </div>
+      <a class="btn btn--ghost" href={`/${lang}/about/`}>
+        <span>{home.free.button}</span>
+        <span class="btn__arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="band" data-reveal>
+      <div class="band__text">
+        <span class="eyebrow">{home.archiveCta.eyebrow}</span>
+        <h2 class="h2">{home.archiveCta.title}</h2>
+        <p class="lead muted">{home.archiveCta.text}</p>
+      </div>
+      <a class="btn" href={`/${lang}/nis/archive/`}>
+        <span>{home.archiveCta.button}</span>
+        <span class="btn__arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="container section">
+    <div class="band band--accent" data-reveal>
+      <div class="band__text">
+        <span class="eyebrow">{home.formCta.eyebrow}</span>
+        <h2 class="h2">{home.formCta.title}</h2>
+        <p class="lead">{home.formCta.text}</p>
+      </div>
+      <a class="btn btn--primary" href={submitHref}>
+        <span>{home.formCta.button}</span>
+        <span class="btn__arrow" aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </section>
+</BaseLayout>

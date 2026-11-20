@@ -1,0 +1,19 @@
+{
+  "slug": "20270117-india",
+  "city": "nis",
+  "repoUrl": "https://github.com/tritonJS826/openLectures/tree/main/public/lectures/nis/20270117-india",
+  "groups": [
+    {
+      "id": "images",
+      "files": [
+        {
+          "name": "cover.avif",
+          "size": 26989,
+          "kind": "image",
+          "path": "lectures/nis/20270117-india/images/cover.avif",
+          "url": "https://github.com/tritonJS826/openLectures/blob/main/public/lectures/nis/20270117-india/images/cover.avif"
+        }
+      ]
+    }
+  ]
+}

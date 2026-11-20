@@ -1,0 +1,8 @@
+{
+  "slug": "novi-sad",
+  "order": 3,
+  "status": "coming-soon",
+  "name": { "ru": "Нови-Сад", "en": "Novi Sad", "sr": "Novi Sad" },
+  "venue": { "ru": "адрес скоро", "en": "venue to be announced", "sr": "adresa uskoro" },
+  "address": ""
+}

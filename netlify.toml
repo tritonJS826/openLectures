@@ -1,36 +1,80 @@
 [build]
-  publish = "."
+  command = "npm run build"
+  publish = "dist"
 
-# --- Duplicate URL cleanup ---------------------------------------------------
-# Every page also answers on its /index.html form (/index.html,
-# /lectures/<slug>/index.html). Redirect the file form to the directory form so
-# Google indexes one URL per page. force = true is required: the file exists, and
-# a real file always wins over a redirect rule otherwise.
+# --- One URL per page --------------------------------------------------------
+# Language is always part of the path, and the default language is RU.
+[[redirects]]
+  from = "/"
+  to = "/ru/"
+  status = 301
+  # dist/index.html exists (Astro redirect stub), so force the rule to win.
+  force = true
+
 [[redirects]]
   from = "/index.html"
-  to = "/"
+  to = "/ru/"
   status = 301
   force = true
 
-# Lectures live exactly two levels deep, so one placeholder rule covers all of
-# them — including lectures added later. (A splat cannot be used mid-path.)
+# --- Sitemap ----------------------------------------------------------------
+# Astro writes sitemap-index.xml; keep the old /sitemap.xml address working for
+# search engines that already know it.
 [[redirects]]
-  from = "/:section/:slug/index.html"
-  to = "/:section/:slug/"
+  from = "/sitemap.xml"
+  to = "/sitemap-index.xml"
+  status = 200
+
+# --- Legacy URLs (pre-Astro site) -------------------------------------------
+[[redirects]]
+  from = "/archive.html"
+  to = "/ru/nis/archive/"
+  status = 301
+
+[[redirects]]
+  from = "/about.html"
+  to = "/ru/about/"
+  status = 301
+
+[[redirects]]
+  from = "/newLectureRequest.html"
+  to = "/ru/nis/new-lecture/"
+  status = 301
+
+[[redirects]]
+  from = "/lectures/:slug"
+  to = "/ru/nis/lectures/:slug/"
+  status = 301
+
+[[redirects]]
+  from = "/lectures/:slug/"
+  to = "/ru/nis/lectures/:slug/"
+  status = 301
+
+# Old lecture assets (/lectures/<slug>/images/…) now live under the city folder.
+[[redirects]]
+  from = "/lectures/:slug/images/:file"
+  to = "/lectures/nis/:slug/images/:file"
+  status = 301
+
+# Directory form with an explicit index.html → clean directory URL.
+[[redirects]]
+  from = "/:lang/:city/lectures/:slug/index.html"
+  to = "/:lang/:city/lectures/:slug/"
   status = 301
   force = true
 
 # --- Deploy contexts ---------------------------------------------------------
-# Production is published as-is, with no build step. Previews and branch deploys
-# get a generated _headers with X-Robots-Tag: noindex, so a copy of the site on
-# another hostname can't outrank the real one.
+# Production builds the site with Astro. Previews append a generated _headers
+# with X-Robots-Tag: noindex so a copy of the site on another hostname can't
+# outrank the real one.
 [context.deploy-preview]
-  command = "sh scripts/preview-headers.sh"
+  command = "npm run build && sh scripts/preview-headers.sh"
 
 [context.branch-deploy]
-  command = "sh scripts/preview-headers.sh"
+  command = "npm run build && sh scripts/preview-headers.sh"
 
-# Basic security headers for a static site.
+# Basic security headers.
 [[headers]]
   for = "/*"
   [headers.values]
@@ -38,23 +82,14 @@
     X-Frame-Options = "SAMEORIGIN"
     Referrer-Policy = "strict-origin-when-cross-origin"
 
-# Cache long-lived static assets.
+# Cache long-lived build assets (CSS/JS bundles are content-hashed).
 [[headers]]
-  for = "/css/*"
-  [headers.values]
-    Cache-Control = "public, max-age=604800"
-
-[[headers]]
-  for = "/js/*"
-  [headers.values]
-    Cache-Control = "public, max-age=604800"
-
-[[headers]]
-  for = "/images/*"
+  for = "/_astro/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
+# Lecture media and materials manifests.
 [[headers]]
-  for = "/lectures/*/images/*"
+  for = "/lectures/*"
   [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+    Cache-Control = "public, max-age=604800"

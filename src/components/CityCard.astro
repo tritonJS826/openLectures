@@ -1,0 +1,16 @@
+---
+const { lang, city, ui, count = 0 } = Astro.props;
+const soon = city.status === "coming-soon";
+const href = `/${lang}/${city.slug}/`;
+---
+
+<a class:list={["city-card", { "city-card--soon": soon }]} href={href}>
+  <span class="city-card__top">
+    <span class="city-card__name">{city.name[lang]}</span>
+    {soon ? <span class="city-card__badge">{ui.umbrella.soon}</span> : null}
+  </span>
+  <span class="city-card__meta">
+    {soon ? ui.umbrella.soonNote : city.venue[lang]}
+  </span>
+  <span class="city-card__arrow" aria-hidden="true">↗</span>
+</a>

@@ -1,0 +1,19 @@
+{
+  "slug": "20261213-cleaning",
+  "city": "nis",
+  "repoUrl": "https://github.com/tritonJS826/openLectures/tree/main/public/lectures/nis/20261213-cleaning",
+  "groups": [
+    {
+      "id": "images",
+      "files": [
+        {
+          "name": "cover.avif",
+          "size": 29225,
+          "kind": "image",
+          "path": "lectures/nis/20261213-cleaning/images/cover.avif",
+          "url": "https://github.com/tritonJS826/openLectures/blob/main/public/lectures/nis/20261213-cleaning/images/cover.avif"
+        }
+      ]
+    }
+  ]
+}

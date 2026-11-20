@@ -1,0 +1,90 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import formData from "../../../data/form.json";
+import uiData from "../../../i18n/ui.json";
+import { LANGS, TG } from "../../../lib/site.js";
+import { loadCities } from "../../../lib/content.js";
+import "../../../styles/newLectureRequest.css";
+
+export async function getStaticPaths() {
+  const cities = await loadCities();
+  return LANGS.flatMap((lang) =>
+    cities.map((city) => ({ params: { lang, city: city.data.slug } })),
+  );
+}
+
+const lang = Astro.params.lang;
+const ui = uiData[lang];
+const form = formData[lang].form;
+const cities = await loadCities();
+const city = cities.find((c) => c.data.slug === Astro.params.city);
+
+const title = `${ui.nav.submit} · ${city.data.name[lang]} — ${ui.brand.name}`;
+const description = form.lead;
+const canonical = `/${lang}/${city.data.slug}/new-lecture/`;
+---
+
+<BaseLayout lang={lang} ui={ui} city={city.data} page="submit" title={title} description={description} canonical={canonical}>
+  <section class="container page-head">
+    <span class="eyebrow">{form.eyebrow}</span>
+    <h1 class="display">{form.title}</h1>
+    <p class="lead">{form.lead}</p>
+  </section>
+
+  <section class="container section">
+    <div class="form-layout">
+      <div class="form-intro">
+        <ul class="form-points">
+          <li>{form.point1}</li>
+          <li>{form.point2}</li>
+          <li>{form.point3}</li>
+        </ul>
+      </div>
+
+      <form class="form" name="lecture-request" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="lecture-request" />
+        <p class="form-honeypot" aria-hidden="true">
+          <label>Don’t fill this out if you’re human: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+        </p>
+
+        <div class="field">
+          <label for="request-name">{form.name.label}</label>
+          <input id="request-name" name="name" type="text" required autocomplete="name" placeholder={form.name.placeholder} />
+        </div>
+
+        <div class="field">
+          <label for="request-contact">{form.contact.label}</label>
+          <input id="request-contact" name="contact" type="text" required placeholder={form.contact.placeholder} />
+          <span class="field__hint">{form.contact.hint}</span>
+        </div>
+
+        <div class="field">
+          <label for="request-comment">{form.comment.label}</label>
+          <textarea id="request-comment" name="comment" rows="5" placeholder={form.comment.placeholder}></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button class="btn btn--primary" type="submit">
+            <span>{form.submit}</span>
+            <span class="btn__arrow" aria-hidden="true">↗</span>
+          </button>
+          <p class="form-note">{form.note}</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="container section">
+    <div class="band" data-reveal>
+      <div class="band__text">
+        <span class="eyebrow">{ui.footer.telegram}</span>
+        <h2 class="h2">{city.data.name[lang]}</h2>
+        <p class="lead muted">{city.data.venue[lang]}</p>
+      </div>
+      <a class="btn btn--ghost" href={TG} target="_blank" rel="noopener">
+        <span>{ui.footer.telegram}</span>
+        <span class="btn__arrow" aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </section>
+</BaseLayout>

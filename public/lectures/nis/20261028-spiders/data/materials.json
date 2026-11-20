@@ -1,0 +1,26 @@
+{
+  "slug": "20261028-spiders",
+  "city": "nis",
+  "repoUrl": "https://github.com/tritonJS826/openLectures/tree/main/public/lectures/nis/20261028-spiders",
+  "groups": [
+    {
+      "id": "images",
+      "files": [
+        {
+          "name": "spider.avif",
+          "size": 126278,
+          "kind": "image",
+          "path": "lectures/nis/20261028-spiders/images/spider.avif",
+          "url": "https://github.com/tritonJS826/openLectures/blob/main/public/lectures/nis/20261028-spiders/images/spider.avif"
+        },
+        {
+          "name": "talk.avif",
+          "size": 29112,
+          "kind": "image",
+          "path": "lectures/nis/20261028-spiders/images/talk.avif",
+          "url": "https://github.com/tritonJS826/openLectures/blob/main/public/lectures/nis/20261028-spiders/images/talk.avif"
+        }
+      ]
+    }
+  ]
+}

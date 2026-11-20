@@ -1,0 +1,160 @@
+{
+  "ru": {
+    "a11y": { "skip": "К содержанию", "menu": "Меню" },
+    "brand": { "sub": "Project", "name": "Open Lectures" },
+    "nav": {
+      "schedule": "Афиша",
+      "archive": "Архив",
+      "about": "О нас",
+      "submit": "Предложить лекцию",
+      "cities": "Города"
+    },
+    "lang": { "label": "Язык", "names": { "ru": "RU", "en": "EN", "sr": "SR" } },
+    "footer": {
+      "tagline": "ZAJEDNO — LEARN · GROW · JOY",
+      "note": "Project Open Lectures",
+      "telegram": "Telegram"
+    },
+    "umbrella": {
+      "eyebrow": "Открытый лекторий",
+      "title": "Бесплатные лекции для всех в твоём городе",
+      "lead": "Project Open Lectures — открытая площадка, где любой может поделиться тем, что его по-настоящему увлекает. Выберите свой город.",
+      "citiesLabel": "Города",
+      "citiesTitle": "Где мы собираемся",
+      "open": "Смотреть афишу",
+      "soon": "Скоро",
+      "soonNote": "Здесь ещё нет событий — но мы уже готовим первые встречи.",
+      "upcomingTitle": "Ближайшие события"
+    },
+    "city": {
+      "scheduleLabel": "Афиша",
+      "comingSoonTitle": "Скоро в этом городе",
+      "comingSoonText": "Мы ещё готовим первые лекции и встречи. Загляните позже — или предложите свою тему!",
+      "emptySchedule": "Пока нет запланированных событий.",
+      "emptyArchive": "Здесь пока нет прошедших событий.",
+      "archiveLink": "Архив города"
+    },
+    "materials": {
+      "eyebrow": "Материалы",
+      "title": "Файлы лекции",
+      "note": "Каждый файл скачивается прямо с сайта. Все они также лежат в репозитории проекта на GitHub.",
+      "folderCta": "Открыть папку на GitHub",
+      "groupImages": "Фото и обложки",
+      "groupFiles": "Файлы лекции",
+      "loading": "Загружаем список…",
+      "empty": "Пока здесь нет файлов.",
+      "error": "Не удалось загрузить список файлов. Откройте папку на GitHub.",
+      "close": "Закрыть",
+      "download": "Скачать",
+      "b": "Б",
+      "kb": "КБ",
+      "mb": "МБ"
+    }
+  },
+
+  "en": {
+    "a11y": { "skip": "Skip to content", "menu": "Menu" },
+    "brand": { "sub": "Project", "name": "Open Lectures" },
+    "nav": {
+      "schedule": "Schedule",
+      "archive": "Archive",
+      "about": "About us",
+      "submit": "Propose a talk",
+      "cities": "Cities"
+    },
+    "lang": { "label": "Language", "names": { "ru": "RU", "en": "EN", "sr": "SR" } },
+    "footer": {
+      "tagline": "ZAJEDNO — LEARN · GROW · JOY",
+      "note": "Project Open Lectures",
+      "telegram": "Telegram"
+    },
+    "umbrella": {
+      "eyebrow": "An open lecture club",
+      "title": "Talks and gatherings in four cities",
+      "lead": "Project Open Lectures is an open stage where anyone can share what genuinely fascinates them. Pick your city.",
+      "citiesLabel": "Cities",
+      "citiesTitle": "Where we meet",
+      "open": "See the schedule",
+      "soon": "Coming soon",
+      "soonNote": "No events here yet — but the first gatherings are on their way.",
+      "upcomingTitle": "Next events"
+    },
+    "city": {
+      "scheduleLabel": "Schedule",
+      "comingSoonTitle": "Coming soon to this city",
+      "comingSoonText": "We're still preparing the first talks and gatherings. Check back later — or propose your own topic!",
+      "emptySchedule": "No upcoming events yet.",
+      "emptyArchive": "No past events here yet.",
+      "archiveLink": "City archive"
+    },
+    "materials": {
+      "eyebrow": "Materials",
+      "title": "Lecture files",
+      "note": "Each file downloads straight from this site. They all also live in the project repository on GitHub.",
+      "folderCta": "Open the folder on GitHub",
+      "groupImages": "Photos & covers",
+      "groupFiles": "Lecture files",
+      "loading": "Loading the list…",
+      "empty": "No files here yet.",
+      "error": "Couldn't load the file list. Open the folder on GitHub.",
+      "close": "Close",
+      "download": "Download",
+      "b": "B",
+      "kb": "KB",
+      "mb": "MB"
+    }
+  },
+
+  "sr": {
+    "a11y": { "skip": "Na sadržaj", "menu": "Meni" },
+    "brand": { "sub": "Project", "name": "Open Lectures" },
+    "nav": {
+      "schedule": "Program",
+      "archive": "Arhiva",
+      "about": "O nama",
+      "submit": "Predloži predavanje",
+      "cities": "Gradovi"
+    },
+    "lang": { "label": "Jezik", "names": { "ru": "RU", "en": "EN", "sr": "SR" } },
+    "footer": {
+      "tagline": "ZAJEDNO — LEARN · GROW · JOY",
+      "note": "Project Open Lectures",
+      "telegram": "Telegram"
+    },
+    "umbrella": {
+      "eyebrow": "Otvoreni lektorij",
+      "title": "Predavanja i susreti u četiri grada",
+      "lead": "Project Open Lectures je otvorena platforma na kojoj svako može da podeli ono što ga istinski zanima. Izaberi svoj grad.",
+      "citiesLabel": "Gradovi",
+      "citiesTitle": "Gde se okupljamo",
+      "open": "Pogledaj program",
+      "soon": "Uskoro",
+      "soonNote": "Ovde još nema događaja — ali prvi susreti su već u pripremi.",
+      "upcomingTitle": "Najbliži događaji"
+    },
+    "city": {
+      "scheduleLabel": "Program",
+      "comingSoonTitle": "Uskoro u ovom gradu",
+      "comingSoonText": "Još pripremamo prva predavanja i susrete. Navrati kasnije — ili predloži svoju temu!",
+      "emptySchedule": "Još nema zakazanih događaja.",
+      "emptyArchive": "Ovde još nema prošlih događaja.",
+      "archiveLink": "Arhiva grada"
+    },
+    "materials": {
+      "eyebrow": "Materijali",
+      "title": "Fajlovi predavanja",
+      "note": "Svaki fajl se preuzima direktno sa sajta. Svi se takođe nalaze u repozitorijumu projekta na GitHubu.",
+      "folderCta": "Otvori folder na GitHubu",
+      "groupImages": "Fotografije i naslovnice",
+      "groupFiles": "Fajlovi predavanja",
+      "loading": "Učitavamo listu…",
+      "empty": "Ovde još nema fajlova.",
+      "error": "Nije uspelo učitavanje liste fajlova. Otvorite folder na GitHubu.",
+      "close": "Zatvori",
+      "download": "Preuzmi",
+      "b": "B",
+      "kb": "KB",
+      "mb": "MB"
+    }
+  }
+}

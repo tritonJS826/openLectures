@@ -1,175 +1,158 @@
-# AGENTS.md — правила создания страниц лекций
+# Project Open Lectures
 
-Инструкции для агентов (и людей), которые добавляют новые лекции в **Нишский Лекторий /
-Project Open Lectures**. Сайт — статический, без сборки и зависимостей: только чистые
-HTML/CSS/JS. Соблюдайте структуру — от неё зависит загрузка текстов и ссылок.
+Открытый лекторий в нескольких городах: Ниш, Белград, Нови-Сад, Златибор.
+Любой может предложить тему и выступить — вход на встречи бесплатный.
 
-## 1. Золотые правила
+**Сайт:** https://openlectures.netlify.app/
 
-1. **Никаких фреймворков и сборки.** Только HTML/CSS/JS. Всё работает от `fetch` + DOM.
-2. **Тексты — только в JSON, не в HTML.** Для каждой страницы свой JSON с `ru` / `en` / `sr`.
-3. **Сербский — латиницей** (`srpski`, не `српски`). Язык по умолчанию — `ru`.
-4. Каждый ключ обязан существовать во **всех трёх** языках.
-5. Не редактируйте данные чужих страниц и не меняйте токены `css/base.css` без причины.
+Сайт собирается на [Astro](https://astro.build/) (статический вывод), тексты хранятся
+в JSON. Никаких UI-фреймворков: только Astro-шаблоны, CSS и немного ванильного JS.
 
-## 2. Где какие ссылки появляются
-
-| Куда | Файл данных | Что показываем | Ссылки на элемент |
-|---|---|---|---|
-| **Будущие** лекции | `data/index.json` → `upcoming.items` | главная страница, блок «Предстоящие лекции» | **одна** — на страницу лекции |
-| **Прошедшие** лекции | `data/archive.json` → `archive.items` | страница `archive.html` | **две** — страница лекции + материалы |
-
-- Лекция **не может** быть одновременно в `upcoming` и `archive`.
-- **Материалы** всегда ведут на папку лекции в GitHub:
-  `https://github.com/tritonJS826/openLectures/tree/main/lectures/<slug>/`
-- Ссылка на Telegram `https://t.me/NisLrktor` — в футере **каждой** страницы.
-- Когда будущая лекция проходит: **удалить** её из `upcoming.items` (во всех языках),
-  **добавить** в `archive.items`, сменить статус на «прошедшая», добавить материалы и recap.
-
-## 3. Структура папки лекции
-
-```
-lectures/<YYYYMMDD-slug>/
-├── index.html          # data-page="lecture" data-lecture="<slug>" data-json="data/lecture.json"
-├── css/style.css       # копия из существующей лекции; акцент — через body[data-lecture="<slug>"]
-├── js/main.js          # копировать как есть
-├── data/lecture.json   # все три языка
-├── data/materials.json # список файлов для окна «Материалы» (генерируется)
-├── images/             # только AVIF
-└── materials/          # файлы лекции: слайды, PDF, архивы (необязательно)
-```
-
-Slug = дата + смысл, например `20261108-newspace`. Дата в slug — дата лекции.
-
-## 4. Создание страницы лекции
-
-1. Скопируйте `lectures/20261028-spiders` → `lectures/<slug>`.
-2. Отредактируйте `data/lecture.json` для `ru` / `en` / `sr`.
-   Обязательные ключи:
-   - `meta.title`, `meta.description`
-   - `a11y.skip`, `brand.sub`, `brand.name`, `nav.{schedule,archive,about,submit}`
-   - `footer.{tagline,note,telegram}`
-   - `lecture.{back,status,title,summary,whenLabel,when,placeLabel,place,speakerLabel,speaker,aboutLabel,about[],learnLabel,learn[]}`
-   - для прошедших лекций ещё: `lecture.{materialsLabel,materialsText,materialsButton,materialsUrl,recapLabel,recapTitle,recap[]}`,
-    блок `materials.*` (см. §6.1) и `data-materials="<slug>"` на кнопке «Смотреть материалы»
-   - если есть фото с лекции: `lecture.{galleryLabel,galleryAlt}` и блок
-     `<div class="gallery">` с `<figure class="gallery__item"><img src="images/…avif" …></figure>`
-3. `status`: бейдж события — «Предстоящая лекция» / «Прошедшая лекция», а для
-   не-лекций (вечер, корпоратив, встреча) — «Общая встреча» / «Прошедшая встреча».
-   Полная таблица и переводы — в §6.2.
-4. `about`, `learn`, `recap` — **массивы** (рендерятся через `data-list`).
-5. Обновите в `index.html`: `<title>`, `meta[name=description]`, `og:*` и `data-lecture` на `<body>`.
-6. **Добавьте страницу в `sitemap.xml`** — иначе Google о ней не узнает:
-   ```xml
-   <url>
-     <loc>https://openlectures.netlify.app/lectures/&lt;slug&gt;/</loc>
-     <changefreq>monthly</changefreq>
-     <priority>0.7</priority>
-   </url>
-   ```
-   Адрес — со **слэшем на конце** и на `https://openlectures.netlify.app` (не на GitHub Pages).
-
-Акценты страницы задаются одним атрибутом: `<body data-lecture="newspace">` →
-стили `body[data-lecture="newspace"] { … }` в `css/style.css`.
-
-## 5. Изображения — только AVIF
-
-- Формат — **AVIF** (компактнее JPEG/PNG, поддерживается всеми современными браузерами).
-- Конвертация через **ffmpeg**:
-
-  ```bash
-  ffmpeg -y -i source.png -frames:v 1 -c:v libaom-av1 \
-    -crf 30 -b:v 0 -cpu-used 6 -still-picture 1 -pix_fmt yuv420p out.avif
-  ```
-
-- Ориентиры: hero — не больше ~1600 px по длинной стороне и желательно < 300 КБ.
-- Имена описательные: `images/spider.avif`; ссылка в HTML — `src="images/spider.avif"`.
-- **alt-текст обязателен и локализован**:
-  `<img src="images/spider.avif" data-i18n-attr="alt:lecture.imageAlt">`
-  и ключ `lecture.imageAlt` в каждом языке.
-- Не храните `jpg/png` в `images/` — только итоговые `.avif`.
-
-## 6. Регистрация лекции в списках (это и есть «где появляются ссылки»)
-
-Будущая — в `data/index.json` (`upcoming.items`, во всех языках):
-
-```json
-{
-  "day": "08", "mon": "ноя",
-  "badge": "Предстоящая лекция",
-  "title": "…", "speaker": "…",
-  "dateText": "8 ноября 2026", "time": "19:00",
-  "place": "кафе «Звуки сердца», Niš",
-  "url": "lectures/20261108-newspace/",
-  "thumb": "lectures/20261108-newspace/images/cover.avif"
-}
-```
-
-Прошедшая — в `data/archive.json` (`archive.items`, во всех языках), плюс две ссылки:
-
-```json
-{
-  "day": "28", "mon": "окт", "badge": "Открытие лектория",
-  "title": "…", "speaker": "…",
-  "dateText": "28 октября 2026", "time": "19:00",
-  "place": "кафе «Звуки сердца», Niš",
-  "url": "lectures/20261028-spiders/",
-  "thumb": "lectures/20261028-spiders/images/spider.avif",
-  "materialUrl": "https://github.com/tritonJS826/openLectures/tree/main/lectures/20261028-spiders",
-  "materialLabel": "Материалы"
-}
-```
-
-`thumb` — уменьшенная обложка для карточки списка (путь от корня сайта, обычно
-`lectures/<slug>/images/cover.avif`). Если её нет, карточка покажет заглушку.
-На телефоне дата и обложка выстраиваются в одну узкую колонку друг под другом,
-чтобы заголовок не сжимался.
-
-`day`/`mon` локализуйте: `ноя` / `NOV` / `nov`; `окт` / `OCT` / `okt`.
-
-**Не забудьте про SEO:** на **главной странице** (`index.html`) в `<head>` должен остаться
-`<meta name="google-site-verification" content="pf5xCPJNGuaX6KXcMd13fm-gsItBwLHK9rma9XsoFcU" />`
-— только там его проверяет Google Search Console (на остальных страницах он не нужен).
-Адрес новой лекции добавьте в `sitemap.xml` (`https://openlectures.netlify.app/lectures/<slug>/`).
-`robots.txt` разрешает обход и указывает на `sitemap.xml`.
-
-## 6.1. Окно «Материалы»
-
-Клик по «Материалам» (в архиве — боковая полоса карточки, на странице лекции — кнопка
-в блоке «Материалы») открывает `<dialog>` со списком файлов лекции и кнопкой «Открыть
-папку на GitHub». Клик по файлу **скачивает его прямо с сайта** (атрибут `download`);
-на GitHub ведёт только кнопка внизу окна. Код — в `js/app.js` (`initMaterials`),
-стили — в `css/base.css`. Без JS и в старых браузерах ссылки ведут прямо на GitHub,
-как раньше.
-
-Список берётся из `lectures/<slug>/data/materials.json`, который собирается по
-папкам `images/` и `materials/`:
+## Команды
 
 ```bash
-node scripts/build-materials.mjs
+npm install        # один раз
+npm run dev        # локальная разработка → http://localhost:4321
+npm run build      # сборка в dist/ (перед этим собирает data/materials.json)
+npm run preview    # посмотреть собранный сайт
+npm run materials  # только пересобрать списки файлов для окна «Материалы»
 ```
 
-Скрипт идемпотентный, без зависимостей. Прогоняйте его после добавления или
-удаления файлов в `images/` / `materials/` и коммитьте обновлённый
-`data/materials.json`. Новых URL он не создаёт — `sitemap.xml` не меняется.
+Открывать `dist/index.html` через `file://` нельзя — используйте `npm run dev`
+или `npm run preview`.
 
-Тексты окна — блок `materials.*` в `data/archive.json` и в `data/lecture.json`
-прошедших лекций (`title`, `note`, `folderCta`, `groupImages`, `groupFiles`,
-`loading`, `empty`, `error`, `close`, `b`, `kb`, `mb`) — во всех трёх языках.
-Превью файлов в окне — те же картинки из `images/`.
+## Структура
 
-## 6.2. Бейджи событий (лекция / общая встреча)
+```
+.
+├── astro.config.mjs          # site, i18n (ru/en/sr, префикс у всех), sitemap, redirect /
+├── netlify.toml              # сборка, старые URL → новые, заголовки, deploy previews
+├── src/
+│   ├── content.config.ts     # схемы коллекций cities и lectures (Zod)
+│   ├── content/
+│   │   ├── cities/<slug>.json
+│   │   └── lectures/<city>/<YYYYMMDD-slug>.json
+│   ├── data/                 # тексты страниц: home, about, archive, form, error404
+│   ├── i18n/ui.json          # общие строки: nav, footer, города, материалы
+│   ├── layouts/BaseLayout.astro
+│   ├── components/           # LectureCard, CityCard, Orbit
+│   ├── pages/                # маршруты (см. ниже)
+│   ├── scripts/              # stars.js, ui.js, about.js
+│   └── styles/               # base.css + стили страниц
+├── public/
+│   ├── robots.txt
+│   └── lectures/<city>/<slug>/
+│       ├── images/           # только AVIF (+ mp4 для видео)
+│       ├── materials/        # слайды, PDF, архивы (необязательно)
+│       └── data/materials.json   # генерируется скриптом
+└── scripts/
+    ├── build-materials.mjs
+    └── preview-headers.sh
+```
 
-Один и тот же текст-бейдж встречается в трёх местах и должен совпадать во всех
-трёх языках:
+## Маршруты
 
-- `data/index.json` → `upcoming.items[].badge` — карточка в афише на главной;
-- `data/archive.json` → `archive.items[].badge` — карточка в архиве;
-- `lectures/<slug>/data/lecture.json` → `lecture.status` — пилюля на странице лекции.
+Язык всегда первый сегмент пути; язык по умолчанию — русский, но префикс есть у всех.
 
-Есть два типа событий: **лекция** (есть лектор и тема) и **общая встреча** — любой
-другой повод собраться: новогодний вечер, корпоратив, джем, поэтический вечер,
-настольные игры и т.п. Для не-лекций всегда берём «Общая встреча», а не «Лекция».
+| Страница | Адрес | Файл |
+|---|---|---|
+| Главная (выбор города) | `/{lang}/` | `src/pages/[lang]/index.astro` |
+| Город | `/{lang}/{city}/` | `src/pages/[lang]/[city]/index.astro` |
+| Архив города | `/{lang}/{city}/archive/` | `src/pages/[lang]/[city]/archive.astro` |
+| Предложить лекцию | `/{lang}/{city}/new-lecture/` | `src/pages/[lang]/[city]/new-lecture.astro` |
+| Лекция | `/{lang}/{city}/lectures/<slug>/` | `src/pages/[lang]/[city]/lectures/[slug].astro` |
+| О проекте | `/{lang}/about/` | `src/pages/[lang]/about.astro` |
+| 404 | `/404.html` | `src/pages/404.astro` |
+
+Города: `nis` (по умолчанию, здесь все прошедшие лекции), `beograd`, `novi-sad`,
+`zlatibor`. Страницы создаются автоматически из `src/content/cities/*.json`.
+
+`/` → 301 `/ru/` (правило в `netlify.toml`, плюс meta-refresh заглушка из
+`astro.config.mjs`). Старые адреса тоже перенаправляются:
+
+- `/archive.html` → `/ru/nis/archive/`
+- `/about.html` → `/ru/about/`
+- `/newLectureRequest.html` → `/ru/nis/new-lecture/`
+- `/lectures/<slug>/` → `/ru/nis/lectures/<slug>/`
+
+## Как добавить лекцию
+
+1. Создайте папку `public/lectures/<city>/<YYYYMMDD-slug>/` и положите туда
+   `images/cover.avif` (и другие AVIF/MP4, если есть). Материалы — в `materials/`.
+2. Скопируйте любой файл из `src/content/lectures/nis/` в
+   `src/content/lectures/<city>/<YYYYMMDD-slug>.json` и заполните:
+   - `slug`, `city`, `type` (`lecture` или `gathering`), `status`
+     (`upcoming` или `past`), `date` (`YYYY-MM-DD`), `time`, `image`
+     (имя файла внутри `images/`), `media` (галерея, можно `[]`);
+   - `translations.ru / en / sr` — полный набор ключей (см. ниже).
+3. Пересоберите списки файлов и сайт:
+
+   ```bash
+   npm run materials
+   npm run build
+   ```
+
+4. Проверьте все три языка и обе ссылки в архиве.
+
+Списки на главной, в городе и в архиве **не редактируются вручную**: карточки берутся
+из коллекции, будущее/прошлое определяется полем `status`, сортировка — по `date`.
+Городская страница показывает предстоящие события, архив — прошедшие.
+
+### Тексты лекции (`translations.<lang>.lecture`)
+
+Обязательные ключи: `back`, `status`, `title`, `summary`, `whenLabel`, `when`,
+`placeLabel`, `place`, `speakerLabel`, `speaker`, `imageAlt`, `aboutLabel`, `about[]`,
+`learnLabel`, `learn[]`.
+
+Для прошедших (`status: "past"`): `materialsLabel`, `materialsText`, `materialsButton`,
+`materialsUrl`, `recapLabel`, `recapTitle`, `recap[]`, а при наличии фото —
+`galleryLabel` и alt-ключи для каждого элемента `media` (`galleryAlt`, `videoAlt`, …).
+
+Для будущих (`status: "upcoming"`) можно добавить блок призыва: `ctaLabel`, `ctaText`,
+`ctaButton`. Если его нет, блок не выводится.
+
+### Как добавить город
+
+Создайте `src/content/cities/<slug>.json`:
+
+```json
+{
+  "slug": "beograd",
+  "order": 2,
+  "status": "coming-soon",
+  "name": { "ru": "Белград", "en": "Belgrade", "sr": "Beograd" },
+  "venue": { "ru": "адрес скоро", "en": "venue to be announced", "sr": "adresa uskoro" },
+  "address": ""
+}
+```
+
+`status: "coming-soon"` показывает заглушку «Скоро» вместо афиши; `"active"` — обычную
+страницу. `isDefault: true` помечает город по умолчанию (Ниш). Страницы и пункты
+навигации появятся сами, отдельных списков нет.
+
+## Языки
+
+Три языка: `ru`, `en`, `sr` (сербский — **латиницей**). Каждый ключ должен быть во всех
+трёх языках — это проверяет Zod-схема в `src/content.config.ts` при сборке.
+Общие строки (навигация, футер, диалог материалов, подписи городов) — в
+`src/i18n/ui.json`, тексты страниц — в `src/data/*.json`, тексты лекций — в самом файле
+лекции.
+
+Переключение языка — обычные ссылки на тот же путь с другим префиксом
+(`/ru/...` ↔ `/en/...` ↔ `/sr/...`), без `localStorage` и клиентского JSON. В `<head>`
+генерируются `canonical` и `hreflang` для всех трёх языков.
+
+Общие ключи `brand`, `nav`, `footer`, `a11y` должны совпадать на всех страницах — они
+лежат в `src/i18n/ui.json` и подставляются в `BaseLayout.astro`.
+
+## Бейджи событий (лекция / общая встреча)
+
+Есть два типа событий: **лекция** (`type: "lecture"`, есть лектор и тема) и
+**общая встреча** (`type: "gathering"`: новогодний вечер, джем, поэтический вечер,
+настольные игры и т.п.).
+
+Текст бейджа хранится в `lecture.status` файла лекции и показывается на карточках и на
+странице лекции. Формулировки — только из таблицы:
 
 | Тип | RU | EN | SR |
 |---|---|---|---|
@@ -177,73 +160,96 @@ node scripts/build-materials.mjs
 | Лекция — прошедшая | `Прошедшая лекция` | `Past talk` | `Prošlo predavanje` |
 | Общая встреча — предстоящая | `Общая встреча` | `Gathering` | `Okupljanje` |
 | Общая встреча — прошедшая | `Прошедшая встреча` | `Past gathering` | `Prošlo okupljanje` |
-| Открытие лектория (разовый) | `Открытие лектория` | `Opening night` | `Otvaranje lektorija` |
+| Открытие лектория (разово) | `Открытие лектория` | `Opening night` | `Otvaranje lektorija` |
 
-Правила:
+Для не-лекций всегда «Общая встреча», а не «Лекция». «Открытие лектория» —
+разовый бейдж самой первой встречи.
 
-- Предстоящее событие живёт в `upcoming.items` и несёт «предстоящий» бейдж, прошедшее —
-  в `archive.items` с «прошедшим» (см. §2).
-- «Открытие лектория» — разовый бейдж самой первой встречи (в архиве), вместо
-  «Прошедшая лекция».
-- Бейдж карточки и `lecture.status` на странице должны совпадать.
-- Не заводите новые формулировки без нужды: расширяйте эту таблицу, чтобы типы
-  событий оставались едиными по всему сайту.
+## Материалы
 
-## 7. Механика текстов (i18n)
+Кнопка «Материалы» (в архиве — боковая полоса карточки, на странице лекции — кнопка
+в блоке «Материалы») открывает `<dialog>` со списком файлов. Список берётся из
+`public/lectures/<city>/<slug>/data/materials.json`, который собирает
+`scripts/build-materials.mjs` по папкам `images/` и `materials/`:
 
-Общие файлы `js/app.js` и `js/stars.js` — не переписывать. Разметка использует:
-
-- `data-i18n="ключ.путь"` — подставить текст;
-- `data-i18n-attr="href:ключ.путь"` / `"alt:…"` — подставить атрибут;
-- `data-list="ключ"` + `data-list-type` — отрисовать массив:
-  `upcoming` | `archive` | `point` | `learn` | `text`.
-
-Общие ключи (`brand`, `nav`, `footer`, `a11y`) должны совпадать на всех страницах.
-
-## 8. Качество и проверка
-
-- Сохраняйте: skip-link, фокусные стили, локализованный `alt`, `prefers-reduced-motion`.
-- Проверка локально: `python3 -m http.server 5173` → http://localhost:5173
-  (открывать как `file://` нельзя — браузер блокирует `fetch` JSON).
-- Проверьте: все три языка, список будущих, архив и **обе** ссылки в архиве.
-- **SEO:** все HTML-страницы проекта должны быть перечислены в `sitemap.xml` ровно одним
-  адресом (`https://openlectures.netlify.app/…`) — ни одной лишней и ни одной забытой.
-  **Исключение — `404.html`: её в sitemap не добавляем.**
-  Быстрая сверка:
-  ```bash
-  find . -name '*.html' -not -path './.git/*' | sort
-  grep -o '<loc>[^<]*</loc>' sitemap.xml
-  ```
-- `<meta name="google-site-verification">` живёт только в корневом `index.html`; при
-  копировании папки лекции в неё он не попадает — так и должно быть.
-- **Один адрес на страницу.** Каждая страница живёт по одному адресу: `/`,
-  `/archive.html`, `/lectures/<slug>/` — без `/index.html` на конце. `netlify.toml`
-  отдаёт 301 с `/index.html` → `/` и с `/:section/:slug/index.html` → `/:section/:slug/`.
-  Ссылки на главную поэтому пишем как `./` (из корня) и `../../` (из папки лекции),
-  а не `index.html` / `../../index.html` — иначе каждая ссылка идёт через лишний 301.
-- **Deploy previews и branch deploys не индексируются.** Сборки на
-  `*--openlectures.netlify.app` запускают `scripts/preview-headers.sh`, который кладёт
-  в корень `_headers` с `X-Robots-Tag: noindex, nofollow` (в `netlify.toml` хедеры по
-  deploy context не настраиваются). Файл `_headers` добавлен в `.gitignore` — **не
-  коммитьте его**, иначе `noindex` уедет на продакшен. Продакшен собирается без команды
-  сборки, скрипт на него не влияет.
-
-## 9. Страница 404
-
-`404.html` в корне — её Netlify показывает автоматически на любой несуществующий адрес,
-отдавая при этом статус **404** (поэтому её не нужно закрывать `noindex` и не нужно
-добавлять в `sitemap.xml`).
-
-Главное правило: **все пути внутри `404.html` — абсолютные.**
-
-```html
-<link rel="stylesheet" href="/css/base.css">   <!-- а не css/base.css -->
-<body data-json="/data/404.json">              <!-- а не data/404.json -->
-<a href="https://openlectures.netlify.app/#upcoming">Афиша</a>
+```bash
+npm run materials
 ```
 
-Почему: файл отдаётся по тому адресу, который запросил пользователь (`/a/b/c/`), а не
-по `/404.html`. Относительные ссылки в такой ситуации ломаются, абсолютные — работают.
+Скрипт идемпотентный и запускается автоматически перед `dev` и `build`. Клик по файлу
+скачивает его прямо с сайта (`download`); на GitHub ведёт только кнопка внизу окна —
+на `https://github.com/tritonJS826/openLectures/tree/main/public/lectures/<city>/<slug>`.
 
-Тексты страницы лежат в `data/404.json` (`ru` / `en` / `sr`), стили — в `css/404.css`.
-Ведёт страница двумя кнопками: афиша (`/#upcoming`) и архив (`/archive.html`).
+`lecture.materialsUrl` в JSON прошедшей лекции должен вести на эту же папку GitHub.
+
+## Изображения
+
+- Только **AVIF** для фото и обложек (компактнее JPEG/PNG).
+- Конвертация через ffmpeg:
+
+  ```bash
+  ffmpeg -y -i source.png -frames:v 1 -c:v libaom-av1 \
+    -crf 30 -b:v 0 -cpu-used 6 -still-picture 1 -pix_fmt yuv420p out.avif
+  ```
+
+- Если ваш ffmpeg умеет `libavif`, можно использовать `-c:v libavif`.
+- Ориентиры: обложка — до ~1600 px по длинной стороне, желательно < 300 КБ.
+- Имена описательные: `images/cover.avif`, `images/talk-1.avif`.
+- alt обязателен и локализован: ключ `lecture.imageAlt` (и alt-ключи для галереи) в
+  каждом языке.
+- В `public/lectures/*/images/` не должно быть jpg/png — только итоговые `.avif`
+  (и `.mp4` для видео с постером `.avif`).
+
+## Стили и скрипты
+
+- `src/styles/base.css` — общая база (шапка, футер, карточки, диалог материалов).
+- Стили страниц (`home.css`, `archive.css`, `about.css`, `newLectureRequest.css`,
+  `404.css`, `lecture.css`, `cities.css`) подключаются в соответствующих `.astro`
+  файлах.
+- Акцент страницы лекции — `<body data-lecture="<slug без даты>">` и правила
+  `body[data-lecture="…"]` в `lecture.css`.
+- `src/scripts/stars.js`, `ui.js` и `about.js` — ванильный JS: звёздное небо,
+  мобильное меню, reveal, наклон обложки, диалог материалов, копирование почты.
+  Сохраняйте `prefers-reduced-motion`, skip-link и фокусные стили.
+
+## SEO и индексация
+
+- `sitemap-index.xml` (и `sitemap-0.xml`) генерирует `@astrojs/sitemap` при
+  сборке: все страницы, кроме `404.html` и корневой заглушки `/`. Вручную sitemap
+  не редактируется. Старый адрес `/sitemap.xml` перенаправляется на индекс.
+- `canonical` и `hreflang` — в `BaseLayout.astro`, по одному адресу на страницу.
+- `<meta name="google-site-verification">` выводится только на `/ru/`.
+- `public/robots.txt` разрешает обход и указывает на sitemap.
+- Каждая страница живёт по одному адресу — со слэшем на конце, без `/index.html`.
+  За это отвечают `trailingSlash: "always"` и правила в `netlify.toml`.
+- Deploy previews и branch deploys не индексируются: `scripts/preview-headers.sh`
+  кладёт в `dist/` файл `_headers` с `X-Robots-Tag: noindex, nofollow`.
+  `_headers` в `.gitignore` — **не коммитьте его**, иначе `noindex` уедет на продакшен.
+
+## Страница 404
+
+`src/pages/404.astro` собирается в `dist/404.html`; Netlify отдаёт её на любой
+несуществующий адрес со статусом 404. Страница помечена `noindex` и не попадает в
+sitemap. Ссылки внутри неё абсолютные (`/ru/`, `/ru/nis/archive/`), потому что файл
+открывается по произвольному глубокому адресу.
+
+## Проверка перед коммитом
+
+```bash
+npm run build
+```
+
+Затем откройте `npm run preview` и проверьте:
+
+- три языка на главной, в городе, архиве, лекции и на странице «О нас»;
+- будущие события только в афише, прошедшие — только в архиве;
+- у прошедшей лекции две ссылки: страница и материалы; окно материалов скачивает файлы;
+- форму «Предложить лекцию» (Netlify Forms) на странице города и в «О нас»;
+- мобильное меню, переключатель языка, 404 и редирект `/` → `/ru/`.
+
+Полный список HTML-страниц для сверки с sitemap:
+
+```bash
+find dist -name '*.html' | sort
+grep -o '<loc>[^<]*' dist/sitemap-0.xml
+```

@@ -73,6 +73,18 @@
           "thumb": "lectures/20261213-cleaning/images/cover.avif"
         },
         {
+          "day": "27",
+          "mon": "дек",
+          "badge": "Общая встреча",
+          "title": "Новогоднее коло друзей: гитара, горячий чай и домашний торт",
+          "speaker": "Нишский Лекторий и друзья",
+          "dateText": "27 декабря 2026",
+          "time": "18:00",
+          "place": "кафе «Звуки сердца», Niš",
+          "url": "lectures/20261227-new-year-guitar/",
+          "thumb": "lectures/20261227-new-year-guitar/images/cover.avif"
+        },
+        {
           "day": "17",
           "mon": "янв",
           "badge": "Предстоящая лекция",
@@ -179,6 +191,18 @@
           "thumb": "lectures/20261213-cleaning/images/cover.avif"
         },
         {
+          "day": "27",
+          "mon": "DEC",
+          "badge": "Gathering",
+          "title": "New Year's kolo of friends: guitar, hot tea and homemade cake",
+          "speaker": "Niš Lectorium and friends",
+          "dateText": "December 27, 2026",
+          "time": "18:00",
+          "place": "Zvuci srca café, Niš",
+          "url": "lectures/20261227-new-year-guitar/",
+          "thumb": "lectures/20261227-new-year-guitar/images/cover.avif"
+        },
+        {
           "day": "17",
           "mon": "JAN",
           "badge": "Upcoming talk",
@@ -283,6 +307,18 @@
           "place": "kafić „Zvuci srca“, Niš",
           "url": "lectures/20261213-cleaning/",
           "thumb": "lectures/20261213-cleaning/images/cover.avif"
+        },
+        {
+          "day": "27",
+          "mon": "dec",
+          "badge": "Okupljanje",
+          "title": "Novogodišnje kolo prijatelja: gitara, vruć čaj i domaća torta",
+          "speaker": "Niški Lektorij i prijatelji",
+          "dateText": "27. decembar 2026.",
+          "time": "18:00",
+          "place": "kafić „Zvuci srca“, Niš",
+          "url": "lectures/20261227-new-year-guitar/",
+          "thumb": "lectures/20261227-new-year-guitar/images/cover.avif"
         },
         {
           "day": "17",

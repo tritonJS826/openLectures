@@ -1,0 +1,139 @@
+{
+  "ru": {
+    "meta": {
+      "title": "Новогоднее коло друзей: гитара, горячий чай и домашний торт · Нишский Лекторий",
+      "description": "Тёплый предновогодний вечер Нишского Лектория: живая акустика и любимые песни, свободный микрофон, горячий чай и домашний торт, новогоднее настроение. 27 декабря 2026, 18:00, кафе «Звуки сердца», Niš."
+    },
+    "a11y": { "skip": "К содержанию", "menu": "Меню" },
+    "brand": { "sub": "Project", "name": "Нишский Лекторий" },
+    "nav": { "schedule": "Афиша", "archive": "Архив", "about": "О нас", "submit": "Предложить лекцию" },
+    "lecture": {
+      "back": "← Все лекции",
+      "status": "Общая встреча",
+      "title": "Новогоднее коло друзей: гитара, горячий чай и домашний торт",
+      "summary": "Нишский Лекторий приглашает на тёплый и душевный предновогодний вечер — наш первый Новогодний корпоратив. Соберёмся за праздничным столом, будем пить чай с домашним тортом, беседовать и передавать по кругу гитару: петь любимые песни, слушать друг друга и мечтать.",
+      "whenLabel": "Когда",
+      "when": "27 декабря 2026, воскресенье, 18:00",
+      "placeLabel": "Где",
+      "place": "кафе «Звуки сердца», Branka Krsmanovića 17, Niš",
+      "speakerLabel": "Ведущие",
+      "speaker": "Нишский Лекторий и друзья",
+      "imageAlt": "Уютный праздничный стол в кафе: домашний торт на подставке, дымящиеся стаканы с горячим чаем и деревянная акустическая гитара, а за окном — снег",
+      "aboutLabel": "О вечере",
+      "about": [
+        "Всем привет! Это наш первый Новогодний корпоратив, и мы очень волнуемся. Хочется собраться всем вместе, сесть вокруг праздничного стола, пить чай с тортом, беседовать и передавать по кругу гитару. Петь любимые песни, слушать друг друга, мечтать. Будто и нет тревог, будто и не декабрь за окном — а есть Мы, и мы вместе.",
+        "Живая акустика и любимые песни: будем петь знакомую классику, новогодние хиты, свои произведения и просто душевные мелодии. Можно слушать, укутавшись в плед настроения, а можно смело подпевать.",
+        "Свободный микрофон для всех: если вы играете на гитаре или другом акустическом инструменте и хотите исполнить пару-тройку песен — обязательно напишите в комментариях или в личку, и мы с радостью включим вас в плейлист вечера.",
+        "Чай и домашний тортик: приложим все усилия, чтобы было вкусно. Новогоднее настроение — общее дело: каждый берёт с собой всё, что может и хочет, — красивые наряды, украшения, хорошее настроение, выпечку. А если ничего нет — всё равно приходите: поделимся и сотворим Новогоднее Чудо друг для друга.",
+        "Приходите сами, приводите близких и зовите друзей! Вход свободный."
+      ],
+      "learnLabel": "Что нас ждёт",
+      "learn": [
+        "Живая акустика и любимые песни — классика, новогодние хиты и душевные мелодии",
+        "Свободный микрофон: исполните свои песни под гитару или другой акустический инструмент",
+        "Горячий чай и домашний тортик — чтобы было вкусно и тепло",
+        "Новогоднее настроение: наряды, украшения, выпечка — и общее чудо друг для друга"
+      ],
+      "ctaLabel": "Приходите",
+      "ctaText": "Вход свободный. Нас традиционно принимает инклюзивное кафе «Звуки сердца», где работают молодые люди с особенностями развития: кофе или чай можно заказать за добровольное пожертвование (в коробочку с сердцем). Пожалуйста, отметьтесь в комментариях, если планируете прийти, — чтобы нам хватило и стульев, и кусочков торта!",
+      "ctaButton": "Напомнить в Telegram"
+    },
+    "footer": {
+      "tagline": "ZAJEDNO — LEARN · GROW · JOY",
+      "note": "Нишский Лекторий · кафе «Звуки сердца», Niš",
+      "telegram": "Telegram"
+    }
+  },
+
+  "en": {
+    "meta": {
+      "title": "New Year's kolo of friends: guitar, hot tea and homemade cake · Niš Lectorium",
+      "description": "A warm pre-New Year evening at the Niš Lectorium: live acoustic music and favourite songs, an open mic, hot tea and homemade cake, and a festive mood. December 27, 2026, 18:00, Zvuci srca café, Niš."
+    },
+    "a11y": { "skip": "Skip to content", "menu": "Menu" },
+    "brand": { "sub": "Project", "name": "Niš Lectorium" },
+    "nav": { "schedule": "Schedule", "archive": "Archive", "about": "About us", "submit": "Propose a talk" },
+    "lecture": {
+      "back": "← All lectures",
+      "status": "Gathering",
+      "title": "New Year's kolo of friends: guitar, hot tea and homemade cake",
+      "summary": "The Niš Lectorium invites you to a warm, heartfelt pre-New Year evening — our first New Year get-together. We'll gather around the festive table, drink tea with homemade cake, chat and pass a guitar around the circle: singing favourite songs, listening to each other and dreaming.",
+      "whenLabel": "When",
+      "when": "December 27, 2026, Sunday, 18:00",
+      "placeLabel": "Where",
+      "place": "Zvuci srca café, Branka Krsmanovića 17, Niš",
+      "speakerLabel": "Hosts",
+      "speaker": "Niš Lectorium and friends",
+      "imageAlt": "A cosy festive café table: a homemade cake on a stand, steaming glasses of hot tea and a wooden acoustic guitar, with snow outside the window",
+      "aboutLabel": "About the evening",
+      "about": [
+        "Hello everyone! This is our first New Year get-together, and we're very excited. We want to come together, sit around the festive table, drink tea with cake, chat and pass a guitar around the circle. To sing favourite songs, listen to each other, dream. As if there were no worries, as if it weren't December outside — just Us, and we're together.",
+        "Live acoustic music and favourite songs: we'll sing familiar classics, New Year hits, our own songs and simply heartfelt melodies. You can listen, wrapped in the mood like a blanket, or boldly sing along.",
+        "An open mic for everyone: if you play the guitar or another acoustic instrument and would like to perform a song or two, be sure to write in the comments or send us a message, and we'll happily add you to the evening's playlist.",
+        "Tea and homemade cake: we'll do our best to make it delicious. The festive mood is a shared effort: everyone brings whatever they can and want — nice outfits, decorations, good cheer, baked treats. And if you have nothing — come anyway: we'll share and create a New Year's miracle for each other.",
+        "Come yourself, bring your loved ones and invite your friends! Free entry."
+      ],
+      "learnLabel": "What's in store",
+      "learn": [
+        "Live acoustic music and favourite songs — classics, New Year hits and heartfelt melodies",
+        "An open mic: perform your own songs with a guitar or another acoustic instrument",
+        "Hot tea and homemade cake — for warmth and good taste",
+        "Festive mood: outfits, decorations, baked treats — and a shared miracle for each other"
+      ],
+      "ctaLabel": "Come along",
+      "ctaText": "Free entry. We are hosted, as always, by the inclusive Zvuci srca café, where young people with developmental disabilities work: coffee or tea comes for a voluntary donation (into the box with a heart). Please leave a comment if you plan to come, so that we have enough chairs and slices of cake!",
+      "ctaButton": "Remind me on Telegram"
+    },
+    "footer": {
+      "tagline": "ZAJEDNO — LEARN · GROW · JOY",
+      "note": "Niš Lectorium · Zvuci srca café, Niš",
+      "telegram": "Telegram"
+    }
+  },
+
+  "sr": {
+    "meta": {
+      "title": "Novogodišnje kolo prijatelja: gitara, vruć čaj i domaća torta · Niški Lektorij",
+      "description": "Toplo prednovogodišnje veče Niškog Lektorija: živa akustika i omiljene pesme, otvoreni mikrofon, vruć čaj i domaća torta i praznično raspoloženje. 27. decembar 2026, 18:00, kafić „Zvuci srca“, Niš."
+    },
+    "a11y": { "skip": "Na sadržaj", "menu": "Meni" },
+    "brand": { "sub": "Project", "name": "Niški Lektorij" },
+    "nav": { "schedule": "Program", "archive": "Arhiva", "about": "O nama", "submit": "Predloži predavanje" },
+    "lecture": {
+      "back": "← Sva predavanja",
+      "status": "Okupljanje",
+      "title": "Novogodišnje kolo prijatelja: gitara, vruć čaj i domaća torta",
+      "summary": "Niški Lektorij vas poziva na toplo i duševno prednovogodišnje veče — naš prvi novogodišnji skup. Okupićemo se oko prazničnog stola, piti čaj uz domaću tortu, razgovarati i predavati gitaru u krug: pevati omiljene pesme, slušati jedni druge i sanjati.",
+      "whenLabel": "Kada",
+      "when": "27. decembar 2026, nedelja, 18:00",
+      "placeLabel": "Gde",
+      "place": "kafić „Zvuci srca“, Branka Krsmanovića 17, Niš",
+      "speakerLabel": "Domaćini",
+      "speaker": "Niški Lektorij i prijatelji",
+      "imageAlt": "Utopljiv praznični sto u kafiću: domaća torta na postolju, čaše vrućeg čaja sa parom i drvena akustična gitara, a napolju pada sneg",
+      "aboutLabel": "O večeri",
+      "about": [
+        "Zdravo svima! Ovo je naš prvi novogodišnji skup i veoma smo uzbuđeni. Želimo da se okupimo svi zajedno, sednemo oko prazničnog stola, pijemo čaj uz tortu, razgovaramo i predajemo gitaru u krug. Da pevamo omiljene pesme, slušamo jedni druge, sanjamo. Kao da nema briga, kao da nije decembar napolju — nego smo Mi, i zajedno smo.",
+        "Živa akustika i omiljene pesme: pevaćemo poznate klasike, novogodišnje hitove, svoje pesme i jednostavno duševne melodije. Možete slušati, umotani u pokrivač raspoloženja, a možete i smelo pevati uz nas.",
+        "Otvoreni mikrofon za sve: ako svirate gitaru ili neki drugi akustični instrument i želite da izvedete pesmu ili dve — obavezno nam pišite u komentarima ili u privatnoj poruci, i rado ćemo vas uvrstiti u plejlistu večeri.",
+        "Čaj i domaća torta: potrudićemo se da sve bude ukusno. Praznično raspoloženje je zajednička stvar: svako donosi sve što može i želi — lepe odevne kombinacije, ukrase, dobro raspoloženje, kolače. A ako nemate ništa — ipak dođite: podelićemo i stvoriti Novogodišnje čudo jedno za drugo.",
+        "Dođite sami, povedite najbliže i pozovite prijatelje! Ulaz je slobodan."
+      ],
+      "learnLabel": "Šta nas čeka",
+      "learn": [
+        "Živa akustika i omiljene pesme — klasici, novogodišnji hitovi i duševne melodije",
+        "Otvoreni mikrofon: izvedite svoje pesme uz gitaru ili drugi akustični instrument",
+        "Vruć čaj i domaća torta — za toplinu i dobar ukus",
+        "Praznično raspoloženje: odevne kombinacije, ukrasi, kolači — i zajedničko čudo jedno za drugo"
+      ],
+      "ctaLabel": "Dođite",
+      "ctaText": "Ulaz je slobodan. Nas tradicionalno prima inkluzivni kafić „Zvuci srca“, u kome rade mladi sa smetnjama u razvoju: kafu ili čaj možete naručiti uz dobrovoljni prilog (u kutijicu sa srcem). Molimo vas da ostavite komentar ako planirate da dođete, da nam bude dovoljno i stolica i parčića torte!",
+      "ctaButton": "Podseti me na Telegramu"
+    },
+    "footer": {
+      "tagline": "ZAJEDNO — LEARN · GROW · JOY",
+      "note": "Niški Lektorij · kafić „Zvuci srca“, Niš",
+      "telegram": "Telegram"
+    }
+  }
+}

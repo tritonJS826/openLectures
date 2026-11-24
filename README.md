@@ -15,6 +15,7 @@ npm install
 npm run dev        # http://localhost:4321
 npm run build      # сборка в dist/
 npm run preview    # локальный просмотр сборки
+npm run materials  # пересобрать списки файлов для окна «Материалы»
 ```
 
 ## Адреса

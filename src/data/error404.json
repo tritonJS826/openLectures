@@ -9,7 +9,7 @@
       "title": "Кажется, такой страницы нет",
       "lead": "Адрес мог измениться, или в ссылке опечатка. Ничего страшного — всё самое интересное рядом.",
       "schedule": "Смотреть афишу",
-      "archive": "Архив лекций",
+      "archive": "Архив лекций в Нише",
       "hint": "Или начните с главной — там всё интересное."
     }
   },
@@ -23,7 +23,7 @@
       "title": "This page doesn’t exist",
       "lead": "The address may have changed, or there’s a typo in the link. No worries — everything interesting is right here.",
       "schedule": "See the schedule",
-      "archive": "Lecture archive",
+      "archive": "Niš lecture archive",
       "hint": "Or start from the home page — that’s where it all is."
     }
   },
@@ -37,7 +37,7 @@
       "title": "Ove stranice nema",
       "lead": "Adresa se možda promenila ili je u linku greška. Nema problema — sve zanimljivo je na dohvat ruke.",
       "schedule": "Pogledaj raspored",
-      "archive": "Arhiva predavanja",
+      "archive": "Arhiva predavanja u Nišu",
       "hint": "Ili počni od početne strane — tamo je sve najzanimljivije."
     }
   }

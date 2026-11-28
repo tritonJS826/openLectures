@@ -1,0 +1,19 @@
+{
+  "slug": "20270110-release-15",
+  "city": "nis",
+  "repoUrl": "https://github.com/tritonJS826/openLectures/tree/main/public/lectures/nis/20270110-release-15",
+  "groups": [
+    {
+      "id": "images",
+      "files": [
+        {
+          "name": "cover.avif",
+          "size": 57780,
+          "kind": "image",
+          "path": "lectures/nis/20270110-release-15/images/cover.avif",
+          "url": "https://github.com/tritonJS826/openLectures/blob/main/public/lectures/nis/20270110-release-15/images/cover.avif"
+        }
+      ]
+    }
+  ]
+}

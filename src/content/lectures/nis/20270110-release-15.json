@@ -1,0 +1,126 @@
+{
+  "slug": "20270110-release-15",
+  "city": "nis",
+  "type": "lecture",
+  "status": "upcoming",
+  "date": "2027-01-10",
+  "time": "18:00",
+  "image": "cover.avif",
+  "media": [],
+  "translations": {
+    "ru": {
+      "meta": {
+        "title": "Релиз 15.0: инструкция по эксплуатации детского мозга · Нишский Лекторий",
+        "description": "Виктория Туманова, учитель, педагог-психолог и методист: как настроить самую сложную биологическую систему и не упустить возможности каждого возраста. 10 января 2027, 18:00, кафе «Звуки сердца», Niš."
+      },
+      "lecture": {
+        "back": "← Все лекции",
+        "status": "Предстоящая лекция",
+        "title": "Релиз 15.0: инструкция по эксплуатации детского мозга",
+        "summary": "Современный, гибкий биокомпьютер — или печатная машинка? Разбираемся, как настраивать самую сложную биологическую систему и не упустить возможности каждого возраста. Учитель, педагог-психолог и методист Виктория Туманова — о правилах эксплуатации детского мозга. Спойлер: кнопки RESET нет.",
+        "whenLabel": "Когда",
+        "when": "10 января 2027, воскресенье, 18:00",
+        "placeLabel": "Где",
+        "place": "кафе «Звуки сердца», Branka Krsmanovića 17, Niš",
+        "speakerLabel": "Лектор",
+        "speaker": "Виктория Туманова — учитель, педагог-психолог, методист",
+        "imageAlt": "Светящийся синий контур мозга на компьютерном чипе среди тёмных плат с оранжевыми огнями",
+        "aboutLabel": "О лекции",
+        "about": [
+          "Приглашаем родителей, педагогов и всех, кому интересно, как растёт и меняется детский мозг, на лекцию «Релиз 15.0» — историю обновлений с рождения до подросткового возраста.",
+          "Что мы хотим получить на выходе? Современный, функциональный и гибкий биокомпьютер, способный самостоятельно обрабатывать информацию, устанавливать новые связи и осваивать новые навыки, адаптироваться к меняющимся условиям, решать нестандартные задачи, взаимодействовать с другими системами и самостоятельно обновляться.",
+          "Или мы случайно превращаем его в печатную машинку, потому что пытаемся запустить сложные программы на неподготовленной системе? А может, упускаем возможности каждого периода?",
+          "Виктория Туманова — учитель, педагог-психолог и методист. Вся лекция построена на абсолютно академической базе, а подача информации — лёгкая и доступная пониманию. Вы узнаете правила эксплуатации детского мозга.",
+          "Спойлер: кнопки RESET нет. Хотите поговорить об этом? 😉 Приходите сами, приводите близких и зовите друзей! Вход свободный, по желанию — донаты Рассказчику."
+        ],
+        "learnLabel": "Что вас ждёт",
+        "learn": [
+          "Как устроен «биокомпьютер»: что происходит с детским мозгом с рождения до подросткового возраста",
+          "Возможности каждого периода: что важно не упустить в разные годы",
+          "Навыки, которые стоит развивать: обработка информации, новые связи, адаптация и нестандартные задачи",
+          "Почему сложные программы не запускаются на неподготовленной системе — и как не превратить ребёнка в печатную машинку",
+          "Правила эксплуатации детского мозга — и почему кнопки RESET нет"
+        ],
+        "ctaLabel": "Приходите",
+        "ctaText": "Вход свободный, по желанию — донаты Рассказчику. Нас традиционно принимает инклюзивное кафе «Звуки сердца», где работают молодые люди с особенностями развития: кофе или чай можно заказать за добровольное пожертвование.",
+        "ctaButton": "Напомнить в Telegram"
+      }
+    },
+    "en": {
+      "meta": {
+        "title": "Release 15.0: a user manual for the child's brain · Niš Lectorium",
+        "description": "Viktoria Tumanova, teacher, educational psychologist and methodologist: how to set up the most complex biological system and not miss the opportunities of every age. January 10, 2027, 18:00, Zvuci srca café, Niš."
+      },
+      "lecture": {
+        "back": "← All lectures",
+        "status": "Upcoming talk",
+        "title": "Release 15.0: a user manual for the child's brain",
+        "summary": "A modern, flexible biocomputer — or a typewriter? We look at how to set up the most complex biological system and not miss the opportunities of every age. Viktoria Tumanova, teacher, educational psychologist and methodologist, explains the operating rules for the child's brain. Spoiler: there is no RESET button.",
+        "whenLabel": "When",
+        "when": "January 10, 2027, Sunday, 18:00",
+        "placeLabel": "Where",
+        "place": "Zvuci srca café, Branka Krsmanovića 17, Niš",
+        "speakerLabel": "Speaker",
+        "speaker": "Viktoria Tumanova — teacher, educational psychologist, methodologist",
+        "imageAlt": "A glowing blue outline of a brain on a computer chip among dark circuit boards with orange lights",
+        "aboutLabel": "About the talk",
+        "about": [
+          "We invite parents, teachers and everyone curious about how the child's brain grows and changes to a talk called “Release 15.0” — the changelog from birth to adolescence.",
+          "What do we want at the output? A modern, functional and flexible biocomputer able to process information on its own, form new connections and master new skills, adapt to changing conditions, solve non-standard problems, interact with other systems and update itself.",
+          "Or are we accidentally turning it into a typewriter because we are trying to run complex programs on an unprepared system? And maybe we are missing the opportunities of each period?",
+          "Viktoria Tumanova is a teacher, educational psychologist and methodologist. The whole talk rests on a thoroughly academic foundation, while the delivery is light and easy to understand. You will learn the operating rules for the child's brain.",
+          "Spoiler: there is no RESET button. Want to talk about it? 😉 Come yourself, bring your loved ones and invite your friends! Free entry, with donations for the Storyteller if you wish."
+        ],
+        "learnLabel": "What to expect",
+        "learn": [
+          "How the “biocomputer” works: what happens to the child's brain from birth to adolescence",
+          "The opportunities of every period: what matters at each age",
+          "Skills worth developing: processing information, new connections, adaptation and non-standard tasks",
+          "Why complex programs do not run on an unprepared system — and how not to turn a child into a typewriter",
+          "The operating rules for the child's brain — and why there is no RESET button"
+        ],
+        "ctaLabel": "Come along",
+        "ctaText": "Free entry, with donations for the Storyteller if you wish. We are hosted, as always, by the inclusive Zvuci srca café, where young people with developmental disabilities work: coffee or tea comes for a voluntary donation.",
+        "ctaButton": "Remind me on Telegram"
+      }
+    },
+    "sr": {
+      "meta": {
+        "title": "Verzija 15.0: uputstvo za upotrebu dečjeg mozga · Niški Lektorij",
+        "description": "Viktorija Tumanova, učiteljica, pedagoški psiholog i metodolog: kako podesiti najsloženiji biološki sistem i ne propustiti mogućnosti svakog uzrasta. 10. januar 2027, 18:00, kafić „Zvuci srca“, Niš."
+      },
+      "lecture": {
+        "back": "← Sva predavanja",
+        "status": "Predstojeće predavanje",
+        "title": "Verzija 15.0: uputstvo za upotrebu dečjeg mozga",
+        "summary": "Savremen, fleksibilan biokompjuter — ili pisaća mašina? Razmatramo kako podesiti najsloženiji biološki sistem i ne propustiti mogućnosti svakog uzrasta. Učiteljica, pedagoški psiholog i metodolog Viktorija Tumanova — o pravilima upotrebe dečjeg mozga. Spojler: dugmeta RESET nema.",
+        "whenLabel": "Kada",
+        "when": "10. januar 2027, nedelja, 18:00",
+        "placeLabel": "Gde",
+        "place": "kafić „Zvuci srca“, Branka Krsmanovića 17, Niš",
+        "speakerLabel": "Predavač",
+        "speaker": "Viktorija Tumanova — učiteljica, pedagoški psiholog, metodolog",
+        "imageAlt": "Svetleći plavi obris mozga na kompjuterskom čipu među tamnim pločama sa narandžastim svetlima",
+        "aboutLabel": "O predavanju",
+        "about": [
+          "Pozivamo roditelje, prosvetne radnike i sve koje zanima kako dečji mozak raste i menja se na predavanje „Verzija 15.0“ — istoriju ažuriranja od rođenja do adolescentnog doba.",
+          "Šta želimo da dobijemo na izlazu? Savremen, funkcionalan i fleksibilan biokompjuter, sposoban da samostalno obrađuje informacije, uspostavlja nove veze i savladava nove veštine, prilagođava se promenljivim uslovima, rešava nestandardne zadatke, sarađuje sa drugim sistemima i sam se ažurira.",
+          "Ili ga slučajno pretvaramo u pisaću mašinu, jer pokušavamo da pokrenemo složene programe na nespremnom sistemu? A možda propuštamo mogućnosti svakog perioda?",
+          "Viktorija Tumanova je učiteljica, pedagoški psiholog i metodolog. Celo predavanje počiva na potpuno akademskoj osnovi, a način izlaganja je lak i pristupačan za razumevanje. Naučićete pravila upotrebe dečjeg mozga.",
+          "Spojler: dugmeta RESET nema. Hoćete da razgovaramo o tome? 😉 Dođite sami, povedite najbliže i pozovite prijatelje! Ulaz je slobodan, a po želji — donacije Pričaču."
+        ],
+        "learnLabel": "Šta vas čeka",
+        "learn": [
+          "Kako funkcioniše „biokompjuter“: šta se dešava sa dečjim mozgom od rođenja do adolescentnog doba",
+          "Mogućnosti svakog perioda: šta je važno ne propustiti u različitim godinama",
+          "Veštine koje vredi razvijati: obrada informacija, nove veze, adaptacija i nestandardni zadaci",
+          "Zašto se složeni programi ne pokreću na nespremnom sistemu — i kako ne pretvoriti dete u pisaću mašinu",
+          "Pravila upotrebe dečjeg mozga — i zašto dugmeta RESET nema"
+        ],
+        "ctaLabel": "Dođite",
+        "ctaText": "Ulaz je slobodan, a po želji — donacije Pričaču. Nas tradicionalno prima inkluzivni kafić „Zvuci srca“, u kome rade mladi sa smetnjama u razvoju: kafu ili čaj možete naručiti uz dobrovoljni prilog.",
+        "ctaButton": "Podseti me na Telegramu"
+      }
+    }
+  }
+}
